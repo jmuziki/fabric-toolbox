@@ -310,7 +310,7 @@
         },
         {
             "id": "dfc84891-c001-4e79-8ef5-9f45be5928e4",
-            "title": "📂 Current Workspace",
+            "title": "\ud83d\udcc2 Current Workspace",
             "description": "This is a description here",
             "visualType": "card",
             "pageId": "24bbe28a-e9a1-493d-9cf2-5faf1d3e5094",
@@ -3439,7 +3439,7 @@
         },
         {
             "id": "da7851cb-1669-4d1a-82c0-e6843956e711",
-            "title": "➡️ Step 1) Running & Recent Semantic Model Queries",
+            "title": "\u27a1\ufe0f Step 1) Running & Recent Semantic Model Queries",
             "visualType": "markdownCard",
             "pageId": "4afe2440-f8cc-434c-906b-5f346e031a59",
             "layout": {
@@ -4122,7 +4122,7 @@
         },
         {
             "id": "dbea78f2-fb5e-4d2a-8380-3e5d57d9ffb5",
-            "title": "🔎 Available logs",
+            "title": "\ud83d\udd0e Available logs",
             "visualType": "markdownCard",
             "pageId": "24bbe28a-e9a1-493d-9cf2-5faf1d3e5094",
             "layout": {
@@ -4131,12 +4131,12 @@
                 "width": 4,
                 "height": 9
             },
-            "markdownText": "All workloads implemented in this dashboard are listed on the right-hand side of the page.\n\n🔵 **Logs available** - Logs have been actively collected for the selected time period across different workloads.\n\n⚠️ **Inactive** - Logs are not available for the selected time period for the following workloads.",
+            "markdownText": "All workloads implemented in this dashboard are listed on the right-hand side of the page.\n\n\ud83d\udd35 **Logs available** - Logs have been actively collected for the selected time period across different workloads.\n\n\u26a0\ufe0f **Inactive** - Logs are not available for the selected time period for the following workloads.",
             "visualOptions": {}
         },
         {
             "id": "a4842fbb-e0a3-4975-bb41-49e8b2ff275a",
-            "title": "🕜 Mission",
+            "title": "\ud83d\udd5c Mission",
             "visualType": "markdownCard",
             "pageId": "24bbe28a-e9a1-493d-9cf2-5faf1d3e5094",
             "layout": {
@@ -4150,7 +4150,7 @@
         },
         {
             "id": "59fd304d-c755-4dcb-a809-fe7e5511fb13",
-            "title": "🔗 Connect to multiple Workspaces",
+            "title": "\ud83d\udd17 Connect to multiple Workspaces",
             "visualType": "markdownCard",
             "pageId": "24bbe28a-e9a1-493d-9cf2-5faf1d3e5094",
             "layout": {
@@ -4281,7 +4281,7 @@
         },
         {
             "id": "5e266553-32da-4737-891f-ccf9210ff3d6",
-            "title": "↩️Take action if needed",
+            "title": "\u21a9\ufe0fTake action if needed",
             "visualType": "markdownCard",
             "pageId": "4afe2440-f8cc-434c-906b-5f346e031a59",
             "layout": {
@@ -4445,7 +4445,7 @@
         },
         {
             "id": "fce21af3-faef-4c70-85f7-98e29903340a",
-            "title": "🧊 Step 4) Identify Active Users by Semantic Models",
+            "title": "\ud83e\uddca Step 4) Identify Active Users by Semantic Models",
             "visualType": "markdownCard",
             "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
             "layout": {
@@ -4459,7 +4459,7 @@
         },
         {
             "id": "66ec1eac-b439-4e23-86a0-b76fdf8e0dea",
-            "title": "📍 Step 9) Analyse resource intensive scenarios | Optional: filter time, User(s), Semantic model(s)",
+            "title": "\ud83d\udccd Step 9) Analyse resource intensive scenarios | Optional: filter time, User(s), Semantic model(s)",
             "visualType": "markdownCard",
             "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
             "layout": {
@@ -4673,7 +4673,7 @@
         },
         {
             "id": "123ee15f-ea11-4b7c-971e-f2f5496d81e0",
-            "title": "👤 Users | Semantic Models",
+            "title": "\ud83d\udc64 Users | Semantic Models",
             "visualType": "markdownCard",
             "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
             "layout": {
@@ -4831,7 +4831,7 @@
         },
         {
             "id": "9b0eb194-b2e3-47a5-8777-a21b2a60f4b7",
-            "title": "🕥 Step 2) Identify days, hours",
+            "title": "\ud83d\udd65 Step 2) Identify days, hours",
             "visualType": "markdownCard",
             "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
             "layout": {
@@ -4845,7 +4845,7 @@
         },
         {
             "id": "a5c9c7cd-589d-4289-88c5-eec6f48bceb8",
-            "title": "📊 Step 3) Identify Active Users based on key metrics",
+            "title": "\ud83d\udcca Step 3) Identify Active Users based on key metrics",
             "visualType": "markdownCard",
             "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
             "layout": {
@@ -4859,7 +4859,7 @@
         },
         {
             "id": "19f7d633-df01-41a1-8859-8eb53049212a",
-            "title": "➡️ Step 1) Review Success Ratios",
+            "title": "\u27a1\ufe0f Step 1) Review Success Ratios",
             "visualType": "markdownCard",
             "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
             "layout": {
@@ -4873,7 +4873,7 @@
         },
         {
             "id": "7fe7b8c7-f9e2-4f06-b6ea-dc08d7766445",
-            "title": "⤵️ Step 5) Review details about queries and refreshes for a specific User | Drill into the User Details",
+            "title": "\u2935\ufe0f Step 5) Review details about queries and refreshes for a specific User | Drill into the User Details",
             "visualType": "markdownCard",
             "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
             "layout": {
@@ -5034,7 +5034,7 @@
         },
         {
             "id": "37ab2994-a353-4ec3-b391-15b22aba3012",
-            "title": "👤 User Details | Semantic Models",
+            "title": "\ud83d\udc64 User Details | Semantic Models",
             "visualType": "markdownCard",
             "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
             "layout": {
@@ -5275,7 +5275,7 @@
         },
         {
             "id": "c20f505a-cc50-4c61-b747-9e270f20111b",
-            "title": "➡️ Step 6) Review currently running queries and refreshes initiated by the User",
+            "title": "\u27a1\ufe0f Step 6) Review currently running queries and refreshes initiated by the User",
             "visualType": "markdownCard",
             "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
             "layout": {
@@ -5289,7 +5289,7 @@
         },
         {
             "id": "ddc60654-0557-4951-85b3-b42f4a4b9106",
-            "title": "📊 Step 7) Check the execution intensity of the queries and refreshes",
+            "title": "\ud83d\udcca Step 7) Check the execution intensity of the queries and refreshes",
             "visualType": "markdownCard",
             "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
             "layout": {
@@ -5675,7 +5675,7 @@
         },
         {
             "id": "ca8913f6-7165-4421-82e7-397815e807b9",
-            "title": "🟩 Step 10q | Queries sorted by StartTime descending | Top 50",
+            "title": "\ud83d\udfe9 Step 10q | Queries sorted by StartTime descending | Top 50",
             "visualType": "table",
             "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
             "layout": {
@@ -5895,7 +5895,7 @@
         },
         {
             "id": "e9ac695e-6d7c-4cda-b891-9dbbace42c50",
-            "title": "🕥 Filter time window",
+            "title": "\ud83d\udd65 Filter time window",
             "visualType": "markdownCard",
             "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
             "layout": {
@@ -5904,7 +5904,7 @@
                 "width": 3,
                 "height": 6
             },
-            "markdownText": "Filter the insights on the bar chart \nby selecting a period with the mouse. ➡️",
+            "markdownText": "Filter the insights on the bar chart \nby selecting a period with the mouse. \u27a1\ufe0f",
             "visualOptions": {}
         },
         {
@@ -5974,7 +5974,7 @@
         },
         {
             "id": "6f9aa033-c870-4300-a3ac-bd97637c2626",
-            "title": "🧮 Step 10) Review the executed DAX or MDX queries initiated by the User",
+            "title": "\ud83e\uddee Step 10) Review the executed DAX or MDX queries initiated by the User",
             "visualType": "markdownCard",
             "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
             "layout": {
@@ -6002,7 +6002,7 @@
         },
         {
             "id": "92546362-6d46-47dd-a0e0-6deba3e0adfd",
-            "title": "1️⃣ Step 1) Review Semantic Model Overview",
+            "title": "1\ufe0f\u20e3 Step 1) Review Semantic Model Overview",
             "visualType": "markdownCard",
             "pageId": "9f268d0e-9f1f-44c7-931f-cec0a6ebce8e",
             "layout": {
@@ -6016,7 +6016,7 @@
         },
         {
             "id": "3b22eee4-b1be-4cb9-94d0-64f9df0cb97f",
-            "title": "🟥 Step 2) Review Execution Delays and Capacity level Throttlings originated by Semantic Models",
+            "title": "\ud83d\udfe5 Step 2) Review Execution Delays and Capacity level Throttlings originated by Semantic Models",
             "visualType": "markdownCard",
             "pageId": "9f268d0e-9f1f-44c7-931f-cec0a6ebce8e",
             "layout": {
@@ -6030,7 +6030,7 @@
         },
         {
             "id": "4878134b-f28d-4ee7-b610-6f04a31bd0c3",
-            "title": "🧊 Step 3) Analyze Key Performance Metrics of Semantic Models",
+            "title": "\ud83e\uddca Step 3) Analyze Key Performance Metrics of Semantic Models",
             "visualType": "markdownCard",
             "pageId": "9f268d0e-9f1f-44c7-931f-cec0a6ebce8e",
             "layout": {
@@ -6367,7 +6367,7 @@
         },
         {
             "id": "a515a0f5-a662-45da-a65f-be7c6eabad95",
-            "title": "➡️ Step 1) Review Query Overview",
+            "title": "\u27a1\ufe0f Step 1) Review Query Overview",
             "visualType": "markdownCard",
             "pageId": "2266be0d-9a7a-49ba-a622-4c20e4ab4885",
             "layout": {
@@ -6381,7 +6381,7 @@
         },
         {
             "id": "5908a17d-c54d-430a-9558-3dea9a03fa6e",
-            "title": "🗺️ Step 2) Resource intensive Visuals",
+            "title": "\ud83d\uddfa\ufe0f Step 2) Resource intensive Visuals",
             "visualType": "markdownCard",
             "pageId": "2266be0d-9a7a-49ba-a622-4c20e4ab4885",
             "layout": {
@@ -6418,12 +6418,12 @@
                 "drillthrough": [],
                 "table__renderLinks": [
                     {
-                        "urlColumn": "📊",
+                        "urlColumn": "\ud83d\udcca",
                         "displayColumn": "ReportId",
                         "disabled": false
                     },
                     {
-                        "urlColumn": "🗺️",
+                        "urlColumn": "\ud83d\uddfa\ufe0f",
                         "displayColumn": "VisualId",
                         "disabled": false
                     }
@@ -6519,7 +6519,7 @@
                         "conditions": [
                             {
                                 "operator": "!=",
-                                "column": "🗺️",
+                                "column": "\ud83d\uddfa\ufe0f",
                                 "values": [
                                     ""
                                 ]
@@ -6546,7 +6546,7 @@
                                     ""
                                 ],
                                 "operator": "!=",
-                                "column": "📊"
+                                "column": "\ud83d\udcca"
                             }
                         ],
                         "chainingOperator": "and",
@@ -6703,7 +6703,7 @@
         },
         {
             "id": "393ad2a9-d0a7-43eb-80af-826bdc76bac1",
-            "title": "🧮 Step 3) Review the executed DAX or MDX queries initiated by the User",
+            "title": "\ud83e\uddee Step 3) Review the executed DAX or MDX queries initiated by the User",
             "visualType": "markdownCard",
             "pageId": "2266be0d-9a7a-49ba-a622-4c20e4ab4885",
             "layout": {
@@ -6717,7 +6717,7 @@
         },
         {
             "id": "9af6d526-d103-4556-b52d-524e29646ece",
-            "title": "🟦 Step 10r | Refreshes sorted by EndTime descending | Top 50",
+            "title": "\ud83d\udfe6 Step 10r | Refreshes sorted by EndTime descending | Top 50",
             "visualType": "table",
             "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
             "layout": {
@@ -6894,7 +6894,7 @@
         },
         {
             "id": "a357f782-cdff-4256-925d-05f9748d3c2d",
-            "title": "➡️ Step 1) Review Success Ratios",
+            "title": "\u27a1\ufe0f Step 1) Review Success Ratios",
             "visualType": "markdownCard",
             "pageId": "233b545f-c558-41db-9179-9b844f6a148d",
             "layout": {
@@ -6950,7 +6950,7 @@
         },
         {
             "id": "db5fa576-9d0f-4e6c-b9ce-f413f4cc4bff",
-            "title": "↩️Take action if needed",
+            "title": "\u21a9\ufe0fTake action if needed",
             "visualType": "markdownCard",
             "pageId": "2266be0d-9a7a-49ba-a622-4c20e4ab4885",
             "layout": {
@@ -7043,12 +7043,12 @@
                 "drillthrough": [],
                 "table__renderLinks": [
                     {
-                        "urlColumn": "📊",
+                        "urlColumn": "\ud83d\udcca",
                         "displayColumn": "ReportId",
                         "disabled": false
                     },
                     {
-                        "urlColumn": "🗺️",
+                        "urlColumn": "\ud83d\uddfa\ufe0f",
                         "displayColumn": "VisualId",
                         "disabled": false
                     }
@@ -7144,7 +7144,7 @@
                         "conditions": [
                             {
                                 "operator": "!=",
-                                "column": "🗺️",
+                                "column": "\ud83d\uddfa\ufe0f",
                                 "values": [
                                     ""
                                 ]
@@ -7171,7 +7171,7 @@
                                     ""
                                 ],
                                 "operator": "!=",
-                                "column": "📊"
+                                "column": "\ud83d\udcca"
                             }
                         ],
                         "chainingOperator": "and",
@@ -7184,6 +7184,489 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "4e4a6493-ffa8-42b7-91fe-4e28c233bdff",
+            "title": "Item Job Executions - Overview",
+            "visualType": "markdownCard",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 0,
+                "y": 0,
+                "width": 24,
+                "height": 1
+            },
+            "markdownText": "",
+            "visualOptions": {}
+        },
+        {
+            "id": "24058a9a-b715-42a5-881e-3f00c2e9daae",
+            "title": "Total Jobs",
+            "visualType": "card",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 0,
+                "y": 1,
+                "width": 3,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "87f0e797-f065-47dc-834f-f50de35d3d55"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "67f14a28-584b-40ec-84e9-20de1feb8a9f",
+            "title": "Success Rate %",
+            "visualType": "card",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 3,
+                "y": 1,
+                "width": 3,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "b3bac89f-f141-44e7-a162-5206bb34ccfb"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "2bfd885f-129d-4376-9264-6f485ab73bb2",
+            "title": "Failed Jobs",
+            "visualType": "card",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 6,
+                "y": 1,
+                "width": 3,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "796fe456-3d78-4fed-a016-e64fc039bffb"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto",
+                "colorRulesDisabled": false,
+                "colorStyle": "light",
+                "colorRules": [
+                    {
+                        "id": "585257f6-be71-4a80-8840-dfeb5257087d",
+                        "ruleType": "colorByCondition",
+                        "conditions": [
+                            {
+                                "operator": ">",
+                                "column": "FailedJobs",
+                                "values": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "colorStyle": "light",
+                        "color": "red",
+                        "applyTo": "cells"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "a3d1203b-2c67-42d9-b4b2-e9cfbf42404b",
+            "title": "Avg Duration (ms)",
+            "visualType": "card",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 9,
+                "y": 1,
+                "width": 3,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "ece7872a-d95a-4f79-a676-be1230cfd44b"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "d8deb197-8396-49f8-b9da-a2d3f3225733",
+            "title": "P95 Duration (ms)",
+            "visualType": "card",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 12,
+                "y": 1,
+                "width": 3,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "53291d77-c419-4c3b-9daf-f245110deff0"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "0993e8e5-a7f3-4e72-9019-1bf8a8bce57f",
+            "title": "Job Count Over Time by Item Kind",
+            "visualType": "area",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 0,
+                "y": 5,
+                "width": 12,
+                "height": 6
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "e3a62d31-e2f0-40bc-b66e-a2d225dd0c3b"
+            },
+            "visualOptions": {}
+        },
+        {
+            "id": "f3827c2a-4475-4950-991a-a99c4028c995",
+            "title": "Failure Count Over Time",
+            "visualType": "line",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 12,
+                "y": 5,
+                "width": 12,
+                "height": 6
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "a7231c50-f479-43f6-a1cf-fffef72ac5dd"
+            },
+            "visualOptions": {
+                "colorRulesDisabled": false,
+                "colorStyle": "light",
+                "colorRules": [
+                    {
+                        "id": "ba050ea7-e89b-497c-8378-448b48365989",
+                        "ruleType": "colorByValue",
+                        "color": "red",
+                        "applyTo": "cells"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1f5b7eae-0b69-462f-91ff-df9074e743a2",
+            "title": "Jobs by Item Kind",
+            "visualType": "bar",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 0,
+                "y": 11,
+                "width": 12,
+                "height": 6
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "0e3cb2cd-7fa0-46aa-a38b-512f9b0c6a65"
+            },
+            "visualOptions": {}
+        },
+        {
+            "id": "3b42df9e-61b2-45d3-92fc-415bb95a41e9",
+            "title": "Top 50 Items by Run Count",
+            "visualType": "table",
+            "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "layout": {
+                "x": 0,
+                "y": 17,
+                "width": 24,
+                "height": 8
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "0fdea72c-be1c-45f7-814f-542adb1a6e94"
+            },
+            "visualOptions": {}
+        },
+        {
+            "id": "2e172bf4-f120-4374-8aa1-c77c9c18f048",
+            "title": "Item Job Failures - Analysis",
+            "visualType": "markdownCard",
+            "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+            "layout": {
+                "x": 0,
+                "y": 0,
+                "width": 24,
+                "height": 1
+            },
+            "markdownText": "",
+            "visualOptions": {}
+        },
+        {
+            "id": "6b6bbcaa-9bc7-4b99-b3ba-abd03e94eb26",
+            "title": "Total Failures",
+            "visualType": "card",
+            "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+            "layout": {
+                "x": 0,
+                "y": 1,
+                "width": 4,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "325a3d39-4bb8-49a0-8f2f-b79ed02b21c0"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto",
+                "colorRulesDisabled": false,
+                "colorStyle": "light",
+                "colorRules": [
+                    {
+                        "id": "e14b2372-9997-4209-ae0e-3989d4989258",
+                        "ruleType": "colorByCondition",
+                        "conditions": [
+                            {
+                                "operator": ">",
+                                "column": "Count",
+                                "values": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "colorStyle": "light",
+                        "color": "red",
+                        "applyTo": "cells"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ff7856ed-c708-47f5-ad28-184231a227d4",
+            "title": "Most Failing Item",
+            "visualType": "card",
+            "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+            "layout": {
+                "x": 4,
+                "y": 1,
+                "width": 4,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "041ae7c5-c29a-4c49-b947-64b7ea21b695"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "0189b73b-4c8f-4438-8eb2-7d814db5969f",
+            "title": "Most Failing Item Kind",
+            "visualType": "card",
+            "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+            "layout": {
+                "x": 8,
+                "y": 1,
+                "width": 4,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "63b5d6b0-3b2c-4138-89f6-5ed02731485a"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "2b52fd41-734f-44fe-a303-696738c5229c",
+            "title": "Failure Trend Over Time",
+            "visualType": "line",
+            "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+            "layout": {
+                "x": 12,
+                "y": 1,
+                "width": 12,
+                "height": 6
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "2438a482-d43e-4950-bc60-6b9d5ff46867"
+            },
+            "visualOptions": {
+                "colorRulesDisabled": false,
+                "colorStyle": "light",
+                "colorRules": [
+                    {
+                        "id": "d3c527ca-ffe0-44db-b373-3445b26cdc56",
+                        "ruleType": "colorByValue",
+                        "color": "red",
+                        "applyTo": "cells"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "9f8f907d-e549-4c84-aa7b-6bc64ee877da",
+            "title": "Failures by Item Kind",
+            "visualType": "bar",
+            "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+            "layout": {
+                "x": 0,
+                "y": 7,
+                "width": 12,
+                "height": 6
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "dddae769-a010-4d5c-9d1e-2267ac5e470f"
+            },
+            "visualOptions": {}
+        },
+        {
+            "id": "8b317d72-88f7-44e5-be75-5340192a3bd4",
+            "title": "Failure Details",
+            "visualType": "table",
+            "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+            "layout": {
+                "x": 0,
+                "y": 13,
+                "width": 24,
+                "height": 10
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "b724249d-e3ff-4d9a-b6fc-44cbc94e766b"
+            },
+            "visualOptions": {}
+        },
+        {
+            "id": "5a0937ac-6297-406d-98bb-5716cfd1b7fc",
+            "title": "Item Job Performance - Analysis",
+            "visualType": "markdownCard",
+            "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+            "layout": {
+                "x": 0,
+                "y": 0,
+                "width": 24,
+                "height": 1
+            },
+            "markdownText": "",
+            "visualOptions": {}
+        },
+        {
+            "id": "fad82d4b-19e4-44d4-aedc-cf3998e88fef",
+            "title": "Avg Duration (ms)",
+            "visualType": "card",
+            "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+            "layout": {
+                "x": 0,
+                "y": 1,
+                "width": 4,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "ece7872a-d95a-4f79-a676-be1230cfd44b"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "395deaf5-60f9-4413-9e10-25ecf87ff4a5",
+            "title": "P95 Duration (ms)",
+            "visualType": "card",
+            "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+            "layout": {
+                "x": 4,
+                "y": 1,
+                "width": 4,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "53291d77-c419-4c3b-9daf-f245110deff0"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "a5813205-52c2-46f4-838b-78f0634a3b3e",
+            "title": "Max Duration (ms)",
+            "visualType": "card",
+            "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+            "layout": {
+                "x": 8,
+                "y": 1,
+                "width": 4,
+                "height": 4
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "c706cb30-020d-49ea-bf11-116bf45c6bb8"
+            },
+            "visualOptions": {
+                "multiStat__textSize": "auto"
+            }
+        },
+        {
+            "id": "d404fb40-22b2-4adf-8458-bc499ea207dc",
+            "title": "Avg Duration by Item Kind",
+            "visualType": "bar",
+            "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+            "layout": {
+                "x": 0,
+                "y": 5,
+                "width": 12,
+                "height": 6
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "5b76bc95-09e6-4742-a640-0a974187ff53"
+            },
+            "visualOptions": {}
+        },
+        {
+            "id": "e75c2e61-c847-4a41-aa2b-75d431d24061",
+            "title": "Scheduled vs On-Demand Jobs",
+            "visualType": "table",
+            "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+            "layout": {
+                "x": 12,
+                "y": 5,
+                "width": 12,
+                "height": 6
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "37ee73cc-d9db-42ed-b876-354150608fb2"
+            },
+            "visualOptions": {}
+        },
+        {
+            "id": "242512de-5f59-4652-a07e-f681afce15ed",
+            "title": "Slowest Jobs (Top 20)",
+            "visualType": "table",
+            "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+            "layout": {
+                "x": 0,
+                "y": 11,
+                "width": 24,
+                "height": 10
+            },
+            "queryRef": {
+                "kind": "query",
+                "queryId": "e2df8440-a361-41aa-a304-e16e776f9f13"
+            },
+            "visualOptions": {}
         }
     ],
     "baseQueries": [
@@ -7251,6 +7734,36 @@
             "id": "6c3c4654-5c13-4295-b3c5-de6582fc06a9",
             "queryId": "deab65f0-1aa2-484c-be53-6f46c8b48cfb",
             "variableName": "_baseMDBLogs"
+        },
+        {
+            "id": "c48840fb-c60e-41eb-b1e7-e3d05effb36b",
+            "queryId": "03553157-89fd-4697-9562-e9c9a48a5c6b",
+            "variableName": "_baseItemJobEventLogs_Overview"
+        },
+        {
+            "id": "9b49b66b-ff41-4f07-bebf-067ddf997d48",
+            "queryId": "df3720fb-3565-4dfa-811b-aafa023587e2",
+            "variableName": "_baseItemJobEventLogs_ByItemKind"
+        },
+        {
+            "id": "e52a325a-65af-4899-b85c-ba0a38cc1ba9",
+            "queryId": "a1e3539e-6d4e-49d4-a869-ecac769eaa58",
+            "variableName": "_baseItemJobEventLogs_Timeline"
+        },
+        {
+            "id": "2de94fa6-42e6-43cc-b024-53c71b1e572d",
+            "queryId": "082ff910-82d8-46d7-8153-db512848d001",
+            "variableName": "_baseItemJobEventLogs_FailureDetails"
+        },
+        {
+            "id": "cbf7e55f-bd0b-445f-b28b-258554ceffd8",
+            "queryId": "efffaed8-7198-45d1-be65-db0af1881676",
+            "variableName": "_baseItemJobEventLogs_TopItems"
+        },
+        {
+            "id": "9976abfc-7a52-41db-becf-3588ca783a7e",
+            "queryId": "371dc476-6589-4611-be27-251cde8db12f",
+            "variableName": "_baseItemJobEventLogs_ScheduledVsOnDemand"
         }
     ],
     "parameters": [
@@ -7997,8 +8510,7 @@
             }
         }
     ],
-    "dataSources": [
-    ],
+    "dataSources": [],
     "pages": [
         {
             "name": "Overview",
@@ -8051,6 +8563,18 @@
         {
             "name": "Help",
             "id": "89d11a49-cfdc-4538-a872-cbe0ed12b643"
+        },
+        {
+            "id": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+            "name": "Item Jobs Overview"
+        },
+        {
+            "id": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+            "name": "- IJ | Failure Analysis"
+        },
+        {
+            "id": "44167d8b-ae26-4ab4-b87a-5068af935767",
+            "name": "- IJ | Performance"
         }
     ],
     "queries": [
@@ -8842,7 +9366,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "_baseSMCurrentQueries\r\n| where ['Executing User'] != 'Power BI Service'\r\n| extend ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId)\r\n| project \r\n    ['Semantic Model'],\r\n    Link = \"🔗\",\r\n    ['Executing User'],\r\n    OperationDetailName,\r\n    StartTime,\r\n    EndTime,\r\n    CurrentStatus,\r\n    EventText,\r\n    OperationId,\r\n    ['.'] = ItemURL\r\n| top 50 by StartTime desc",
+            "text": "_baseSMCurrentQueries\r\n| where ['Executing User'] != 'Power BI Service'\r\n| extend ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId)\r\n| project \r\n    ['Semantic Model'],\r\n    Link = \"\ud83d\udd17\",\r\n    ['Executing User'],\r\n    OperationDetailName,\r\n    StartTime,\r\n    EndTime,\r\n    CurrentStatus,\r\n    EventText,\r\n    OperationId,\r\n    ['.'] = ItemURL\r\n| top 50 by StartTime desc",
             "id": "1a3c972f-284d-41c0-8e06-bb1d078ca6c3",
             "usedVariables": [
                 "_baseSMCurrentQueries"
@@ -9010,7 +9534,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "_baseSMCurrentRefreshes\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| extend \n    ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId) // Item URL\n| summarize\n    StartTime = min(StartTime),\n    EndTime = max(EndTime),\n    ['Total Duration'] = sum(Duration),\n    ['Total CPU Time'] = sum(CpuTime),\n    ['Total Power Query CPU Time'] = sum(MashupCPUTime),\n    ['Total Power Query Peak Memory'] = sum(MashupPeakMemory),\n    ['Total Processed Objects'] = sum(ObjectCount)\n    by \n    ItemName,\n    Link = \"🔗\",\n    OperationId,\n    Status,\n    ItemURL\n| project \n    ['Semantic Model'] = ItemName,\n    Link,\n    Status,\n    StartTime,\n    EndTime,\n    ['Total Duration'],\n    ['Total CPU Time'],\n    ['Total Power Query CPU Time'],\n    ['Total Power Query Peak Memory'],\n    ['Total Processed Objects'],\n    OperationId,\n    ['.'] = ItemURL\n| order by EndTime desc\n",
+            "text": "_baseSMCurrentRefreshes\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| extend \n    ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId) // Item URL\n| summarize\n    StartTime = min(StartTime),\n    EndTime = max(EndTime),\n    ['Total Duration'] = sum(Duration),\n    ['Total CPU Time'] = sum(CpuTime),\n    ['Total Power Query CPU Time'] = sum(MashupCPUTime),\n    ['Total Power Query Peak Memory'] = sum(MashupPeakMemory),\n    ['Total Processed Objects'] = sum(ObjectCount)\n    by \n    ItemName,\n    Link = \"\ud83d\udd17\",\n    OperationId,\n    Status,\n    ItemURL\n| project \n    ['Semantic Model'] = ItemName,\n    Link,\n    Status,\n    StartTime,\n    EndTime,\n    ['Total Duration'],\n    ['Total CPU Time'],\n    ['Total Power Query CPU Time'],\n    ['Total Power Query Peak Memory'],\n    ['Total Processed Objects'],\n    OperationId,\n    ['.'] = ItemURL\n| order by EndTime desc\n",
             "id": "3e94ff91-227b-45f2-b41b-9a3a36d2b381",
             "usedVariables": [
                 "_baseSMCurrentRefreshes",
@@ -9354,7 +9878,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "_baseSMCurrentQueries\r\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\r\n| where isempty(_SM_Users) or ['Executing User'] in (_SM_Users) // Multiple selection filtering\r\n| where ['Executing User'] != 'Power BI Service'\r\n| extend ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId)\r\n| project \r\n    ['Semantic Model'],\r\n    Link = \"🔗\",\r\n    ['Executing User'],\r\n    OperationDetailName,\r\n    StartTime,\r\n    EndTime,\r\n    CurrentStatus,\r\n    EventText,\r\n    OperationId,\r\n    ['.'] = ItemURL\r\n| top 50 by StartTime desc",
+            "text": "_baseSMCurrentQueries\r\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\r\n| where isempty(_SM_Users) or ['Executing User'] in (_SM_Users) // Multiple selection filtering\r\n| where ['Executing User'] != 'Power BI Service'\r\n| extend ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId)\r\n| project \r\n    ['Semantic Model'],\r\n    Link = \"\ud83d\udd17\",\r\n    ['Executing User'],\r\n    OperationDetailName,\r\n    StartTime,\r\n    EndTime,\r\n    CurrentStatus,\r\n    EventText,\r\n    OperationId,\r\n    ['.'] = ItemURL\r\n| top 50 by StartTime desc",
             "id": "3c8138bc-664c-45d5-a7be-e0f299b20728",
             "usedVariables": [
                 "_SM_Users",
@@ -9473,7 +9997,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "_baseSMExecutionMetrics\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| where isempty(_SM_Users) or ExecutingUser in (_SM_Users) // Multiple selection filtering\n| where IntendedUsageScenario in ('DAX Query', 'MDX Query') // calculated column filter\n| project \n    Status,\n    ['Usage Scenario'] = IntendedUsageScenario,\n    ExecutingUser,\n    ['Semantic Model'] = ItemName,\n    TimeStart,\n    //TimeEnd,\n    ['Duration Time'] = round(TotalDuration, 2),\n    ['Total CPU Time'] = round(TotalCpuTime, 2),\n    ['Memory Peak'] = round(ApproximatePeakMemConsumption, 2),\n    ReportId,\n    VisualId,\n    ReplicaId,\n    OperationId,\n    ['🗺️'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi&visual=', VisualId), // Visual ID Link\n    ['📊'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi') // Report Link\n| top 50 by ['Total CPU Time'] desc\n",
+            "text": "_baseSMExecutionMetrics\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| where isempty(_SM_Users) or ExecutingUser in (_SM_Users) // Multiple selection filtering\n| where IntendedUsageScenario in ('DAX Query', 'MDX Query') // calculated column filter\n| project \n    Status,\n    ['Usage Scenario'] = IntendedUsageScenario,\n    ExecutingUser,\n    ['Semantic Model'] = ItemName,\n    TimeStart,\n    //TimeEnd,\n    ['Duration Time'] = round(TotalDuration, 2),\n    ['Total CPU Time'] = round(TotalCpuTime, 2),\n    ['Memory Peak'] = round(ApproximatePeakMemConsumption, 2),\n    ReportId,\n    VisualId,\n    ReplicaId,\n    OperationId,\n    ['\ud83d\uddfa\ufe0f'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi&visual=', VisualId), // Visual ID Link\n    ['\ud83d\udcca'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi') // Report Link\n| top 50 by ['Total CPU Time'] desc\n",
             "id": "4d1caa87-ca75-4512-be2a-8784804205bd",
             "usedVariables": [
                 "_SM_Users",
@@ -9499,7 +10023,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "_baseSMCurrentRefreshes\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| extend \n    ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId) // Item URL\n| summarize\n    //StartTime = min(StartTime),\n    EndTime = max(EndTime),\n    ['Total Duration'] = sum(Duration),\n    ['Total CPU Time'] = sum(CpuTime),\n    ['Total Power Query CPU Time'] = sum(MashupCPUTime),\n    ['Total Power Query Peak Memory'] = sum(MashupPeakMemory),\n    ['Total Processed Objects'] = sum(ObjectCount)\n    by \n    ItemName,\n    Link = \"🔗\",\n    OperationId,\n    Status,\n    ItemURL\n| project \n    ['Semantic Model'] = ItemName,\n    Link,\n    Status,\n    //StartTime,\n    EndTime,\n    ['Total Duration'],\n    ['Total CPU Time'],\n    ['Total Power Query CPU Time'],\n    ['Total Power Query Peak Memory'],\n    ['Total Processed Objects'],\n    ['.'] = ItemURL,\n    OperationId\n| top 50 by EndTime desc\n",
+            "text": "_baseSMCurrentRefreshes\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| extend \n    ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId) // Item URL\n| summarize\n    //StartTime = min(StartTime),\n    EndTime = max(EndTime),\n    ['Total Duration'] = sum(Duration),\n    ['Total CPU Time'] = sum(CpuTime),\n    ['Total Power Query CPU Time'] = sum(MashupCPUTime),\n    ['Total Power Query Peak Memory'] = sum(MashupPeakMemory),\n    ['Total Processed Objects'] = sum(ObjectCount)\n    by \n    ItemName,\n    Link = \"\ud83d\udd17\",\n    OperationId,\n    Status,\n    ItemURL\n| project \n    ['Semantic Model'] = ItemName,\n    Link,\n    Status,\n    //StartTime,\n    EndTime,\n    ['Total Duration'],\n    ['Total CPU Time'],\n    ['Total Power Query CPU Time'],\n    ['Total Power Query Peak Memory'],\n    ['Total Processed Objects'],\n    ['.'] = ItemURL,\n    OperationId\n| top 50 by EndTime desc\n",
             "id": "977b4041-ae8a-45eb-9787-1fd37da5f4a3",
             "usedVariables": [
                 "_baseSMCurrentRefreshes",
@@ -9511,7 +10035,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "_baseSMExecutionMetrics\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| where isempty(_SM_Users) or ExecutingUser in (_SM_Users) // Multiple selection filtering\n| where IntendedUsageScenario in ('DAX Query', 'MDX Query') // calculated column filter\n| project \n    Status,\n    ['Usage Scenario'] = IntendedUsageScenario,\n    ExecutingUser,\n    ['Semantic Model'] = ItemName,\n    TimeStart,\n    //TimeEnd,\n    ['Duration Time'] = round(TotalDuration, 2),\n    ['Total CPU Time'] = round(TotalCpuTime, 2),\n    ['Memory Peak'] = round(ApproximatePeakMemConsumption, 2),\n    ReportId,\n    VisualId,\n    ReplicaId,\n    OperationId,\n    ['🗺️'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi&visual=', VisualId), // Visual ID Link\n    ['📊'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi') // Report Link\n| top 2 by ['Total CPU Time'] desc\n",
+            "text": "_baseSMExecutionMetrics\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| where isempty(_SM_Users) or ExecutingUser in (_SM_Users) // Multiple selection filtering\n| where IntendedUsageScenario in ('DAX Query', 'MDX Query') // calculated column filter\n| project \n    Status,\n    ['Usage Scenario'] = IntendedUsageScenario,\n    ExecutingUser,\n    ['Semantic Model'] = ItemName,\n    TimeStart,\n    //TimeEnd,\n    ['Duration Time'] = round(TotalDuration, 2),\n    ['Total CPU Time'] = round(TotalCpuTime, 2),\n    ['Memory Peak'] = round(ApproximatePeakMemConsumption, 2),\n    ReportId,\n    VisualId,\n    ReplicaId,\n    OperationId,\n    ['\ud83d\uddfa\ufe0f'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi&visual=', VisualId), // Visual ID Link\n    ['\ud83d\udcca'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi') // Report Link\n| top 2 by ['Total CPU Time'] desc\n",
             "id": "0cdadfd2-a413-458c-b65f-362241d35720",
             "usedVariables": [
                 "_SM_Users",
@@ -9595,7 +10119,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "// SM_Progress_Report\nlet window = SemanticModelLogs \n| where Timestamp between (['_startTime']+totimespan(_utcOffset).. datetime_add('hour', 7, ['_endTime']+totimespan(_utcOffset))) and OperationId has _operationId\n| where OperationName in ('ProgressReportBegin', 'ProgressReportCurrent', 'ProgressReportEnd', 'ProgressReportError')\n| where OperationDetailName in ('ReadData', 'ExecuteSql', 'CompressSegment', 'TabularRefresh')\n| where not(OperationName =='ProgressReportError' and OperationDetailName =='TabularRefresh' and EventText !has 'Internal Error Code')\n| extend ObjectName = tostring( split(XmlaObjectPath,'.').[3])\n| project \n    EndTime=Timestamp, \n    ItemId,\n    OperationId, \n    CorrelationId, \n    OperationDetailName, \n    DurationMs, \n    CpuTimeMs, \n    ObjectCount=ProgressCounter, \n    Status, \n    StatusCode, \n    XmlaObjectPath, \n    ObjectName, \n    EventText,\n    ObjectType = case(OperationDetailName in ('ReadData', 'ExecuteSql', 'CompressSegment'), 'Partition',\n        EventText contains ' parti' or EventText contains 'osion' or EventText contains 'partycji' or EventText contains 'skaidinio' or EventText contains 'дяла' or EventText contains 'διαμερίσματος' or EventText contains 'nodalījuma' or EventText contains 'oddílu' or EventText contains 'bölümünün' or EventText contains 'พาร์ติชั' or EventText contains '分区' or EventText contains 'パーティション' or EventText contains '파티션', 'Partition',\n        EventText contains ' hiera' or EventText contains 'jerar' or EventText contains 'rarchi' or EventText contains 'erarh' or EventText contains 'ιεραρχίας' or EventText contains 'ерарх' or EventText contains 'hiyerarşisinin' or EventText contains 'ลำดับชั้น' or EventText contains '层次' or EventText contains '階層' or EventText contains '계층 구조', 'Hierarchy',\n        EventText contains ' calc' or EventText contains 'beräknade' or EventText contains 'berechneten' or EventText contains 'beregne' or EventText contains 'počítaného' or EventText contains 'berekende' or EventText contains 'lasketun' or EventText contains 'izračun' or EventText contains 'apskaičiuotojo' or EventText contains 'obliczeniowej' or EventText contains 'числяе' or EventText contains 'υπολογισμένης' or EventText contains 'aprēķinātās' or EventText contains 'hesaplanmış' or EventText contains 'ารคำน' or EventText contains '算' or EventText contains '계산', 'Calculated column',\n        XmlaObjectPath has 'CalculatedTable', 'Calculated Table',\n        XmlaObjectPath has 'CalculationGroup', 'Calculation Group',\n        OperationDetailName =='TabularRefresh' and split(XmlaObjectPath,'.').[3]=='', 'Relationship', '')\n| extend \n    TableName=iif(ObjectType != 'Relationship', split(XmlaObjectPath,'.').[2],''), \n    PartitionName=iif(ObjectType == 'Partition', split(XmlaObjectPath,'.').[3],''),\n    StartTime=datetime_add('millisecond', -DurationMs, EndTime)\n| parse EventText with * '[MashupCPUTime: ' MashupCPUTime:long ' ms, MashupPeakMemory: '  MashupPeakMemory:long ' KB]'\n| parse EventText with * 'Internal Error Code: \\'' ErrorHex '\\'' *\n| extend \n    TableTMID = extract(\"TableTMID='([0-9]+)'\", 1, EventText), \n    PartitionTMID = extract(\"PartitionTMID='([0-9]+)'\", 1, EventText)\n;\nlet TMID = window \n| where EventText has 'TableTMID='| summarize arg_min(StartTime, TableTMID, PartitionTMID) by CorrelationId;\nlet DataRefresh = window \n| where OperationDetailName != 'CompressSegment'// in ('TabularRefresh')\n| summarize \n    //StartTime=iif(isempty(min(StartTime)),min(EndTime), min(StartTime)), \n    StartTime=iif(isempty(min(StartTime)),datetime(null), min(StartTime)), \n    EndTime=arg_max(EndTime, ObjectName, CorrelationId, MashupCPUTime, MashupPeakMemory), \n    DurationMs=sum(DurationMs), \n    CpuTimeMs=sum(CpuTimeMs), \n    ObjectCount=max(ObjectCount), \n    TmObjCount=dcount(XmlaObjectPath), \n    Status=max(Status), \n    StatusCode = min_of(min(StatusCode), \n    toint(min(ErrorHex))) \n    by ItemId, TableName, PartitionName, OperationId, OperationDetailName, ObjectType\n| extend \n    ObjectCount=iff(ObjectType =='Partition', ObjectCount, TmObjCount), \n    ErrorTimeMs=iif(StatusCode <0, datetime_part('millisecond',EndTime), toint(''))\n| join kind=leftouter TMID on CorrelationId\n| project-away TmObjCount, CorrelationId1, StartTime1\n;\nlet PartitionColumn = window | where OperationDetailName == 'CompressSegment'| parse EventText with * '<oii>' columnName '</oii>' *\n| summarize \n    arg_min(StartTime, ObjectType, ObjectName, OperationDetailName), \n    EndTime=max(EndTime), \n    DurationMs=sum(DurationMs), \n    CpuTimeMs=sum(CpuTimeMs), \n    ObjectCount=dcount(columnName), \n    Status=max(Status), \n    StatusCode = min(StatusCode) \n    by TableName, PartitionName, OperationId, TableTMID, PartitionTMID\n;\nlet CompositeResult = DataRefresh | union PartitionColumn\n| extend \n    StartTime,\n    EndTime;\nlet OperationsToItems = \nSemanticModelLogs\n    | where OperationId != '00000000-0000-0000-0000-000000000000'\n    | where ItemId != '' and isnotempty(ItemName)\n    | distinct ItemId, OperationId\n| join kind=inner CompositeResult on OperationId\n| project-away OperationId1, ItemId1\n;\nlet Items = _baseSMItems\n| join kind=inner OperationsToItems on ItemId;\nItems\n| project \n    ItemId,\n    ItemName,\n    OperationId,\n    TableName,\n    PartitionName,\n    OperationDetailName,\n    ObjectType,\n    StartTime = StartTime+totimespan(_utcOffset),\n    EndTime = EndTime+totimespan(_utcOffset),\n    ObjectName,\n    CorrelationId,\n    MashupCPUTime = MashupCPUTime/_TimeUnitBasedOnMs,\n    MashupPeakMemory = MashupPeakMemory/_SizeUnitBasedOnKB,\n    Duration = DurationMs/_TimeUnitBasedOnMs,\n    CpuTime = CpuTimeMs/_TimeUnitBasedOnMs,\n    ObjectCount,\n    Status,\n    StatusCode;",
+            "text": "// SM_Progress_Report\nlet window = SemanticModelLogs \n| where Timestamp between (['_startTime']+totimespan(_utcOffset).. datetime_add('hour', 7, ['_endTime']+totimespan(_utcOffset))) and OperationId has _operationId\n| where OperationName in ('ProgressReportBegin', 'ProgressReportCurrent', 'ProgressReportEnd', 'ProgressReportError')\n| where OperationDetailName in ('ReadData', 'ExecuteSql', 'CompressSegment', 'TabularRefresh')\n| where not(OperationName =='ProgressReportError' and OperationDetailName =='TabularRefresh' and EventText !has 'Internal Error Code')\n| extend ObjectName = tostring( split(XmlaObjectPath,'.').[3])\n| project \n    EndTime=Timestamp, \n    ItemId,\n    OperationId, \n    CorrelationId, \n    OperationDetailName, \n    DurationMs, \n    CpuTimeMs, \n    ObjectCount=ProgressCounter, \n    Status, \n    StatusCode, \n    XmlaObjectPath, \n    ObjectName, \n    EventText,\n    ObjectType = case(OperationDetailName in ('ReadData', 'ExecuteSql', 'CompressSegment'), 'Partition',\n        EventText contains ' parti' or EventText contains 'osion' or EventText contains 'partycji' or EventText contains 'skaidinio' or EventText contains '\u0434\u044f\u043b\u0430' or EventText contains '\u03b4\u03b9\u03b1\u03bc\u03b5\u03c1\u03af\u03c3\u03bc\u03b1\u03c4\u03bf\u03c2' or EventText contains 'nodal\u012bjuma' or EventText contains 'odd\u00edlu' or EventText contains 'b\u00f6l\u00fcm\u00fcn\u00fcn' or EventText contains '\u0e1e\u0e32\u0e23\u0e4c\u0e15\u0e34\u0e0a\u0e31' or EventText contains '\u5206\u533a' or EventText contains '\u30d1\u30fc\u30c6\u30a3\u30b7\u30e7\u30f3' or EventText contains '\ud30c\ud2f0\uc158', 'Partition',\n        EventText contains ' hiera' or EventText contains 'jerar' or EventText contains 'rarchi' or EventText contains 'erarh' or EventText contains '\u03b9\u03b5\u03c1\u03b1\u03c1\u03c7\u03af\u03b1\u03c2' or EventText contains '\u0435\u0440\u0430\u0440\u0445' or EventText contains 'hiyerar\u015fisinin' or EventText contains '\u0e25\u0e33\u0e14\u0e31\u0e1a\u0e0a\u0e31\u0e49\u0e19' or EventText contains '\u5c42\u6b21' or EventText contains '\u968e\u5c64' or EventText contains '\uacc4\uce35 \uad6c\uc870', 'Hierarchy',\n        EventText contains ' calc' or EventText contains 'ber\u00e4knade' or EventText contains 'berechneten' or EventText contains 'beregne' or EventText contains 'po\u010d\u00edtan\u00e9ho' or EventText contains 'berekende' or EventText contains 'lasketun' or EventText contains 'izra\u010dun' or EventText contains 'apskai\u010diuotojo' or EventText contains 'obliczeniowej' or EventText contains '\u0447\u0438\u0441\u043b\u044f\u0435' or EventText contains '\u03c5\u03c0\u03bf\u03bb\u03bf\u03b3\u03b9\u03c3\u03bc\u03ad\u03bd\u03b7\u03c2' or EventText contains 'apr\u0113\u0137in\u0101t\u0101s' or EventText contains 'hesaplanm\u0131\u015f' or EventText contains '\u0e32\u0e23\u0e04\u0e33\u0e19' or EventText contains '\u7b97' or EventText contains '\uacc4\uc0b0', 'Calculated column',\n        XmlaObjectPath has 'CalculatedTable', 'Calculated Table',\n        XmlaObjectPath has 'CalculationGroup', 'Calculation Group',\n        OperationDetailName =='TabularRefresh' and split(XmlaObjectPath,'.').[3]=='', 'Relationship', '')\n| extend \n    TableName=iif(ObjectType != 'Relationship', split(XmlaObjectPath,'.').[2],''), \n    PartitionName=iif(ObjectType == 'Partition', split(XmlaObjectPath,'.').[3],''),\n    StartTime=datetime_add('millisecond', -DurationMs, EndTime)\n| parse EventText with * '[MashupCPUTime: ' MashupCPUTime:long ' ms, MashupPeakMemory: '  MashupPeakMemory:long ' KB]'\n| parse EventText with * 'Internal Error Code: \\'' ErrorHex '\\'' *\n| extend \n    TableTMID = extract(\"TableTMID='([0-9]+)'\", 1, EventText), \n    PartitionTMID = extract(\"PartitionTMID='([0-9]+)'\", 1, EventText)\n;\nlet TMID = window \n| where EventText has 'TableTMID='| summarize arg_min(StartTime, TableTMID, PartitionTMID) by CorrelationId;\nlet DataRefresh = window \n| where OperationDetailName != 'CompressSegment'// in ('TabularRefresh')\n| summarize \n    //StartTime=iif(isempty(min(StartTime)),min(EndTime), min(StartTime)), \n    StartTime=iif(isempty(min(StartTime)),datetime(null), min(StartTime)), \n    EndTime=arg_max(EndTime, ObjectName, CorrelationId, MashupCPUTime, MashupPeakMemory), \n    DurationMs=sum(DurationMs), \n    CpuTimeMs=sum(CpuTimeMs), \n    ObjectCount=max(ObjectCount), \n    TmObjCount=dcount(XmlaObjectPath), \n    Status=max(Status), \n    StatusCode = min_of(min(StatusCode), \n    toint(min(ErrorHex))) \n    by ItemId, TableName, PartitionName, OperationId, OperationDetailName, ObjectType\n| extend \n    ObjectCount=iff(ObjectType =='Partition', ObjectCount, TmObjCount), \n    ErrorTimeMs=iif(StatusCode <0, datetime_part('millisecond',EndTime), toint(''))\n| join kind=leftouter TMID on CorrelationId\n| project-away TmObjCount, CorrelationId1, StartTime1\n;\nlet PartitionColumn = window | where OperationDetailName == 'CompressSegment'| parse EventText with * '<oii>' columnName '</oii>' *\n| summarize \n    arg_min(StartTime, ObjectType, ObjectName, OperationDetailName), \n    EndTime=max(EndTime), \n    DurationMs=sum(DurationMs), \n    CpuTimeMs=sum(CpuTimeMs), \n    ObjectCount=dcount(columnName), \n    Status=max(Status), \n    StatusCode = min(StatusCode) \n    by TableName, PartitionName, OperationId, TableTMID, PartitionTMID\n;\nlet CompositeResult = DataRefresh | union PartitionColumn\n| extend \n    StartTime,\n    EndTime;\nlet OperationsToItems = \nSemanticModelLogs\n    | where OperationId != '00000000-0000-0000-0000-000000000000'\n    | where ItemId != '' and isnotempty(ItemName)\n    | distinct ItemId, OperationId\n| join kind=inner CompositeResult on OperationId\n| project-away OperationId1, ItemId1\n;\nlet Items = _baseSMItems\n| join kind=inner OperationsToItems on ItemId;\nItems\n| project \n    ItemId,\n    ItemName,\n    OperationId,\n    TableName,\n    PartitionName,\n    OperationDetailName,\n    ObjectType,\n    StartTime = StartTime+totimespan(_utcOffset),\n    EndTime = EndTime+totimespan(_utcOffset),\n    ObjectName,\n    CorrelationId,\n    MashupCPUTime = MashupCPUTime/_TimeUnitBasedOnMs,\n    MashupPeakMemory = MashupPeakMemory/_SizeUnitBasedOnKB,\n    Duration = DurationMs/_TimeUnitBasedOnMs,\n    CpuTime = CpuTimeMs/_TimeUnitBasedOnMs,\n    ObjectCount,\n    Status,\n    StatusCode;",
             "usedVariables": [
                 "_SizeUnitBasedOnKB",
                 "_TimeUnitBasedOnMs",
@@ -9741,7 +10265,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "let QueryDBs=\n_baseEHQueryLogs\n|where isempty( _EventhouseName)  or ItemId  in ( _EventhouseName)\n|summarize  by DatabaseName\n;\n//QueryDBs\nlet MetricDBs=\n_baseEHMetrics\n|where isempty( _EventhouseName)  or ItemId  in ( _EventhouseName)\n|where MetricName in (\"IngestionResult\", \"IngestionVolumeInBytes\", \"StreamingIngestDataRate \")\n|extend DatabaseId=tostring(MetricSpecificDimensions.DatabaseId)\n|extend DatabaseName=tostring(MetricSpecificDimensions.DatabaseName)\n//|where DatabaseName !=\"$copilot\" and  isnotempty( DatabaseName)// and DatabaseName != DatabaseId\n|summarize  by DatabaseName, DatabaseId\n//|distinct DatabaseName\n;\nunion MetricDBs//, QueryDBs\n|summarize by DatabaseName, DatabaseId\n|where DatabaseName !=\"$copilot\" and  isnotempty( DatabaseName) and DatabaseName != DatabaseId\n|distinct DatabaseName\n\n",
+            "text": "let QueryDBs=\n_baseEHQueryLogs\n|where isempty( _EventhouseName)  or ItemId  in ( _EventhouseName)\n|summarize  by DatabaseName\n;\n//QueryDBs\nlet MetricDBs=\n_baseEHMetrics\n|where isempty( _EventhouseName)  or ItemId  in ( _EventhouseName)\n|where MetricName in (\"IngestionResult\", \"IngestionVolumeInBytes\", \"StreamingIngestDataRate\u00a0\")\n|extend DatabaseId=tostring(MetricSpecificDimensions.DatabaseId)\n|extend DatabaseName=tostring(MetricSpecificDimensions.DatabaseName)\n//|where DatabaseName !=\"$copilot\" and  isnotempty( DatabaseName)// and DatabaseName != DatabaseId\n|summarize  by DatabaseName, DatabaseId\n//|distinct DatabaseName\n;\nunion MetricDBs//, QueryDBs\n|summarize by DatabaseName, DatabaseId\n|where DatabaseName !=\"$copilot\" and  isnotempty( DatabaseName) and DatabaseName != DatabaseId\n|distinct DatabaseName\n\n",
             "id": "9e5d2b66-5e7e-41fc-ac65-62a54ac6d6ed",
             "usedVariables": [
                 "_EventhouseName",
@@ -9754,7 +10278,7 @@
                 "kind": "parameter",
                 "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
             },
-            "text": "let tables1=_baseEHMetrics\n|where MetricName in (\"IngestionResult\", \"IngestionVolumeInBytes\", \"StreamingIngestDataRate \")\n|extend DatabaseId=tostring(MetricSpecificDimensions.DatabaseId)\n|extend Database=tostring(MetricSpecificDimensions.DatabaseName)\n|where isempty(['_DatabaseName']) or Database  in (['_DatabaseName']) \n|extend Table=tostring(MetricSpecificDimensions.Table)\n|extend TableName=tostring(MetricSpecificDimensions.TableName)\n|extend Table=iff(isnotempty( TableName), TableName, Table)\n|where Table !startswith \"$\" and isnotempty( Table)\n|where Database !=\"$copilot\" and  isnotempty( Database) and Database != DatabaseId\n|distinct Table\n;\nlet tables2=_baseDataOperations\n|where isempty(['_DatabaseName']) or DatabaseName  in (['_DatabaseName']) \n|where TableName !startswith \"$\" and isnotempty( TableName)\n|distinct Table=TableName\n;\nunion tables1, tables2\n|distinct Table\n|order by Table asc \n",
+            "text": "let tables1=_baseEHMetrics\n|where MetricName in (\"IngestionResult\", \"IngestionVolumeInBytes\", \"StreamingIngestDataRate\u00a0\")\n|extend DatabaseId=tostring(MetricSpecificDimensions.DatabaseId)\n|extend Database=tostring(MetricSpecificDimensions.DatabaseName)\n|where isempty(['_DatabaseName']) or Database  in (['_DatabaseName']) \n|extend Table=tostring(MetricSpecificDimensions.Table)\n|extend TableName=tostring(MetricSpecificDimensions.TableName)\n|extend Table=iff(isnotempty( TableName), TableName, Table)\n|where Table !startswith \"$\" and isnotempty( Table)\n|where Database !=\"$copilot\" and  isnotempty( Database) and Database != DatabaseId\n|distinct Table\n;\nlet tables2=_baseDataOperations\n|where isempty(['_DatabaseName']) or DatabaseName  in (['_DatabaseName']) \n|where TableName !startswith \"$\" and isnotempty( TableName)\n|distinct Table=TableName\n;\nunion tables1, tables2\n|distinct Table\n|order by Table asc \n",
             "id": "5ed6bdd0-6a36-49b4-8001-8f5dc7a28853",
             "usedVariables": [
                 "_DatabaseName",
@@ -9783,6 +10307,106 @@
             "usedVariables": [
                 "_baseEHQueryLogs"
             ]
+        },
+        {
+            "id": "03553157-89fd-4697-9562-e9c9a48a5c6b",
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalJobs = count(),\n    SucceededJobs = countif(JobStatus == \"Completed\"),\n    FailedJobs = countif(JobStatus == \"Failed\"),\n    InProgressJobs = countif(JobStatus == \"InProgress\"),\n    AvgDurationMs = avg(DurationMs),\n    P95DurationMs = percentile(DurationMs, 95)\n  by WorkspaceName"
+        },
+        {
+            "id": "df3720fb-3565-4dfa-811b-aafa023587e2",
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalJobs = count(),\n    FailedJobs = countif(JobStatus == \"Failed\"),\n    AvgDurationMs = avg(DurationMs)\n  by ItemKind, JobType\n| order by TotalJobs desc"
+        },
+        {
+            "id": "a1e3539e-6d4e-49d4-a869-ecac769eaa58",
+            "text": "let Duration = _endTime - _startTime;\nlet BinSize = case(Duration >= 7d, 1d, Duration > 1d, 1h, Duration > 6h, 10m, Duration > 1h, 1m, 1m);\nItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    JobCount = count(),\n    FailCount = countif(JobStatus == \"Failed\")\n  by bin(Timestamp, BinSize), ItemKind"
+        },
+        {
+            "id": "082ff910-82d8-46d7-8153-db512848d001",
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| where JobStatus == \"Failed\"\n| project Timestamp, ItemName, ItemKind, JobType, WorkspaceName, \n         DurationMs, ExecutingPrincipalId, JobStartTime, JobEndTime,\n         JobInstanceId, JobInvokeType\n| order by Timestamp desc"
+        },
+        {
+            "id": "efffaed8-7198-45d1-be65-db0af1881676",
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    AvgDurationMs = avg(DurationMs),\n    MaxDurationMs = max(DurationMs),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n  by ItemName, ItemKind, ItemId\n| order by TotalRuns desc\n| take 50"
+        },
+        {
+            "id": "371dc476-6589-4611-be27-251cde8db12f",
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    RunCount = count(),\n    AvgDurationMs = avg(DurationMs),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n  by JobInvokeType, ItemKind"
+        },
+        {
+            "id": "87f0e797-f065-47dc-834f-f50de35d3d55",
+            "text": "_baseItemJobEventLogs_Overview\n| summarize TotalJobs = sum(TotalJobs)"
+        },
+        {
+            "id": "b3bac89f-f141-44e7-a162-5206bb34ccfb",
+            "text": "_baseItemJobEventLogs_Overview\n| summarize \n    Total = sum(TotalJobs),\n    Succeeded = sum(SucceededJobs)\n| extend SuccessRate = round(100.0 * Succeeded / Total, 2)\n| project SuccessRate"
+        },
+        {
+            "id": "796fe456-3d78-4fed-a016-e64fc039bffb",
+            "text": "_baseItemJobEventLogs_Overview\n| summarize FailedJobs = sum(FailedJobs)"
+        },
+        {
+            "id": "ece7872a-d95a-4f79-a676-be1230cfd44b",
+            "text": "_baseItemJobEventLogs_Overview\n| summarize AvgDurationMs = round(avg(AvgDurationMs), 2)"
+        },
+        {
+            "id": "53291d77-c419-4c3b-9daf-f245110deff0",
+            "text": "_baseItemJobEventLogs_Overview\n| summarize P95DurationMs = round(avg(P95DurationMs), 2)"
+        },
+        {
+            "id": "e3a62d31-e2f0-40bc-b66e-a2d225dd0c3b",
+            "text": "_baseItemJobEventLogs_Timeline\n| project Timestamp, ItemKind, JobCount"
+        },
+        {
+            "id": "a7231c50-f479-43f6-a1cf-fffef72ac5dd",
+            "text": "_baseItemJobEventLogs_Timeline\n| summarize FailCount = sum(FailCount) by Timestamp"
+        },
+        {
+            "id": "0e3cb2cd-7fa0-46aa-a38b-512f9b0c6a65",
+            "text": "_baseItemJobEventLogs_ByItemKind\n| summarize TotalJobs = sum(TotalJobs) by ItemKind\n| order by TotalJobs desc"
+        },
+        {
+            "id": "0fdea72c-be1c-45f7-814f-542adb1a6e94",
+            "text": "_baseItemJobEventLogs_TopItems"
+        },
+        {
+            "id": "b724249d-e3ff-4d9a-b6fc-44cbc94e766b",
+            "text": "_baseItemJobEventLogs_FailureDetails"
+        },
+        {
+            "id": "325a3d39-4bb8-49a0-8f2f-b79ed02b21c0",
+            "text": "_baseItemJobEventLogs_FailureDetails\n| count"
+        },
+        {
+            "id": "041ae7c5-c29a-4c49-b947-64b7ea21b695",
+            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize FailureCount = count() by ItemName\n| top 1 by FailureCount desc\n| project ItemName"
+        },
+        {
+            "id": "63b5d6b0-3b2c-4138-89f6-5ed02731485a",
+            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize FailureCount = count() by ItemKind\n| top 1 by FailureCount desc\n| project ItemKind"
+        },
+        {
+            "id": "dddae769-a010-4d5c-9d1e-2267ac5e470f",
+            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize Failures = count() by ItemKind\n| order by Failures desc"
+        },
+        {
+            "id": "2438a482-d43e-4950-bc60-6b9d5ff46867",
+            "text": "_baseItemJobEventLogs_Timeline\n| summarize FailCount = sum(FailCount) by Timestamp\n| order by Timestamp asc"
+        },
+        {
+            "id": "5b76bc95-09e6-4742-a640-0a974187ff53",
+            "text": "_baseItemJobEventLogs_ByItemKind\n| summarize AvgDurationMs = round(avg(AvgDurationMs), 2) by ItemKind\n| order by AvgDurationMs desc"
+        },
+        {
+            "id": "37ee73cc-d9db-42ed-b876-354150608fb2",
+            "text": "_baseItemJobEventLogs_ScheduledVsOnDemand"
+        },
+        {
+            "id": "e2df8440-a361-41aa-a304-e16e776f9f13",
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| top 20 by DurationMs desc\n| project Timestamp, ItemName, ItemKind, JobType, DurationMs, JobStatus"
+        },
+        {
+            "id": "c706cb30-020d-49ea-bf11-116bf45c6bb8",
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize MaxDurationMs = max(DurationMs)"
         }
     ]
 }
