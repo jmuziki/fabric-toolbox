@@ -11557,7 +11557,7 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "id": "80aeb7b4-e89e-4fb3-997b-c5f72451c3a7",
-      "text": "_baseItemJobEventLogs_SLAMetrics\n| top 10 by Availability desc\n| project ItemName, ItemKind, Availability_Pct = round(Availability, 2), TotalJobs, SuccessfulJobs, FailedJobs, MTTR_Minutes = round(MTTR, 2)",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| top 10 by Availability desc\n| project ItemName, ItemKind, Availability_Pct = round(Availability, 2), TotalJobs, SuccessfulJobs, FailedJobs",
       "usedVariables": [
         "_baseItemJobEventLogs_SLAMetrics"
       ]
@@ -11568,7 +11568,7 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "id": "8685643d-78d0-49a8-b3f1-518b2ceea243",
-      "text": "FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| summarize FirstFailureTime = min(Timestamp) by ItemName, ItemKind\n| extend TimeToFirstFailure_Hours = round(datetime_diff('hour', FirstFailureTime, _startTime), 2)\n| where TimeToFirstFailure_Hours >= 0\n| summarize Count = count() by TimeWindow = bin(TimeToFirstFailure_Hours, 1.0)\n| order by TimeWindow asc",
+      "text": "ItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where JobStatus == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| summarize FirstFailureTime = min(Timestamp) by ItemName, ItemKind\n| extend TimeToFirstFailure_Hours = round(datetime_diff('hour', FirstFailureTime, _startTime), 2)\n| where TimeToFirstFailure_Hours >= 0\n| summarize Count = count() by TimeWindow = bin(TimeToFirstFailure_Hours, 1.0)\n| order by TimeWindow asc",
       "usedVariables": [
         "_startTime",
         "_endTime"
@@ -11591,7 +11591,7 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "id": "22fd5464-652e-4c5c-9a19-16ff1eab555b",
-      "text": "let FailureWindows = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailedItems = dcount(ItemName) by TimeWindow;\nFailureWindows\n| summarize MaxBlastRadius = max(FailedItems)\n| project MaxBlastRadius",
+      "text": "let FailureWindows = ItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where JobStatus == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailedItems = dcount(ItemName) by TimeWindow;\nFailureWindows\n| summarize MaxBlastRadius = max(FailedItems)\n| project MaxBlastRadius",
       "usedVariables": [
         "_startTime",
         "_endTime"
@@ -11603,7 +11603,7 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "id": "172f96c9-f8eb-4dfa-96be-80f7166e869f",
-      "text": "let Failures = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize by ItemName, ItemKind, TimeWindow;\nFailures\n| join kind=inner (Failures) on TimeWindow\n| where ItemName != ItemName1\n| summarize CoFailureCount = count() by Item1 = ItemName, ItemKind1 = ItemKind, Item2 = ItemName1, ItemKind2 = ItemKind1\n| where CoFailureCount >= 2\n| top 20 by CoFailureCount desc\n| project Item1, Item2, CoFailureCount, ItemKind1, ItemKind2",
+      "text": "let Failures = ItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where JobStatus == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize by ItemName, ItemKind, TimeWindow;\nFailures\n| join kind=inner (Failures) on TimeWindow\n| where ItemName != ItemName1\n| summarize CoFailureCount = count() by Item1 = ItemName, ItemKind1 = ItemKind, Item2 = ItemName1, ItemKind2 = ItemKind1\n| where CoFailureCount >= 2\n| top 20 by CoFailureCount desc\n| project Item1, Item2, CoFailureCount, ItemKind1, ItemKind2",
       "usedVariables": [
         "_startTime",
         "_endTime"
@@ -11615,7 +11615,7 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "id": "b70f0355-0dd7-44ea-98e7-b3710a59565a",
-      "text": "let Failures = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m);\nlet DownstreamImpact = Failures\n| join kind=inner (Failures) on TimeWindow\n| where ItemName != ItemName1\n| where Timestamp < Timestamp1  // ItemName failed before ItemName1\n| summarize DownstreamFailures = dcount(ItemName1) by TriggerItem = ItemName;\nDownstreamImpact\n| top 1 by DownstreamFailures desc\n| project MostImpactfulItem = TriggerItem, DownstreamFailures",
+      "text": "let Failures = ItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where JobStatus == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m);\nlet DownstreamImpact = Failures\n| join kind=inner (Failures) on TimeWindow\n| where ItemName != ItemName1\n| where Timestamp < Timestamp1  // ItemName failed before ItemName1\n| summarize DownstreamFailures = dcount(ItemName1) by TriggerItem = ItemName;\nDownstreamImpact\n| top 1 by DownstreamFailures desc\n| project MostImpactfulItem = TriggerItem, DownstreamFailures",
       "usedVariables": [
         "_startTime",
         "_endTime"
@@ -11627,7 +11627,7 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "id": "c07927ff-ea9d-4b61-baf5-8d98b8fd21f8",
-      "text": "let CascadeWindows = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailureCount = count(), Items = dcount(ItemName) by TimeWindow\n| where FailureCount >= 3;\nCascadeWindows\n| order by TimeWindow asc\n| extend PropagationVelocity = FailureCount\n| project TimeWindow, FailureCount, Items, PropagationVelocity",
+      "text": "let CascadeWindows = ItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where JobStatus == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailureCount = count(), Items = dcount(ItemName) by TimeWindow\n| where FailureCount >= 3;\nCascadeWindows\n| order by TimeWindow asc\n| extend PropagationVelocity = FailureCount\n| project TimeWindow, FailureCount, Items, PropagationVelocity",
       "usedVariables": [
         "_startTime",
         "_endTime"
@@ -11639,7 +11639,7 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "id": "ec47c412-20cb-47f6-be9c-f6f104f0a000",
-      "text": "let Failures = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName);\nFailures\n| summarize \n    FailureCount = count(),\n    LastFailure = max(Timestamp)\nby ItemName, ItemKind\n| extend CriticalityScore = FailureCount * 10\n| top 15 by CriticalityScore desc\n| project ItemName, ItemKind, FailureCount, CriticalityScore, LastFailure",
+      "text": "let Failures = ItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where JobStatus == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName);\nFailures\n| summarize \n    FailureCount = count(),\n    LastFailure = max(Timestamp)\nby ItemName, ItemKind\n| extend CriticalityScore = FailureCount * 10\n| top 15 by CriticalityScore desc\n| project ItemName, ItemKind, FailureCount, CriticalityScore, LastFailure",
       "usedVariables": [
         "_startTime",
         "_endTime"
