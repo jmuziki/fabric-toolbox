@@ -107,6 +107,41 @@ The ItemJobEventLogs table captures events from multiple Fabric item types. Comm
 |DataflowFabric|Refresh, Publish|Dataflow refresh and publish operations|
 |MLExperiment|MLExperimentRun|Machine learning experiment runs|
 
+#### Advanced Reliability & Dependency Metrics
+
+**Reliability & SLA Metrics:**
+
+|Source Column|Metric Name|Description|
+|--|--|--|
+|JobStatus|Overall Availability %|Percentage of successful jobs across all item types. SLA target: 99%|
+|JobStatus|Items Below SLA|Count of items with availability < 99%|
+|JobStatus, Timestamp|MTBF (Mean Time Between Failures)|Average time between consecutive failures for an item. Higher is better.|
+|JobStartTime, JobEndTime|MTTR (Mean Time to Recovery)|Average time from job start to end for failed jobs. Lower is better.|
+|JobStatus|Error Budget|Remaining failure allowance to maintain 99% SLA target|
+|JobStatus|SLA Health Status|Overall platform health: Excellent (>99.5%), Good (99-99.5%), Warning (97-99%), Critical (<97%)|
+|Timestamp|Availability Trend|Time series of platform availability to detect degradation|
+
+**Dependency & Cascade Metrics:**
+
+|Source Column|Metric Name|Description|
+|--|--|--|
+|ItemName, Timestamp|Co-Failure Count|Number of times two items fail within the same 5-minute window, indicating possible dependencies|
+|Timestamp, JobStatus|Cascade Events|Time windows with 3+ failures within 15 minutes, suggesting cascading failures from a single root cause|
+|ItemName|Blast Radius|Maximum number of downstream items affected when a critical item fails|
+|ItemName|Impact Score|Calculated as FailureCount × UniqueTimeWindows. High scores indicate items that fail frequently across different time periods|
+|ItemName|Most Impactful Failure|Identifies which single item's failure caused the most downstream co-failures|
+|Timestamp|Failure Propagation|Time series showing how failures spread through the workspace during cascade events|
+|ItemName pairs|Co-Failure Pairs|Top item pairs that consistently fail together, revealing hidden dependencies|
+|ItemName|Critical Dependency Paths|Items with highest failure impact based on co-failure analysis|
+
+**Use Cases:**
+
+**Cascade Detection:** When multiple items fail within a short time window, the Dependency Analysis page helps identify: (1) Which item failed first (likely root cause), (2) Which items failed as a consequence, (3) The blast radius of the initial failure, (4) Whether this is a recurring pattern.
+
+**Dependency Mapping:** Co-failure analysis reveals hidden dependencies not visible in code. Example: If "Notebook_ProcessOrders" and "Pipeline_OrderETL" always fail together, there's likely a dependency even if not explicitly defined. Use this to improve error handling or add explicit dependency declarations.
+
+**Reliability Improvement:** The Impact Score helps prioritize which items to fix first. An item with 50 failures across 10 different hours has higher impact (score: 500) than an item with 100 failures all in one hour (score: 100), because the former affects more scenarios.
+
 ----------------
 
 ## Other helpful resources

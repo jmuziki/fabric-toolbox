@@ -55,12 +55,16 @@ The Item Jobs pages enable you to:
 - **Identify failing jobs** and analyze failure patterns by item type
 - **Monitor job performance** including duration trends and resource consumption
 - **Compare scheduled vs on-demand** job execution patterns
-- **Drill into specific items** to understand execution history
+- **Track SLA compliance** with availability metrics, MTBF, MTTR, and error budgets
+- **Detect dependency patterns** including co-failures, cascading failures, and blast radius analysis
+- **Drill into specific items** to understand execution history and impact
 
 **Dashboard Pages:**
 - **Item Jobs Overview**: High-level metrics, trends, and top items by run count
-- **Item Jobs - Failure Analysis**: Deep dive into failures with detailed logs and patterns
-- **Item Jobs - Performance**: Duration analysis, slowest jobs, and performance optimization insights
+- **IJ | Failure Analysis**: Deep dive into failures with detailed logs and patterns
+- **IJ | Performance**: Duration analysis, slowest jobs, and performance optimization insights
+- **IJ | Reliability & SLA**: Enterprise-grade monitoring with SLA tracking, MTBF/MTTR metrics, error budgets
+- **IJ | Dependency Analysis**: Co-failure detection, cascade analysis, blast radius visualization, critical dependency identification
 
 For Power BI Report users, see [How to add ItemJobEventLogs to PBI Report](./how-to/How_to_add_ItemJobEventLogs_to_PBI_Report.md) for step-by-step instructions to extend the Power BI template with these capabilities.
 

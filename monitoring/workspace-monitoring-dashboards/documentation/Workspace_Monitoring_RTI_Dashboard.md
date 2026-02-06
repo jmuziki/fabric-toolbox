@@ -39,6 +39,8 @@ Workspace Monitoring with the Real-Time Dashboard template can help answer commo
 |Semantic model|[Most active Users](#analytical-pathway--semantic-models---most-active-users)|
 |Semantic model|[Refreshes & Queries](#analytical-pathway--semantic-models--refreshes-queries)|
 |Item Jobs|[Item Jobs Analysis](#analytical-pathway--item-jobs-analysis)|
+|Item Jobs|[Reliability & SLA Monitoring](#analytical-pathway--item-jobs-reliability-sla)|
+|Item Jobs|[Dependency & Cascade Analysis](#analytical-pathway--item-jobs-dependency-analysis)|
 
 
 ### Overview page
@@ -339,6 +341,62 @@ Use the Overview page to understand job volume trends. If you see increasing "Jo
 
 **Very well done!**
 You finished the analytical pathway for "Item Jobs analysis".
+
+--------------------------------------------------------
+
+### Analytical Pathway | Item Jobs Reliability & SLA
+**for enterprise-grade monitoring and SLA compliance**
+
+The Reliability & SLA dashboard page provides enterprise metrics for tracking platform health and SLA compliance across all job executions.
+
+|Step|Description|
+|---|---|
+|1.|**Review** the Overall Availability % card at the top. This shows your platform's uptime percentage across all job types. Green indicates meeting 99%+ SLA target, red indicates below SLA.|
+|2.|**Check** the SLA violation count to see how many items are currently performing below the 99% availability threshold. This card highlights in red when violations exist.|
+|3.|**Analyze** the MTBF (Mean Time Between Failures) and MTTR (Mean Time to Recovery) metrics. These professional reliability indicators help you: <br> - MTBF: Understand how long items typically run without failure <br> - MTTR: Track how quickly items recover from failures|
+|4.|**Monitor** the Error Budget card which shows remaining failure budget for your 99% SLA target. This helps you make informed decisions about deploying changes vs maintaining stability.|
+|5.|**Track** the "Availability % Over Time" trend to identify degradation patterns. If availability is declining, proactive action is needed before SLA violations occur.|
+|6.|**Compare** availability across item types using the "Availability by Item Kind" bar chart. This reveals which types of items (Pipelines, Notebooks, Lakehouses) are most reliable.|
+|7.|**Investigate** the "Items Below SLA" table to identify specific Pipelines, Notebooks, or other items that need attention. This table is sorted by worst performers first.|
+|8.|**Review** the reliability scorecard showing the top 10 most reliable items. Use this to identify best practices from consistently successful implementations.|
+
+**Use Case: SLA Reporting to Leadership**
+The Reliability & SLA page provides executive-ready metrics. Instead of saying "we had some failures," you can report: "Platform availability is 99.2%, with 3 items below SLA threshold requiring optimization. Error budget shows we can tolerate 12 more failures this month while maintaining our 99% commitment."
+
+**Very well done!**
+You finished the analytical pathway for "Item Jobs reliability and SLA monitoring".
+
+--------------------------------------------------------
+
+### Analytical Pathway | Item Jobs Dependency Analysis
+**for understanding failure cascades and system dependencies**
+
+The Dependency Analysis page reveals hidden patterns showing how failures in one item can trigger failures in other items, helping you understand the blast radius of issues.
+
+|Step|Description|
+|---|---|
+|1.|**Review** the Co-Failure Events card which shows how many item pairs consistently fail together. High co-failure counts indicate dependencies that should be investigated.|
+|2.|**Check** the Cascade Events card which detects time windows where 3 or more items failed within 15 minutes. This pattern often indicates a cascading failure triggered by a single root cause.|
+|3.|**Analyze** the Blast Radius card showing the maximum number of items affected when a critical item fails. This metric helps prioritize which items need reliability improvements.|
+|4.|**Identify** the Most Impactful Single Failure - this reveals which item's failure causes the most downstream problems. Focus reliability efforts here first.|
+|5.|**Examine** the "Co-Failing Items" table which lists pairs of items that fail together. For example: <br> - "Pipeline_DataIngestion" and "Notebook_Transformation" fail together 8 times <br> - This indicates the Notebook likely depends on the Pipeline's output <br> - Fix the Pipeline to reduce overall failure count|
+|6.|**Review** the "Critical Items" table with impact scores. Items with high scores (calculated as FailureCount × UniqueFailureWindows) cause widespread problems and should be prioritized for fixes.|
+|7.|**Investigate** cascade event details in the time window table. This shows when multiple failures occurred together, helping you understand: <br> - What time of day cascades occur (e.g., "Every morning at 9 AM") <br> - Which items were involved in the cascade <br> - Whether cascades are increasing in frequency|
+|8.|**Use** the Failure Propagation Timeline to visualize how failures spread through your workspace over time. Spikes indicate cascade events worth investigating.|
+|9.|**Review** the Critical Dependency Paths table to understand which items have the highest failure-prone dependencies. These represent architectural risks that may need redesign.|
+
+**Use Case: Root Cause Analysis**
+When a cascade occurs (multiple items failing), use the Dependency Analysis page to: <br>
+1. Identify the time window of the cascade <br>
+2. Find which items failed together <br>
+3. Determine the most likely root cause (the item that failed first or most impactfully) <br>
+4. Understand the blast radius to assess business impact <br>
+5. Fix the root cause to prevent future cascades
+
+**Real Example:** "Analysis revealed that when DataflowFabric 'CustomerRefresh' fails, it triggers failures in 3 downstream Notebooks and 2 Pipelines within 10 minutes. Blast radius: 5 items. Root cause: Timeout in source API. Fix: Increase timeout from 30s to 60s. Result: Cascade events dropped from 12/week to 0."
+
+**Very well done!**
+You finished the analytical pathway for "Item Jobs dependency and cascade analysis".
 
 --------------------------------------------------------
 
