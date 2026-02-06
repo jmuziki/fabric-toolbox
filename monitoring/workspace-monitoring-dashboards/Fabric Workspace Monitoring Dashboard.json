@@ -7355,20 +7355,7 @@
             },
             "visualOptions": {
                 "colorRulesDisabled": false,
-                "colorStyle": "light",
-                "colorRules": [
-                    {
-                        "id": "ba050ea7-e89b-497c-8378-448b48365989",
-                        "ruleType": "colorByValue",
-                        "column": "FailCount",
-                        "themeName": "",
-                        "maxValue": null,
-                        "minValue": null,
-                        "reverseTheme": false,
-                        "color": "red",
-                        "applyTo": "cells"
-                    }
-                ]
+                "colorStyle": "light"
             }
         },
         {
@@ -7520,20 +7507,7 @@
             },
             "visualOptions": {
                 "colorRulesDisabled": false,
-                "colorStyle": "light",
-                "colorRules": [
-                    {
-                        "id": "d3c527ca-ffe0-44db-b373-3445b26cdc56",
-                        "ruleType": "colorByValue",
-                        "column": "FailCount",
-                        "themeName": "",
-                        "maxValue": null,
-                        "minValue": null,
-                        "reverseTheme": false,
-                        "color": "red",
-                        "applyTo": "cells"
-                    }
-                ]
+                "colorStyle": "light"
             }
         },
         {
