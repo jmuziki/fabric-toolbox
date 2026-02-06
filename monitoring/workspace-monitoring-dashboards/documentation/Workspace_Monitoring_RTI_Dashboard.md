@@ -25,6 +25,8 @@ Workspace Monitoring with the Real-Time Dashboard template can help answer commo
 |Semantic model|"Which semantic models used significant resources for refresh operations in the recent period on the workspace?"|Investigate query patterns and CPU usage per model|[Refreshes & queries](#analytical-pathway--semantic-models--refreshes-queries)|
 |Eventhouse|"Which Eventhouse queries are consuming the most resources or failing frequently?"|Query performance analysis and error tracking|[Eventhouse Analysis](#analytical-pathway--eventhouse-analysis-in-near-real-time)|
 |Eventhouse|"Are there ingestion pipelines that are failing or running slower than expected?"|Monitor ingestion success rates, durations, and retry patterns|[Eventhouse Analysis](#analytical-pathway--eventhouse-analysis-in-near-real-time)|
+|Item Jobs|"Which Pipelines, Notebooks, or other items are failing most frequently?"|Analyze job execution patterns and failure rates by item type|[Item Jobs Analysis](#analytical-pathway--item-jobs-analysis)|
+|Item Jobs|"What is the performance trend of scheduled vs on-demand jobs?"|Compare execution metrics across trigger types|[Item Jobs Performance](#analytical-pathway--item-jobs-analysis)|
 
 -----
 
@@ -36,6 +38,7 @@ Workspace Monitoring with the Real-Time Dashboard template can help answer commo
 |Semantic model|[Semantic Models Analysis](#analytical-pathway--semantic-model-log-analysis)|
 |Semantic model|[Most active Users](#analytical-pathway--semantic-models---most-active-users)|
 |Semantic model|[Refreshes & Queries](#analytical-pathway--semantic-models--refreshes-queries)|
+|Item Jobs|[Item Jobs Analysis](#analytical-pathway--item-jobs-analysis)|
 
 
 ### Overview page
@@ -282,6 +285,60 @@ Let's deep dive into an example query:
 
 **Very well done!**
 You finished the analytical pathway for "Semantic model refreshes & queries".
+
+--------------------------------------------------------
+
+### Analytical Pathway | Item Jobs Analysis
+**for near-real-time monitoring/troubleshooting**
+
+The Item Jobs dashboard pages provide comprehensive monitoring of job-level execution events across all Fabric item types including Pipelines, Notebooks, Lakehouses, Warehouses, Dataflows, CopyJobs, and MLExperiments.
+
+#### Overview | Item Jobs
+
+This dashboard page provides a high-level view of all job executions within your workspace.
+
+|Step|Description|
+|---|---|
+|Info|The Item Jobs Overview page aggregates execution metrics across all item types in the workspace.|
+|1.|**Review** the stat cards at the top: <br> - **Total Jobs**: Count of all job executions in the selected time window <br> - **Success Rate %**: Percentage of jobs that completed successfully <br> - **Failed Jobs**: Count of jobs that failed (highlighted in red if > 0) <br> - **Avg Duration**: Average job execution time in milliseconds <br> - **P95 Duration**: 95th percentile job execution time|
+|2.|**Analyze** the time series charts: <br> - **Job Count Over Time by Item Kind**: Area chart showing job volume trends segmented by item type (Pipeline, Notebook, Lakehouse, etc.) <br> - **Failure Count Over Time**: Line chart (red) tracking failure trends to identify spikes or patterns|
+|3.|**Review** the bar chart "Jobs by Item Kind" to understand which item types are most actively executing jobs in your workspace.|
+|4.|**Examine** the "Top 50 Items by Run Count" table to identify: <br> - Which specific items (Pipelines, Notebooks, etc.) run most frequently <br> - Failure rates per item <br> - Average and maximum execution durations <br> _Hint: Items with high failure rates (> 5%) are highlighted in red._|
+
+#### Failure Analysis | Item Jobs
+
+The Failure Analysis page helps you quickly identify and investigate failing jobs.
+
+|Step|Description|
+|---|---|
+|5.|**Review** the failure summary cards: <br> - **Total Failures**: Total count of failed jobs (red background) <br> - **Most Failing Item**: Name of the item with the highest failure count <br> - **Most Failing Item Kind**: Item type with the most failures|
+|6.|**Analyze failure patterns** using the visualizations: <br> - **Failure Trend Over Time**: Line chart showing failure frequency over time to identify when issues started <br> - **Failures by Item Kind**: Bar chart breaking down failures by item type (Pipeline, Notebook, Lakehouse, etc.)|
+|7.|**Deep dive into failures** using the Failure Details table, which shows: <br> - Timestamp of each failure <br> - Item name and type <br> - Job type (e.g., Data Pipeline, RunNotebook, TableLoad) <br> - Workspace name <br> - Duration and timing information <br> - Executing principal (user or service principal) <br> - Job invoke type (Scheduled or OnDemand) <br> _Hint: You can filter this table by any column to focus on specific failure patterns._|
+
+#### Performance | Item Jobs
+
+The Performance page helps you understand job execution efficiency and identify optimization opportunities.
+
+|Step|Description|
+|---|---|
+|8.|**Review** the performance metrics cards: <br> - **Avg Duration**: Average job execution time <br> - **P95 Duration**: 95th percentile duration (helps identify outliers) <br> - **Max Duration**: Longest job execution time in the selected window|
+|9.|**Analyze** the "Avg Duration by Item Kind" bar chart to compare performance across different item types. This helps you understand which types of jobs typically take longer to execute.|
+|10.|**Compare** scheduled vs on-demand execution patterns in the table, which shows: <br> - Run count for each trigger type <br> - Average duration comparison <br> - Failure rate comparison <br> _This helps you understand if scheduled jobs perform differently than manually triggered ones._|
+|11.|**Identify optimization candidates** in the "Slowest Jobs (Top 20)" table: <br> - Lists the 20 longest-running jobs <br> - Shows item name, type, job type, duration, and status <br> - Use this to find jobs that may benefit from performance tuning|
+
+**Common Use Cases:**
+
+**Use Case 1: Pipeline Failure Investigation**
+If you notice a spike in the "Failure Count Over Time" chart, navigate to the Failure Analysis page, filter the Failure Details table by the relevant time period, and identify which pipelines or notebooks are failing and why.
+
+**Use Case 2: Performance Optimization**
+Use the Performance page to identify jobs with high P95 duration. Check if these are Scheduled jobs that could be optimized or if they're running during peak hours and competing for resources.
+
+**Use Case 3: Capacity Planning**
+Use the Overview page to understand job volume trends. If you see increasing "Job Count Over Time", you may need to plan for additional capacity or optimize high-frequency jobs.
+
+**Very well done!**
+You finished the analytical pathway for "Item Jobs analysis".
 
 --------------------------------------------------------
 

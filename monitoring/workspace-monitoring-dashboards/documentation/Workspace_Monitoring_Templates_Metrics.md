@@ -68,6 +68,47 @@ Source table: **SemanticModelLogs**
 
 ----------------
 
+### Item Job Event Logs Metrics
+
+Source table: **ItemJobEventLogs**
+
+|Source Column|Metric Name|Description|
+|--|--|--|
+|JobStatus|Total Jobs / Job Count|Count of all job executions across all item types (Pipelines, Notebooks, Lakehouses, Warehouses, Dataflows, etc.)|
+|JobStatus|Success Rate|Percentage of jobs with "Completed" status. Higher is better. Calculated as (Succeeded / Total) * 100|
+|JobStatus|Succeeded Jobs|Count of jobs with JobStatus = "Completed"|
+|JobStatus|Failed Jobs|Count of jobs with JobStatus = "Failed"|
+|JobStatus|In Progress Jobs|Count of jobs with JobStatus = "InProgress"|
+|DurationMs|Avg Duration|Average job execution time in milliseconds. Calculated from job start to end time|
+|DurationMs|P95 Duration|95th percentile job execution time in milliseconds. Useful for identifying outliers and setting SLA thresholds|
+|DurationMs|Max Duration|Maximum job execution time observed in the selected time window|
+|ItemKind|Jobs by Item Kind|Distribution of jobs across Fabric item types (Pipeline, Notebook, Lakehouse, Warehouse, CopyJob, DataflowFabric, MLExperiment, etc.)|
+|JobType|Jobs by Job Type|Breakdown by specific job type (Data Pipeline, RunNotebook, TableMaintenance, SqlAnalyticsEndpoint, Refresh, etc.)|
+|JobInvokeType|Scheduled vs On-Demand|Breakdown of jobs by trigger type: "Scheduled" (time-based) or "OnDemand" (manually triggered)|
+|ItemName, JobStatus|Failure Rate by Item|Per-item failure percentage. Calculated as (Failed jobs for item / Total jobs for item) * 100|
+|ItemKind, JobStatus|Failure Rate by Item Kind|Failure percentage aggregated by item type|
+|ExecutingPrincipalId|Jobs by User|Distribution of jobs by executing principal (user or service principal who triggered the job)|
+|ExecutingPrincipalType|Jobs by Principal Type|Breakdown by "User" vs "ServicePrincipal"|
+|JobStartTime, JobEndTime|Job Duration Trend|Time series of job execution times to identify performance trends|
+|Timestamp|Job Volume Over Time|Count of job executions over time, useful for capacity planning and identifying usage patterns|
+|WorkspaceName|Jobs by Workspace|Distribution of jobs across different workspaces (for multi-workspace monitoring scenarios)|
+
+#### Supported ItemKind and JobType Combinations
+
+The ItemJobEventLogs table captures events from multiple Fabric item types. Common combinations include:
+
+|Item Kind|Job Types|Use Case|
+|--|--|--|
+|Pipeline|Data Pipeline|Data pipeline orchestration executions|
+|Notebook|RunNotebook, RunNotebookInteractive, PipelineRunNotebook|Notebook job executions (scheduled, interactive, or called from pipelines)|
+|Lakehouse|TableMaintenance, TableLoad, LakehouseOperation, LivyBatch, LivySession|Lakehouse operations including table loads, maintenance jobs, and Spark sessions|
+|Warehouse|DatamartBatch, SqlAnalyticsEndpoint|Warehouse batch operations and SQL endpoint queries|
+|CopyJob|CopyJob|Data copy/movement operations|
+|DataflowFabric|Refresh, Publish|Dataflow refresh and publish operations|
+|MLExperiment|MLExperimentRun|Machine learning experiment runs|
+
+----------------
+
 ## Other helpful resources
 
 ##### Microsoft Fabric features
