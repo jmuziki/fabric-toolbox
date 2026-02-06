@@ -7260,6 +7260,9 @@
                     {
                         "id": "585257f6-be71-4a80-8840-dfeb5257087d",
                         "ruleType": "colorByCondition",
+                        "applyToColumn": null,
+                        "hideText": false,
+                        "applyTo": "cells",
                         "conditions": [
                             {
                                 "operator": ">",
@@ -7269,9 +7272,13 @@
                                 ]
                             }
                         ],
+                        "chainingOperator": "and",
                         "colorStyle": "light",
                         "color": "red",
-                        "applyTo": "cells"
+                        "tag": "",
+                        "icon": null,
+                        "ruleName": "FailedJobsAlert",
+                        "visualType": "card"
                     }
                 ]
             }
@@ -7353,6 +7360,11 @@
                     {
                         "id": "ba050ea7-e89b-497c-8378-448b48365989",
                         "ruleType": "colorByValue",
+                        "column": "FailCount",
+                        "themeName": "",
+                        "maxValue": null,
+                        "minValue": null,
+                        "reverseTheme": false,
                         "color": "red",
                         "applyTo": "cells"
                     }
@@ -7430,6 +7442,9 @@
                     {
                         "id": "e14b2372-9997-4209-ae0e-3989d4989258",
                         "ruleType": "colorByCondition",
+                        "applyToColumn": null,
+                        "hideText": false,
+                        "applyTo": "cells",
                         "conditions": [
                             {
                                 "operator": ">",
@@ -7439,9 +7454,13 @@
                                 ]
                             }
                         ],
+                        "chainingOperator": "and",
                         "colorStyle": "light",
                         "color": "red",
-                        "applyTo": "cells"
+                        "tag": "",
+                        "icon": null,
+                        "ruleName": "TotalFailuresAlert",
+                        "visualType": "card"
                     }
                 ]
             }
@@ -7506,6 +7525,11 @@
                     {
                         "id": "d3c527ca-ffe0-44db-b373-3445b26cdc56",
                         "ruleType": "colorByValue",
+                        "column": "FailCount",
+                        "themeName": "",
+                        "maxValue": null,
+                        "minValue": null,
+                        "reverseTheme": false,
                         "color": "red",
                         "applyTo": "cells"
                     }
@@ -10310,103 +10334,202 @@
         },
         {
             "id": "03553157-89fd-4697-9562-e9c9a48a5c6b",
-            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalJobs = count(),\n    SucceededJobs = countif(JobStatus == \"Completed\"),\n    FailedJobs = countif(JobStatus == \"Failed\"),\n    InProgressJobs = countif(JobStatus == \"InProgress\"),\n    AvgDurationMs = avg(DurationMs),\n    P95DurationMs = percentile(DurationMs, 95)\n  by WorkspaceName"
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalJobs = count(),\n    SucceededJobs = countif(JobStatus == \"Completed\"),\n    FailedJobs = countif(JobStatus == \"Failed\"),\n    InProgressJobs = countif(JobStatus == \"InProgress\"),\n    AvgDurationMs = avg(DurationMs),\n    P95DurationMs = percentile(DurationMs, 95)\n  by WorkspaceName",
+            "usedVariables": [
+                "_WorkspaceName",
+                "_endTime",
+                "_startTime",
+                "_utcOffset"
+            ]
         },
         {
             "id": "df3720fb-3565-4dfa-811b-aafa023587e2",
-            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalJobs = count(),\n    FailedJobs = countif(JobStatus == \"Failed\"),\n    AvgDurationMs = avg(DurationMs)\n  by ItemKind, JobType\n| order by TotalJobs desc"
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalJobs = count(),\n    FailedJobs = countif(JobStatus == \"Failed\"),\n    AvgDurationMs = avg(DurationMs)\n  by ItemKind, JobType\n| order by TotalJobs desc",
+            "usedVariables": [
+                "_WorkspaceName",
+                "_endTime",
+                "_startTime",
+                "_utcOffset"
+            ]
         },
         {
             "id": "a1e3539e-6d4e-49d4-a869-ecac769eaa58",
-            "text": "let Duration = _endTime - _startTime;\nlet BinSize = case(Duration >= 7d, 1d, Duration > 1d, 1h, Duration > 6h, 10m, Duration > 1h, 1m, 1m);\nItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    JobCount = count(),\n    FailCount = countif(JobStatus == \"Failed\")\n  by bin(Timestamp, BinSize), ItemKind"
+            "text": "let Duration = _endTime - _startTime;\nlet BinSize = case(Duration >= 7d, 1d, Duration > 1d, 1h, Duration > 6h, 10m, Duration > 1h, 1m, 1m);\nItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    JobCount = count(),\n    FailCount = countif(JobStatus == \"Failed\")\n  by bin(Timestamp, BinSize), ItemKind",
+            "usedVariables": [
+                "_WorkspaceName",
+                "_endTime",
+                "_startTime",
+                "_utcOffset"
+            ]
         },
         {
             "id": "082ff910-82d8-46d7-8153-db512848d001",
-            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| where JobStatus == \"Failed\"\n| project Timestamp, ItemName, ItemKind, JobType, WorkspaceName, \n         DurationMs, ExecutingPrincipalId, JobStartTime, JobEndTime,\n         JobInstanceId, JobInvokeType\n| order by Timestamp desc"
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| where JobStatus == \"Failed\"\n| project Timestamp, ItemName, ItemKind, JobType, WorkspaceName, \n         DurationMs, ExecutingPrincipalId, JobStartTime, JobEndTime,\n         JobInstanceId, JobInvokeType\n| order by Timestamp desc",
+            "usedVariables": [
+                "_WorkspaceName",
+                "_endTime",
+                "_startTime",
+                "_utcOffset"
+            ]
         },
         {
             "id": "efffaed8-7198-45d1-be65-db0af1881676",
-            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    AvgDurationMs = avg(DurationMs),\n    MaxDurationMs = max(DurationMs),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n  by ItemName, ItemKind, ItemId\n| order by TotalRuns desc\n| take 50"
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    AvgDurationMs = avg(DurationMs),\n    MaxDurationMs = max(DurationMs),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n  by ItemName, ItemKind, ItemId\n| order by TotalRuns desc\n| take 50",
+            "usedVariables": [
+                "_WorkspaceName",
+                "_endTime",
+                "_startTime",
+                "_utcOffset"
+            ]
         },
         {
             "id": "371dc476-6589-4611-be27-251cde8db12f",
-            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    RunCount = count(),\n    AvgDurationMs = avg(DurationMs),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n  by JobInvokeType, ItemKind"
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    RunCount = count(),\n    AvgDurationMs = avg(DurationMs),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n  by JobInvokeType, ItemKind",
+            "usedVariables": [
+                "_WorkspaceName",
+                "_endTime",
+                "_startTime",
+                "_utcOffset"
+            ]
         },
         {
             "id": "87f0e797-f065-47dc-834f-f50de35d3d55",
-            "text": "_baseItemJobEventLogs_Overview\n| summarize TotalJobs = sum(TotalJobs)"
+            "text": "_baseItemJobEventLogs_Overview\n| summarize TotalJobs = sum(TotalJobs)",
+            "usedVariables": [
+                "_baseItemJobEventLogs_Overview"
+            ]
         },
         {
             "id": "b3bac89f-f141-44e7-a162-5206bb34ccfb",
-            "text": "_baseItemJobEventLogs_Overview\n| summarize \n    Total = sum(TotalJobs),\n    Succeeded = sum(SucceededJobs)\n| extend SuccessRate = round(100.0 * Succeeded / Total, 2)\n| project SuccessRate"
+            "text": "_baseItemJobEventLogs_Overview\n| summarize \n    Total = sum(TotalJobs),\n    Succeeded = sum(SucceededJobs)\n| extend SuccessRate = round(100.0 * Succeeded / Total, 2)\n| project SuccessRate",
+            "usedVariables": [
+                "_baseItemJobEventLogs_Overview"
+            ]
         },
         {
             "id": "796fe456-3d78-4fed-a016-e64fc039bffb",
-            "text": "_baseItemJobEventLogs_Overview\n| summarize FailedJobs = sum(FailedJobs)"
+            "text": "_baseItemJobEventLogs_Overview\n| summarize FailedJobs = sum(FailedJobs)",
+            "usedVariables": [
+                "_baseItemJobEventLogs_Overview"
+            ]
         },
         {
             "id": "ece7872a-d95a-4f79-a676-be1230cfd44b",
-            "text": "_baseItemJobEventLogs_Overview\n| summarize AvgDurationMs = round(avg(AvgDurationMs), 2)"
+            "text": "_baseItemJobEventLogs_Overview\n| summarize AvgDurationMs = round(avg(AvgDurationMs), 2)",
+            "usedVariables": [
+                "_baseItemJobEventLogs_Overview"
+            ]
         },
         {
             "id": "53291d77-c419-4c3b-9daf-f245110deff0",
-            "text": "_baseItemJobEventLogs_Overview\n| summarize P95DurationMs = round(avg(P95DurationMs), 2)"
+            "text": "_baseItemJobEventLogs_Overview\n| summarize P95DurationMs = round(avg(P95DurationMs), 2)",
+            "usedVariables": [
+                "_baseItemJobEventLogs_Overview"
+            ]
         },
         {
             "id": "e3a62d31-e2f0-40bc-b66e-a2d225dd0c3b",
-            "text": "_baseItemJobEventLogs_Timeline\n| project Timestamp, ItemKind, JobCount"
+            "text": "_baseItemJobEventLogs_Timeline\n| project Timestamp, ItemKind, JobCount",
+            "usedVariables": [
+                "_baseItemJobEventLogs_Timeline"
+            ]
         },
         {
             "id": "a7231c50-f479-43f6-a1cf-fffef72ac5dd",
-            "text": "_baseItemJobEventLogs_Timeline\n| summarize FailCount = sum(FailCount) by Timestamp"
+            "text": "_baseItemJobEventLogs_Timeline\n| summarize FailCount = sum(FailCount) by Timestamp",
+            "usedVariables": [
+                "_baseItemJobEventLogs_Timeline"
+            ]
         },
         {
             "id": "0e3cb2cd-7fa0-46aa-a38b-512f9b0c6a65",
-            "text": "_baseItemJobEventLogs_ByItemKind\n| summarize TotalJobs = sum(TotalJobs) by ItemKind\n| order by TotalJobs desc"
+            "text": "_baseItemJobEventLogs_ByItemKind\n| summarize TotalJobs = sum(TotalJobs) by ItemKind\n| order by TotalJobs desc",
+            "usedVariables": [
+                "_baseItemJobEventLogs_ByItemKind"
+            ]
         },
         {
             "id": "0fdea72c-be1c-45f7-814f-542adb1a6e94",
-            "text": "_baseItemJobEventLogs_TopItems"
+            "text": "_baseItemJobEventLogs_TopItems",
+            "usedVariables": [
+                "_baseItemJobEventLogs_TopItems"
+            ]
         },
         {
             "id": "b724249d-e3ff-4d9a-b6fc-44cbc94e766b",
-            "text": "_baseItemJobEventLogs_FailureDetails"
+            "text": "_baseItemJobEventLogs_FailureDetails",
+            "usedVariables": [
+                "_baseItemJobEventLogs_FailureDetails"
+            ]
         },
         {
             "id": "325a3d39-4bb8-49a0-8f2f-b79ed02b21c0",
-            "text": "_baseItemJobEventLogs_FailureDetails\n| count"
+            "text": "_baseItemJobEventLogs_FailureDetails\n| count",
+            "usedVariables": [
+                "_baseItemJobEventLogs_FailureDetails"
+            ]
         },
         {
             "id": "041ae7c5-c29a-4c49-b947-64b7ea21b695",
-            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize FailureCount = count() by ItemName\n| top 1 by FailureCount desc\n| project ItemName"
+            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize FailureCount = count() by ItemName\n| top 1 by FailureCount desc\n| project ItemName",
+            "usedVariables": [
+                "_baseItemJobEventLogs_FailureDetails"
+            ]
         },
         {
             "id": "63b5d6b0-3b2c-4138-89f6-5ed02731485a",
-            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize FailureCount = count() by ItemKind\n| top 1 by FailureCount desc\n| project ItemKind"
+            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize FailureCount = count() by ItemKind\n| top 1 by FailureCount desc\n| project ItemKind",
+            "usedVariables": [
+                "_baseItemJobEventLogs_FailureDetails"
+            ]
         },
         {
             "id": "dddae769-a010-4d5c-9d1e-2267ac5e470f",
-            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize Failures = count() by ItemKind\n| order by Failures desc"
+            "text": "_baseItemJobEventLogs_FailureDetails\n| summarize Failures = count() by ItemKind\n| order by Failures desc",
+            "usedVariables": [
+                "_baseItemJobEventLogs_FailureDetails"
+            ]
         },
         {
             "id": "2438a482-d43e-4950-bc60-6b9d5ff46867",
-            "text": "_baseItemJobEventLogs_Timeline\n| summarize FailCount = sum(FailCount) by Timestamp\n| order by Timestamp asc"
+            "text": "_baseItemJobEventLogs_Timeline\n| summarize FailCount = sum(FailCount) by Timestamp\n| order by Timestamp asc",
+            "usedVariables": [
+                "_baseItemJobEventLogs_Timeline"
+            ]
         },
         {
             "id": "5b76bc95-09e6-4742-a640-0a974187ff53",
-            "text": "_baseItemJobEventLogs_ByItemKind\n| summarize AvgDurationMs = round(avg(AvgDurationMs), 2) by ItemKind\n| order by AvgDurationMs desc"
+            "text": "_baseItemJobEventLogs_ByItemKind\n| summarize AvgDurationMs = round(avg(AvgDurationMs), 2) by ItemKind\n| order by AvgDurationMs desc",
+            "usedVariables": [
+                "_baseItemJobEventLogs_ByItemKind"
+            ]
         },
         {
             "id": "37ee73cc-d9db-42ed-b876-354150608fb2",
-            "text": "_baseItemJobEventLogs_ScheduledVsOnDemand"
+            "text": "_baseItemJobEventLogs_ScheduledVsOnDemand",
+            "usedVariables": [
+                "_baseItemJobEventLogs_ScheduledVsOnDemand"
+            ]
         },
         {
             "id": "e2df8440-a361-41aa-a304-e16e776f9f13",
-            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| top 20 by DurationMs desc\n| project Timestamp, ItemName, ItemKind, JobType, DurationMs, JobStatus"
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| top 20 by DurationMs desc\n| project Timestamp, ItemName, ItemKind, JobType, DurationMs, JobStatus",
+            "usedVariables": [
+                "_WorkspaceName",
+                "_endTime",
+                "_startTime",
+                "_utcOffset"
+            ]
         },
         {
             "id": "c706cb30-020d-49ea-bf11-116bf45c6bb8",
-            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize MaxDurationMs = max(DurationMs)"
+            "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize MaxDurationMs = max(DurationMs)",
+            "usedVariables": [
+                "_WorkspaceName",
+                "_endTime",
+                "_startTime",
+                "_utcOffset"
+            ]
         }
     ]
 }
