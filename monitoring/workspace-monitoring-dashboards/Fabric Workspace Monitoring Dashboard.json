@@ -310,7 +310,7 @@
     },
     {
       "id": "dfc84891-c001-4e79-8ef5-9f45be5928e4",
-      "title": "📂 Current Workspace",
+      "title": "\ud83d\udcc2 Current Workspace",
       "description": "This is a description here",
       "visualType": "card",
       "pageId": "24bbe28a-e9a1-493d-9cf2-5faf1d3e5094",
@@ -3439,7 +3439,7 @@
     },
     {
       "id": "da7851cb-1669-4d1a-82c0-e6843956e711",
-      "title": "➡️ Step 1) Running & Recent Semantic Model Queries",
+      "title": "\u27a1\ufe0f Step 1) Running & Recent Semantic Model Queries",
       "visualType": "markdownCard",
       "pageId": "4afe2440-f8cc-434c-906b-5f346e031a59",
       "layout": {
@@ -4122,7 +4122,7 @@
     },
     {
       "id": "dbea78f2-fb5e-4d2a-8380-3e5d57d9ffb5",
-      "title": "🔎 Available logs",
+      "title": "\ud83d\udd0e Available logs",
       "visualType": "markdownCard",
       "pageId": "24bbe28a-e9a1-493d-9cf2-5faf1d3e5094",
       "layout": {
@@ -4131,12 +4131,12 @@
         "width": 4,
         "height": 9
       },
-      "markdownText": "All workloads implemented in this dashboard are listed on the right-hand side of the page.\n\n🔵 **Logs available** - Logs have been actively collected for the selected time period across different workloads.\n\n⚠️ **Inactive** - Logs are not available for the selected time period for the following workloads.",
+      "markdownText": "All workloads implemented in this dashboard are listed on the right-hand side of the page.\n\n\ud83d\udd35 **Logs available** - Logs have been actively collected for the selected time period across different workloads.\n\n\u26a0\ufe0f **Inactive** - Logs are not available for the selected time period for the following workloads.",
       "visualOptions": {}
     },
     {
       "id": "a4842fbb-e0a3-4975-bb41-49e8b2ff275a",
-      "title": "🕜 Mission",
+      "title": "\ud83d\udd5c Mission",
       "visualType": "markdownCard",
       "pageId": "24bbe28a-e9a1-493d-9cf2-5faf1d3e5094",
       "layout": {
@@ -4150,7 +4150,7 @@
     },
     {
       "id": "59fd304d-c755-4dcb-a809-fe7e5511fb13",
-      "title": "🔗 Connect to multiple Workspaces",
+      "title": "\ud83d\udd17 Connect to multiple Workspaces",
       "visualType": "markdownCard",
       "pageId": "24bbe28a-e9a1-493d-9cf2-5faf1d3e5094",
       "layout": {
@@ -4281,7 +4281,7 @@
     },
     {
       "id": "5e266553-32da-4737-891f-ccf9210ff3d6",
-      "title": "↩️Take action if needed",
+      "title": "\u21a9\ufe0fTake action if needed",
       "visualType": "markdownCard",
       "pageId": "4afe2440-f8cc-434c-906b-5f346e031a59",
       "layout": {
@@ -4445,7 +4445,7 @@
     },
     {
       "id": "fce21af3-faef-4c70-85f7-98e29903340a",
-      "title": "🧊 Step 4) Identify Active Users by Semantic Models",
+      "title": "\ud83e\uddca Step 4) Identify Active Users by Semantic Models",
       "visualType": "markdownCard",
       "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
       "layout": {
@@ -4459,7 +4459,7 @@
     },
     {
       "id": "66ec1eac-b439-4e23-86a0-b76fdf8e0dea",
-      "title": "📍 Step 9) Analyse resource intensive scenarios | Optional: filter time, User(s), Semantic model(s)",
+      "title": "\ud83d\udccd Step 9) Analyse resource intensive scenarios | Optional: filter time, User(s), Semantic model(s)",
       "visualType": "markdownCard",
       "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
       "layout": {
@@ -4673,7 +4673,7 @@
     },
     {
       "id": "123ee15f-ea11-4b7c-971e-f2f5496d81e0",
-      "title": "👤 Users | Semantic Models",
+      "title": "\ud83d\udc64 Users | Semantic Models",
       "visualType": "markdownCard",
       "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
       "layout": {
@@ -4831,7 +4831,7 @@
     },
     {
       "id": "9b0eb194-b2e3-47a5-8777-a21b2a60f4b7",
-      "title": "🕥 Step 2) Identify days, hours",
+      "title": "\ud83d\udd65 Step 2) Identify days, hours",
       "visualType": "markdownCard",
       "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
       "layout": {
@@ -4845,7 +4845,7 @@
     },
     {
       "id": "a5c9c7cd-589d-4289-88c5-eec6f48bceb8",
-      "title": "📊 Step 3) Identify Active Users based on key metrics",
+      "title": "\ud83d\udcca Step 3) Identify Active Users based on key metrics",
       "visualType": "markdownCard",
       "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
       "layout": {
@@ -4859,7 +4859,7 @@
     },
     {
       "id": "19f7d633-df01-41a1-8859-8eb53049212a",
-      "title": "➡️ Step 1) Review Success Ratios",
+      "title": "\u27a1\ufe0f Step 1) Review Success Ratios",
       "visualType": "markdownCard",
       "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
       "layout": {
@@ -4873,7 +4873,7 @@
     },
     {
       "id": "7fe7b8c7-f9e2-4f06-b6ea-dc08d7766445",
-      "title": "⤵️ Step 5) Review details about queries and refreshes for a specific User | Drill into the User Details",
+      "title": "\u2935\ufe0f Step 5) Review details about queries and refreshes for a specific User | Drill into the User Details",
       "visualType": "markdownCard",
       "pageId": "65b99db5-13e1-4ed7-8ee5-d45428e04119",
       "layout": {
@@ -5034,7 +5034,7 @@
     },
     {
       "id": "37ab2994-a353-4ec3-b391-15b22aba3012",
-      "title": "👤 User Details | Semantic Models",
+      "title": "\ud83d\udc64 User Details | Semantic Models",
       "visualType": "markdownCard",
       "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
       "layout": {
@@ -5275,7 +5275,7 @@
     },
     {
       "id": "c20f505a-cc50-4c61-b747-9e270f20111b",
-      "title": "➡️ Step 6) Review currently running queries and refreshes initiated by the User",
+      "title": "\u27a1\ufe0f Step 6) Review currently running queries and refreshes initiated by the User",
       "visualType": "markdownCard",
       "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
       "layout": {
@@ -5289,7 +5289,7 @@
     },
     {
       "id": "ddc60654-0557-4951-85b3-b42f4a4b9106",
-      "title": "📊 Step 7) Check the execution intensity of the queries and refreshes",
+      "title": "\ud83d\udcca Step 7) Check the execution intensity of the queries and refreshes",
       "visualType": "markdownCard",
       "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
       "layout": {
@@ -5675,7 +5675,7 @@
     },
     {
       "id": "ca8913f6-7165-4421-82e7-397815e807b9",
-      "title": "🟩 Step 10q | Queries sorted by StartTime descending | Top 50",
+      "title": "\ud83d\udfe9 Step 10q | Queries sorted by StartTime descending | Top 50",
       "visualType": "table",
       "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
       "layout": {
@@ -5895,7 +5895,7 @@
     },
     {
       "id": "e9ac695e-6d7c-4cda-b891-9dbbace42c50",
-      "title": "🕥 Filter time window",
+      "title": "\ud83d\udd65 Filter time window",
       "visualType": "markdownCard",
       "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
       "layout": {
@@ -5904,7 +5904,7 @@
         "width": 3,
         "height": 6
       },
-      "markdownText": "Filter the insights on the bar chart \nby selecting a period with the mouse. ➡️",
+      "markdownText": "Filter the insights on the bar chart \nby selecting a period with the mouse. \u27a1\ufe0f",
       "visualOptions": {}
     },
     {
@@ -5974,7 +5974,7 @@
     },
     {
       "id": "6f9aa033-c870-4300-a3ac-bd97637c2626",
-      "title": "🧮 Step 10) Review the executed DAX or MDX queries initiated by the User",
+      "title": "\ud83e\uddee Step 10) Review the executed DAX or MDX queries initiated by the User",
       "visualType": "markdownCard",
       "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
       "layout": {
@@ -6002,7 +6002,7 @@
     },
     {
       "id": "92546362-6d46-47dd-a0e0-6deba3e0adfd",
-      "title": "1️⃣ Step 1) Review Semantic Model Overview",
+      "title": "1\ufe0f\u20e3 Step 1) Review Semantic Model Overview",
       "visualType": "markdownCard",
       "pageId": "9f268d0e-9f1f-44c7-931f-cec0a6ebce8e",
       "layout": {
@@ -6016,7 +6016,7 @@
     },
     {
       "id": "3b22eee4-b1be-4cb9-94d0-64f9df0cb97f",
-      "title": "🟥 Step 2) Review Execution Delays and Capacity level Throttlings originated by Semantic Models",
+      "title": "\ud83d\udfe5 Step 2) Review Execution Delays and Capacity level Throttlings originated by Semantic Models",
       "visualType": "markdownCard",
       "pageId": "9f268d0e-9f1f-44c7-931f-cec0a6ebce8e",
       "layout": {
@@ -6030,7 +6030,7 @@
     },
     {
       "id": "4878134b-f28d-4ee7-b610-6f04a31bd0c3",
-      "title": "🧊 Step 3) Analyze Key Performance Metrics of Semantic Models",
+      "title": "\ud83e\uddca Step 3) Analyze Key Performance Metrics of Semantic Models",
       "visualType": "markdownCard",
       "pageId": "9f268d0e-9f1f-44c7-931f-cec0a6ebce8e",
       "layout": {
@@ -6367,7 +6367,7 @@
     },
     {
       "id": "a515a0f5-a662-45da-a65f-be7c6eabad95",
-      "title": "➡️ Step 1) Review Query Overview",
+      "title": "\u27a1\ufe0f Step 1) Review Query Overview",
       "visualType": "markdownCard",
       "pageId": "2266be0d-9a7a-49ba-a622-4c20e4ab4885",
       "layout": {
@@ -6381,7 +6381,7 @@
     },
     {
       "id": "5908a17d-c54d-430a-9558-3dea9a03fa6e",
-      "title": "🗺️ Step 2) Resource intensive Visuals",
+      "title": "\ud83d\uddfa\ufe0f Step 2) Resource intensive Visuals",
       "visualType": "markdownCard",
       "pageId": "2266be0d-9a7a-49ba-a622-4c20e4ab4885",
       "layout": {
@@ -6418,12 +6418,12 @@
         "drillthrough": [],
         "table__renderLinks": [
           {
-            "urlColumn": "📊",
+            "urlColumn": "\ud83d\udcca",
             "displayColumn": "ReportId",
             "disabled": false
           },
           {
-            "urlColumn": "🗺️",
+            "urlColumn": "\ud83d\uddfa\ufe0f",
             "displayColumn": "VisualId",
             "disabled": false
           }
@@ -6519,7 +6519,7 @@
             "conditions": [
               {
                 "operator": "!=",
-                "column": "🗺️",
+                "column": "\ud83d\uddfa\ufe0f",
                 "values": [
                   ""
                 ]
@@ -6546,7 +6546,7 @@
                   ""
                 ],
                 "operator": "!=",
-                "column": "📊"
+                "column": "\ud83d\udcca"
               }
             ],
             "chainingOperator": "and",
@@ -6703,7 +6703,7 @@
     },
     {
       "id": "393ad2a9-d0a7-43eb-80af-826bdc76bac1",
-      "title": "🧮 Step 3) Review the executed DAX or MDX queries initiated by the User",
+      "title": "\ud83e\uddee Step 3) Review the executed DAX or MDX queries initiated by the User",
       "visualType": "markdownCard",
       "pageId": "2266be0d-9a7a-49ba-a622-4c20e4ab4885",
       "layout": {
@@ -6717,7 +6717,7 @@
     },
     {
       "id": "9af6d526-d103-4556-b52d-524e29646ece",
-      "title": "🟦 Step 10r | Refreshes sorted by EndTime descending | Top 50",
+      "title": "\ud83d\udfe6 Step 10r | Refreshes sorted by EndTime descending | Top 50",
       "visualType": "table",
       "pageId": "16b4de35-32d7-4562-8b04-8d65e4cfdd80",
       "layout": {
@@ -6894,7 +6894,7 @@
     },
     {
       "id": "a357f782-cdff-4256-925d-05f9748d3c2d",
-      "title": "➡️ Step 1) Review Success Ratios",
+      "title": "\u27a1\ufe0f Step 1) Review Success Ratios",
       "visualType": "markdownCard",
       "pageId": "233b545f-c558-41db-9179-9b844f6a148d",
       "layout": {
@@ -6950,7 +6950,7 @@
     },
     {
       "id": "db5fa576-9d0f-4e6c-b9ce-f413f4cc4bff",
-      "title": "↩️Take action if needed",
+      "title": "\u21a9\ufe0fTake action if needed",
       "visualType": "markdownCard",
       "pageId": "2266be0d-9a7a-49ba-a622-4c20e4ab4885",
       "layout": {
@@ -7043,12 +7043,12 @@
         "drillthrough": [],
         "table__renderLinks": [
           {
-            "urlColumn": "📊",
+            "urlColumn": "\ud83d\udcca",
             "displayColumn": "ReportId",
             "disabled": false
           },
           {
-            "urlColumn": "🗺️",
+            "urlColumn": "\ud83d\uddfa\ufe0f",
             "displayColumn": "VisualId",
             "disabled": false
           }
@@ -7144,7 +7144,7 @@
             "conditions": [
               {
                 "operator": "!=",
-                "column": "🗺️",
+                "column": "\ud83d\uddfa\ufe0f",
                 "values": [
                   ""
                 ]
@@ -7171,7 +7171,7 @@
                   ""
                 ],
                 "operator": "!=",
-                "column": "📊"
+                "column": "\ud83d\udcca"
               }
             ],
             "chainingOperator": "and",
@@ -7665,6 +7665,657 @@
         "queryId": "e2df8440-a361-41aa-a304-e16e776f9f13"
       },
       "visualOptions": {}
+    },
+    {
+      "id": "e567de20-394e-4010-a261-fef5d2e578a4",
+      "title": "Reliability & SLA Compliance",
+      "visualType": "markdownCard",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 24,
+        "height": 1
+      },
+      "markdownText": "",
+      "visualOptions": {}
+    },
+    {
+      "id": "de547b2a-4dd2-4825-b99d-51f969040c8b",
+      "title": "Overall Availability %",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 1,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "deda70ad-c492-4648-9469-4ac3f32ea738"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorRulesDisabled": false,
+        "colorRules": [
+          {
+            "id": "6b112703-23e8-4b48-8b54-c16a05a698b5",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": ">=",
+                "column": "OverallAvailability",
+                "values": [
+                  "99.0"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "green",
+            "tag": "",
+            "icon": null,
+            "ruleName": "SLAGreen",
+            "visualType": "card"
+          },
+          {
+            "id": "bf561cfb-7247-49b3-a3aa-01b0bd101660",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": "<",
+                "column": "OverallAvailability",
+                "values": [
+                  "99.0"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "red",
+            "tag": "",
+            "icon": null,
+            "ruleName": "SLARed",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2a334a9e-8082-42bf-83cd-4626a35e8be0",
+      "title": "Items Below 99% SLA",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 4,
+        "y": 1,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "ca5431ab-4b1d-44d9-bbb5-bcd5354ae291"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorRulesDisabled": false,
+        "colorRules": [
+          {
+            "id": "4e98fe2f-ede0-4772-8343-c24743d114b5",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "Count",
+                "values": [
+                  "0"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "red",
+            "tag": "",
+            "icon": null,
+            "ruleName": "SLAViolation",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f9974779-061d-4505-b2ca-fe0ada1dd505",
+      "title": "Availability % Over Time (SLA Target: 99%)",
+      "visualType": "line",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 8,
+        "y": 1,
+        "width": 16,
+        "height": 6
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "5618ad52-6d60-4b9e-9b87-9eb08e925bf4"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "3e57a014-c802-4f48-b963-7d0c45f401c0",
+      "title": "Availability % by Item Kind",
+      "visualType": "bar",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 7,
+        "width": 12,
+        "height": 6
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "2ddd45db-2a8c-42b9-807c-deced84cb80e"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "ce79bc82-5574-494d-8a97-2111aef47e6e",
+      "title": "Mean Time to Recovery (minutes) by Item Kind",
+      "visualType": "bar",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 12,
+        "y": 7,
+        "width": 12,
+        "height": 6
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "487292a8-3b49-41d4-917b-253d41d11b1f"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "e6ea2042-6eb1-4d9f-8670-cfcc73e6145e",
+      "title": "Items Below 99% SLA - Detailed View",
+      "visualType": "table",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 13,
+        "width": 24,
+        "height": 10
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "c5c93dff-4b93-460f-9f51-6f2aa3d45464"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "40d31e5a-3979-4bc0-a105-0a85faf8602d",
+      "title": "Dependency & Cascade Analysis",
+      "visualType": "markdownCard",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 24,
+        "height": 1
+      },
+      "markdownText": "",
+      "visualOptions": {}
+    },
+    {
+      "id": "6b9a90ca-eb5f-41a2-9d0c-fe3e96193c20",
+      "title": "Co-Failure Events",
+      "visualType": "card",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 1,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "782bc06c-f7ff-421f-8467-36fe88e52595"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto"
+      }
+    },
+    {
+      "id": "349a6f91-98f0-4488-a4a7-7ce5ee2fa46f",
+      "title": "Cascade Events (3+ failures in 15min)",
+      "visualType": "card",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 4,
+        "y": 1,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "0c034a91-3583-460e-8067-90472ec6eb12"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorRulesDisabled": false,
+        "colorRules": [
+          {
+            "id": "eac522a1-a5ea-426d-b1f9-44e736174dc8",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "Count",
+                "values": [
+                  "0"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "red",
+            "tag": "",
+            "icon": null,
+            "ruleName": "CascadeAlert",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fec315ab-8f8c-4426-9c2c-ca25e9be523d",
+      "title": "Co-Failing Items (Fail Together)",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 5,
+        "width": 12,
+        "height": 8
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "66746da2-8626-4c81-9ea6-d7645be6872b"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "9afb1f71-21cd-4a64-b625-ce8667ac7232",
+      "title": "Critical Items (High Impact Score)",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 12,
+        "y": 5,
+        "width": 12,
+        "height": 8
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "596bdead-7463-46eb-8674-5fe268894597"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "7ca2c3e1-109f-429e-853b-0fdde8e622c4",
+      "title": "Cascade Events - Time Windows with Multiple Failures",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 13,
+        "width": 24,
+        "height": 10
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "0370f80f-4e85-499d-bcc3-b4b002c0fa8f"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "99bcd387-6185-417a-bc2f-f19750449224",
+      "title": "MTBF (Mean Time Between Failures)",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 5,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "95721392-fd5a-4f3e-8b69-cf62f0393a88"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorRulesDisabled": false,
+        "colorRules": [
+          {
+            "id": "e4ad041a-58e4-4521-b329-2c21a7b8dd43",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": ">=",
+                "column": "MTBF_Hours",
+                "values": [
+                  "24.0"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "green",
+            "tag": "",
+            "icon": null,
+            "ruleName": "MTBFGood",
+            "visualType": "card"
+          },
+          {
+            "id": "8e326bd3-5262-4383-985e-d77b04c68682",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": "<",
+                "column": "MTBF_Hours",
+                "values": [
+                  "24.0"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "red",
+            "tag": "",
+            "icon": null,
+            "ruleName": "MTBFBad",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "93233d71-9fba-490f-af4b-df85b9692c73",
+      "title": "Error Budget Remaining (99% SLA)",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 4,
+        "y": 5,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "8c84e211-be74-4884-b4a1-95e721cea145"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorRulesDisabled": false,
+        "colorRules": [
+          {
+            "id": "56ac38d4-c7ab-4d0b-b3e8-269d2708443e",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "ErrorBudget_Remaining",
+                "values": [
+                  "0.5"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "green",
+            "tag": "",
+            "icon": null,
+            "ruleName": "BudgetHealthy",
+            "visualType": "card"
+          },
+          {
+            "id": "81134f79-3caf-43b1-b6de-5ac3e5efe47d",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": "<=",
+                "column": "ErrorBudget_Remaining",
+                "values": [
+                  "0.5"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "red",
+            "tag": "",
+            "icon": null,
+            "ruleName": "BudgetExhausted",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d639ea8b-baa4-4be3-9406-fa3128eee186",
+      "title": "Top 10 Most Reliable Items",
+      "visualType": "table",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 8,
+        "y": 7,
+        "width": 16,
+        "height": 8
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "80aeb7b4-e89e-4fb3-997b-c5f72451c3a7"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "9215b6cd-3977-45b9-881d-4382ee98e34a",
+      "title": "Time to First Failure Distribution (Hours)",
+      "visualType": "column",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 15,
+        "width": 12,
+        "height": 8
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "8685643d-78d0-49a8-b3f1-518b2ceea243"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "c2379aa6-9ae7-448b-aedd-265b4257be45",
+      "title": "SLA Health Status",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 12,
+        "y": 15,
+        "width": 6,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "024710d2-bd7d-4134-98ff-7f69d25a6874"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto"
+      }
+    },
+    {
+      "id": "40a83f02-225b-4422-afc0-d1ba39638f94",
+      "title": "Max Blast Radius (Items Affected)",
+      "visualType": "card",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 8,
+        "y": 1,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "22fd5464-652e-4c5c-9a19-16ff1eab555b"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorRulesDisabled": false,
+        "colorRules": [
+          {
+            "id": "47ad3437-bba2-42f2-ae25-8e3bf720795f",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "MaxBlastRadius",
+                "values": [
+                  "5"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "red",
+            "tag": "",
+            "icon": null,
+            "ruleName": "HighImpact",
+            "visualType": "card"
+          },
+          {
+            "id": "87daf9c2-1249-4176-8dfd-ce60d652f714",
+            "ruleType": "colorByCondition",
+            "applyToColumn": null,
+            "hideText": false,
+            "applyTo": "cells",
+            "conditions": [
+              {
+                "operator": "<=",
+                "column": "MaxBlastRadius",
+                "values": [
+                  "5"
+                ]
+              }
+            ],
+            "chainingOperator": "and",
+            "colorStyle": "light",
+            "color": "green",
+            "tag": "",
+            "icon": null,
+            "ruleName": "LowImpact",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f73c884f-e8ea-4151-a55f-730645744dd2",
+      "title": "Dependency Matrix (Top 20 Co-Failures)",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 23,
+        "width": 24,
+        "height": 10
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "172f96c9-f8eb-4dfa-96be-80f7166e869f"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "3ab701e7-4a78-4b54-9964-385606b81b67",
+      "title": "Most Impactful Single Failure",
+      "visualType": "card",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 12,
+        "y": 1,
+        "width": 6,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "b70f0355-0dd7-44ea-98e7-b3710a59565a"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto"
+      }
+    },
+    {
+      "id": "f7962e51-72b5-40a4-8077-88ca2590e28e",
+      "title": "Failure Propagation Timeline (Cascade Events)",
+      "visualType": "line",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 33,
+        "width": 24,
+        "height": 8
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "c07927ff-ea9d-4b61-baf5-8d98b8fd21f8"
+      },
+      "visualOptions": {}
+    },
+    {
+      "id": "8f18cd60-6e1f-4b51-bf14-7b5dd0529d82",
+      "title": "Critical Dependency Paths (Top 15)",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 18,
+        "y": 1,
+        "width": 6,
+        "height": 8
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "ec47c412-20cb-47f6-be9c-f6f104f0a000"
+      },
+      "visualOptions": {}
     }
   ],
   "baseQueries": [
@@ -7762,6 +8413,26 @@
       "id": "9976abfc-7a52-41db-becf-3588ca783a7e",
       "queryId": "371dc476-6589-4611-be27-251cde8db12f",
       "variableName": "_baseItemJobEventLogs_ScheduledVsOnDemand"
+    },
+    {
+      "id": "6cbcbebe-f6a2-4bcd-8f52-233b799b6e65",
+      "queryId": "691111d8-a0cf-4d11-b08c-3e73a9299e56",
+      "variableName": "_baseItemJobEventLogs_SLAMetrics"
+    },
+    {
+      "id": "2598a18f-54b9-4855-a22f-3d2a1f111126",
+      "queryId": "fc6adcbf-9fe6-492e-ae2c-61bf2949c810",
+      "variableName": "_baseItemJobEventLogs_MTTR"
+    },
+    {
+      "id": "4177884a-aa4e-4619-b18f-b6f9b1a07a80",
+      "queryId": "56909fe0-f206-4b9e-b488-468ca3dfb34d",
+      "variableName": "_baseItemJobEventLogs_CoFailures"
+    },
+    {
+      "id": "3e18440b-abe8-40b6-b0e0-df4155c69905",
+      "queryId": "0eef2e89-d6c0-4e28-9b74-2691a0203917",
+      "variableName": "_baseItemJobEventLogs_Cascades"
     }
   ],
   "parameters": [
@@ -8602,6 +9273,14 @@
     {
       "id": "44167d8b-ae26-4ab4-b87a-5068af935767",
       "name": "- IJ | Performance"
+    },
+    {
+      "id": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "name": "- IJ | Reliability & SLA"
+    },
+    {
+      "id": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "name": "- IJ | Dependency Analysis"
     }
   ],
   "queries": [
@@ -9393,7 +10072,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "_baseSMCurrentQueries\r\n| where ['Executing User'] != 'Power BI Service'\r\n| extend ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId)\r\n| project \r\n    ['Semantic Model'],\r\n    Link = \"🔗\",\r\n    ['Executing User'],\r\n    OperationDetailName,\r\n    StartTime,\r\n    EndTime,\r\n    CurrentStatus,\r\n    EventText,\r\n    OperationId,\r\n    ['.'] = ItemURL\r\n| top 50 by StartTime desc",
+      "text": "_baseSMCurrentQueries\r\n| where ['Executing User'] != 'Power BI Service'\r\n| extend ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId)\r\n| project \r\n    ['Semantic Model'],\r\n    Link = \"\ud83d\udd17\",\r\n    ['Executing User'],\r\n    OperationDetailName,\r\n    StartTime,\r\n    EndTime,\r\n    CurrentStatus,\r\n    EventText,\r\n    OperationId,\r\n    ['.'] = ItemURL\r\n| top 50 by StartTime desc",
       "id": "1a3c972f-284d-41c0-8e06-bb1d078ca6c3",
       "usedVariables": [
         "_baseSMCurrentQueries"
@@ -9561,7 +10240,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "_baseSMCurrentRefreshes\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| extend \n    ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId) // Item URL\n| summarize\n    StartTime = min(StartTime),\n    EndTime = max(EndTime),\n    ['Total Duration'] = sum(Duration),\n    ['Total CPU Time'] = sum(CpuTime),\n    ['Total Power Query CPU Time'] = sum(MashupCPUTime),\n    ['Total Power Query Peak Memory'] = sum(MashupPeakMemory),\n    ['Total Processed Objects'] = sum(ObjectCount)\n    by \n    ItemName,\n    Link = \"🔗\",\n    OperationId,\n    Status,\n    ItemURL\n| project \n    ['Semantic Model'] = ItemName,\n    Link,\n    Status,\n    StartTime,\n    EndTime,\n    ['Total Duration'],\n    ['Total CPU Time'],\n    ['Total Power Query CPU Time'],\n    ['Total Power Query Peak Memory'],\n    ['Total Processed Objects'],\n    OperationId,\n    ['.'] = ItemURL\n| order by EndTime desc\n",
+      "text": "_baseSMCurrentRefreshes\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| extend \n    ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId) // Item URL\n| summarize\n    StartTime = min(StartTime),\n    EndTime = max(EndTime),\n    ['Total Duration'] = sum(Duration),\n    ['Total CPU Time'] = sum(CpuTime),\n    ['Total Power Query CPU Time'] = sum(MashupCPUTime),\n    ['Total Power Query Peak Memory'] = sum(MashupPeakMemory),\n    ['Total Processed Objects'] = sum(ObjectCount)\n    by \n    ItemName,\n    Link = \"\ud83d\udd17\",\n    OperationId,\n    Status,\n    ItemURL\n| project \n    ['Semantic Model'] = ItemName,\n    Link,\n    Status,\n    StartTime,\n    EndTime,\n    ['Total Duration'],\n    ['Total CPU Time'],\n    ['Total Power Query CPU Time'],\n    ['Total Power Query Peak Memory'],\n    ['Total Processed Objects'],\n    OperationId,\n    ['.'] = ItemURL\n| order by EndTime desc\n",
       "id": "3e94ff91-227b-45f2-b41b-9a3a36d2b381",
       "usedVariables": [
         "_baseSMCurrentRefreshes",
@@ -9905,7 +10584,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "_baseSMCurrentQueries\r\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\r\n| where isempty(_SM_Users) or ['Executing User'] in (_SM_Users) // Multiple selection filtering\r\n| where ['Executing User'] != 'Power BI Service'\r\n| extend ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId)\r\n| project \r\n    ['Semantic Model'],\r\n    Link = \"🔗\",\r\n    ['Executing User'],\r\n    OperationDetailName,\r\n    StartTime,\r\n    EndTime,\r\n    CurrentStatus,\r\n    EventText,\r\n    OperationId,\r\n    ['.'] = ItemURL\r\n| top 50 by StartTime desc",
+      "text": "_baseSMCurrentQueries\r\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\r\n| where isempty(_SM_Users) or ['Executing User'] in (_SM_Users) // Multiple selection filtering\r\n| where ['Executing User'] != 'Power BI Service'\r\n| extend ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId)\r\n| project \r\n    ['Semantic Model'],\r\n    Link = \"\ud83d\udd17\",\r\n    ['Executing User'],\r\n    OperationDetailName,\r\n    StartTime,\r\n    EndTime,\r\n    CurrentStatus,\r\n    EventText,\r\n    OperationId,\r\n    ['.'] = ItemURL\r\n| top 50 by StartTime desc",
       "id": "3c8138bc-664c-45d5-a7be-e0f299b20728",
       "usedVariables": [
         "_SM_Users",
@@ -10024,7 +10703,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "_baseSMExecutionMetrics\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| where isempty(_SM_Users) or ExecutingUser in (_SM_Users) // Multiple selection filtering\n| where IntendedUsageScenario in ('DAX Query', 'MDX Query') // calculated column filter\n| project \n    Status,\n    ['Usage Scenario'] = IntendedUsageScenario,\n    ExecutingUser,\n    ['Semantic Model'] = ItemName,\n    TimeStart,\n    //TimeEnd,\n    ['Duration Time'] = round(TotalDuration, 2),\n    ['Total CPU Time'] = round(TotalCpuTime, 2),\n    ['Memory Peak'] = round(ApproximatePeakMemConsumption, 2),\n    ReportId,\n    VisualId,\n    ReplicaId,\n    OperationId,\n    ['🗺️'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi&visual=', VisualId), // Visual ID Link\n    ['📊'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi') // Report Link\n| top 50 by ['Total CPU Time'] desc\n",
+      "text": "_baseSMExecutionMetrics\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| where isempty(_SM_Users) or ExecutingUser in (_SM_Users) // Multiple selection filtering\n| where IntendedUsageScenario in ('DAX Query', 'MDX Query') // calculated column filter\n| project \n    Status,\n    ['Usage Scenario'] = IntendedUsageScenario,\n    ExecutingUser,\n    ['Semantic Model'] = ItemName,\n    TimeStart,\n    //TimeEnd,\n    ['Duration Time'] = round(TotalDuration, 2),\n    ['Total CPU Time'] = round(TotalCpuTime, 2),\n    ['Memory Peak'] = round(ApproximatePeakMemConsumption, 2),\n    ReportId,\n    VisualId,\n    ReplicaId,\n    OperationId,\n    ['\ud83d\uddfa\ufe0f'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi&visual=', VisualId), // Visual ID Link\n    ['\ud83d\udcca'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi') // Report Link\n| top 50 by ['Total CPU Time'] desc\n",
       "id": "4d1caa87-ca75-4512-be2a-8784804205bd",
       "usedVariables": [
         "_SM_Users",
@@ -10050,7 +10729,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "_baseSMCurrentRefreshes\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| extend \n    ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId) // Item URL\n| summarize\n    //StartTime = min(StartTime),\n    EndTime = max(EndTime),\n    ['Total Duration'] = sum(Duration),\n    ['Total CPU Time'] = sum(CpuTime),\n    ['Total Power Query CPU Time'] = sum(MashupCPUTime),\n    ['Total Power Query Peak Memory'] = sum(MashupPeakMemory),\n    ['Total Processed Objects'] = sum(ObjectCount)\n    by \n    ItemName,\n    Link = \"🔗\",\n    OperationId,\n    Status,\n    ItemURL\n| project \n    ['Semantic Model'] = ItemName,\n    Link,\n    Status,\n    //StartTime,\n    EndTime,\n    ['Total Duration'],\n    ['Total CPU Time'],\n    ['Total Power Query CPU Time'],\n    ['Total Power Query Peak Memory'],\n    ['Total Processed Objects'],\n    ['.'] = ItemURL,\n    OperationId\n| top 50 by EndTime desc\n",
+      "text": "_baseSMCurrentRefreshes\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| extend \n    ItemURL = strcat('https://app.powerbi.com/datahub/datasets/', ItemId) // Item URL\n| summarize\n    //StartTime = min(StartTime),\n    EndTime = max(EndTime),\n    ['Total Duration'] = sum(Duration),\n    ['Total CPU Time'] = sum(CpuTime),\n    ['Total Power Query CPU Time'] = sum(MashupCPUTime),\n    ['Total Power Query Peak Memory'] = sum(MashupPeakMemory),\n    ['Total Processed Objects'] = sum(ObjectCount)\n    by \n    ItemName,\n    Link = \"\ud83d\udd17\",\n    OperationId,\n    Status,\n    ItemURL\n| project \n    ['Semantic Model'] = ItemName,\n    Link,\n    Status,\n    //StartTime,\n    EndTime,\n    ['Total Duration'],\n    ['Total CPU Time'],\n    ['Total Power Query CPU Time'],\n    ['Total Power Query Peak Memory'],\n    ['Total Processed Objects'],\n    ['.'] = ItemURL,\n    OperationId\n| top 50 by EndTime desc\n",
       "id": "977b4041-ae8a-45eb-9787-1fd37da5f4a3",
       "usedVariables": [
         "_baseSMCurrentRefreshes",
@@ -10062,7 +10741,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "_baseSMExecutionMetrics\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| where isempty(_SM_Users) or ExecutingUser in (_SM_Users) // Multiple selection filtering\n| where IntendedUsageScenario in ('DAX Query', 'MDX Query') // calculated column filter\n| project \n    Status,\n    ['Usage Scenario'] = IntendedUsageScenario,\n    ExecutingUser,\n    ['Semantic Model'] = ItemName,\n    TimeStart,\n    //TimeEnd,\n    ['Duration Time'] = round(TotalDuration, 2),\n    ['Total CPU Time'] = round(TotalCpuTime, 2),\n    ['Memory Peak'] = round(ApproximatePeakMemConsumption, 2),\n    ReportId,\n    VisualId,\n    ReplicaId,\n    OperationId,\n    ['🗺️'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi&visual=', VisualId), // Visual ID Link\n    ['📊'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi') // Report Link\n| top 2 by ['Total CPU Time'] desc\n",
+      "text": "_baseSMExecutionMetrics\n| where isempty(_semanticModels) or ItemId in (_semanticModels) // Multiple selection filtering\n| where isempty(_SM_Users) or ExecutingUser in (_SM_Users) // Multiple selection filtering\n| where IntendedUsageScenario in ('DAX Query', 'MDX Query') // calculated column filter\n| project \n    Status,\n    ['Usage Scenario'] = IntendedUsageScenario,\n    ExecutingUser,\n    ['Semantic Model'] = ItemName,\n    TimeStart,\n    //TimeEnd,\n    ['Duration Time'] = round(TotalDuration, 2),\n    ['Total CPU Time'] = round(TotalCpuTime, 2),\n    ['Memory Peak'] = round(ApproximatePeakMemConsumption, 2),\n    ReportId,\n    VisualId,\n    ReplicaId,\n    OperationId,\n    ['\ud83d\uddfa\ufe0f'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi&visual=', VisualId), // Visual ID Link\n    ['\ud83d\udcca'] = strcat('https://app.powerbi.com/groups/', WorkspaceId, '/reports/', ReportId, '?experience=power-bi') // Report Link\n| top 2 by ['Total CPU Time'] desc\n",
       "id": "0cdadfd2-a413-458c-b65f-362241d35720",
       "usedVariables": [
         "_SM_Users",
@@ -10146,7 +10825,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "// SM_Progress_Report\nlet window = SemanticModelLogs \n| where Timestamp between (['_startTime']+totimespan(_utcOffset).. datetime_add('hour', 7, ['_endTime']+totimespan(_utcOffset))) and OperationId has _operationId\n| where OperationName in ('ProgressReportBegin', 'ProgressReportCurrent', 'ProgressReportEnd', 'ProgressReportError')\n| where OperationDetailName in ('ReadData', 'ExecuteSql', 'CompressSegment', 'TabularRefresh')\n| where not(OperationName =='ProgressReportError' and OperationDetailName =='TabularRefresh' and EventText !has 'Internal Error Code')\n| extend ObjectName = tostring( split(XmlaObjectPath,'.').[3])\n| project \n    EndTime=Timestamp, \n    ItemId,\n    OperationId, \n    CorrelationId, \n    OperationDetailName, \n    DurationMs, \n    CpuTimeMs, \n    ObjectCount=ProgressCounter, \n    Status, \n    StatusCode, \n    XmlaObjectPath, \n    ObjectName, \n    EventText,\n    ObjectType = case(OperationDetailName in ('ReadData', 'ExecuteSql', 'CompressSegment'), 'Partition',\n        EventText contains ' parti' or EventText contains 'osion' or EventText contains 'partycji' or EventText contains 'skaidinio' or EventText contains 'дяла' or EventText contains 'διαμερίσματος' or EventText contains 'nodalījuma' or EventText contains 'oddílu' or EventText contains 'bölümünün' or EventText contains 'พาร์ติชั' or EventText contains '分区' or EventText contains 'パーティション' or EventText contains '파티션', 'Partition',\n        EventText contains ' hiera' or EventText contains 'jerar' or EventText contains 'rarchi' or EventText contains 'erarh' or EventText contains 'ιεραρχίας' or EventText contains 'ерарх' or EventText contains 'hiyerarşisinin' or EventText contains 'ลำดับชั้น' or EventText contains '层次' or EventText contains '階層' or EventText contains '계층 구조', 'Hierarchy',\n        EventText contains ' calc' or EventText contains 'beräknade' or EventText contains 'berechneten' or EventText contains 'beregne' or EventText contains 'počítaného' or EventText contains 'berekende' or EventText contains 'lasketun' or EventText contains 'izračun' or EventText contains 'apskaičiuotojo' or EventText contains 'obliczeniowej' or EventText contains 'числяе' or EventText contains 'υπολογισμένης' or EventText contains 'aprēķinātās' or EventText contains 'hesaplanmış' or EventText contains 'ารคำน' or EventText contains '算' or EventText contains '계산', 'Calculated column',\n        XmlaObjectPath has 'CalculatedTable', 'Calculated Table',\n        XmlaObjectPath has 'CalculationGroup', 'Calculation Group',\n        OperationDetailName =='TabularRefresh' and split(XmlaObjectPath,'.').[3]=='', 'Relationship', '')\n| extend \n    TableName=iif(ObjectType != 'Relationship', split(XmlaObjectPath,'.').[2],''), \n    PartitionName=iif(ObjectType == 'Partition', split(XmlaObjectPath,'.').[3],''),\n    StartTime=datetime_add('millisecond', -DurationMs, EndTime)\n| parse EventText with * '[MashupCPUTime: ' MashupCPUTime:long ' ms, MashupPeakMemory: '  MashupPeakMemory:long ' KB]'\n| parse EventText with * 'Internal Error Code: \\'' ErrorHex '\\'' *\n| extend \n    TableTMID = extract(\"TableTMID='([0-9]+)'\", 1, EventText), \n    PartitionTMID = extract(\"PartitionTMID='([0-9]+)'\", 1, EventText)\n;\nlet TMID = window \n| where EventText has 'TableTMID='| summarize arg_min(StartTime, TableTMID, PartitionTMID) by CorrelationId;\nlet DataRefresh = window \n| where OperationDetailName != 'CompressSegment'// in ('TabularRefresh')\n| summarize \n    //StartTime=iif(isempty(min(StartTime)),min(EndTime), min(StartTime)), \n    StartTime=iif(isempty(min(StartTime)),datetime(null), min(StartTime)), \n    EndTime=arg_max(EndTime, ObjectName, CorrelationId, MashupCPUTime, MashupPeakMemory), \n    DurationMs=sum(DurationMs), \n    CpuTimeMs=sum(CpuTimeMs), \n    ObjectCount=max(ObjectCount), \n    TmObjCount=dcount(XmlaObjectPath), \n    Status=max(Status), \n    StatusCode = min_of(min(StatusCode), \n    toint(min(ErrorHex))) \n    by ItemId, TableName, PartitionName, OperationId, OperationDetailName, ObjectType\n| extend \n    ObjectCount=iff(ObjectType =='Partition', ObjectCount, TmObjCount), \n    ErrorTimeMs=iif(StatusCode <0, datetime_part('millisecond',EndTime), toint(''))\n| join kind=leftouter TMID on CorrelationId\n| project-away TmObjCount, CorrelationId1, StartTime1\n;\nlet PartitionColumn = window | where OperationDetailName == 'CompressSegment'| parse EventText with * '<oii>' columnName '</oii>' *\n| summarize \n    arg_min(StartTime, ObjectType, ObjectName, OperationDetailName), \n    EndTime=max(EndTime), \n    DurationMs=sum(DurationMs), \n    CpuTimeMs=sum(CpuTimeMs), \n    ObjectCount=dcount(columnName), \n    Status=max(Status), \n    StatusCode = min(StatusCode) \n    by TableName, PartitionName, OperationId, TableTMID, PartitionTMID\n;\nlet CompositeResult = DataRefresh | union PartitionColumn\n| extend \n    StartTime,\n    EndTime;\nlet OperationsToItems = \nSemanticModelLogs\n    | where OperationId != '00000000-0000-0000-0000-000000000000'\n    | where ItemId != '' and isnotempty(ItemName)\n    | distinct ItemId, OperationId\n| join kind=inner CompositeResult on OperationId\n| project-away OperationId1, ItemId1\n;\nlet Items = _baseSMItems\n| join kind=inner OperationsToItems on ItemId;\nItems\n| project \n    ItemId,\n    ItemName,\n    OperationId,\n    TableName,\n    PartitionName,\n    OperationDetailName,\n    ObjectType,\n    StartTime = StartTime+totimespan(_utcOffset),\n    EndTime = EndTime+totimespan(_utcOffset),\n    ObjectName,\n    CorrelationId,\n    MashupCPUTime = MashupCPUTime/_TimeUnitBasedOnMs,\n    MashupPeakMemory = MashupPeakMemory/_SizeUnitBasedOnKB,\n    Duration = DurationMs/_TimeUnitBasedOnMs,\n    CpuTime = CpuTimeMs/_TimeUnitBasedOnMs,\n    ObjectCount,\n    Status,\n    StatusCode;",
+      "text": "// SM_Progress_Report\nlet window = SemanticModelLogs \n| where Timestamp between (['_startTime']+totimespan(_utcOffset).. datetime_add('hour', 7, ['_endTime']+totimespan(_utcOffset))) and OperationId has _operationId\n| where OperationName in ('ProgressReportBegin', 'ProgressReportCurrent', 'ProgressReportEnd', 'ProgressReportError')\n| where OperationDetailName in ('ReadData', 'ExecuteSql', 'CompressSegment', 'TabularRefresh')\n| where not(OperationName =='ProgressReportError' and OperationDetailName =='TabularRefresh' and EventText !has 'Internal Error Code')\n| extend ObjectName = tostring( split(XmlaObjectPath,'.').[3])\n| project \n    EndTime=Timestamp, \n    ItemId,\n    OperationId, \n    CorrelationId, \n    OperationDetailName, \n    DurationMs, \n    CpuTimeMs, \n    ObjectCount=ProgressCounter, \n    Status, \n    StatusCode, \n    XmlaObjectPath, \n    ObjectName, \n    EventText,\n    ObjectType = case(OperationDetailName in ('ReadData', 'ExecuteSql', 'CompressSegment'), 'Partition',\n        EventText contains ' parti' or EventText contains 'osion' or EventText contains 'partycji' or EventText contains 'skaidinio' or EventText contains '\u0434\u044f\u043b\u0430' or EventText contains '\u03b4\u03b9\u03b1\u03bc\u03b5\u03c1\u03af\u03c3\u03bc\u03b1\u03c4\u03bf\u03c2' or EventText contains 'nodal\u012bjuma' or EventText contains 'odd\u00edlu' or EventText contains 'b\u00f6l\u00fcm\u00fcn\u00fcn' or EventText contains '\u0e1e\u0e32\u0e23\u0e4c\u0e15\u0e34\u0e0a\u0e31' or EventText contains '\u5206\u533a' or EventText contains '\u30d1\u30fc\u30c6\u30a3\u30b7\u30e7\u30f3' or EventText contains '\ud30c\ud2f0\uc158', 'Partition',\n        EventText contains ' hiera' or EventText contains 'jerar' or EventText contains 'rarchi' or EventText contains 'erarh' or EventText contains '\u03b9\u03b5\u03c1\u03b1\u03c1\u03c7\u03af\u03b1\u03c2' or EventText contains '\u0435\u0440\u0430\u0440\u0445' or EventText contains 'hiyerar\u015fisinin' or EventText contains '\u0e25\u0e33\u0e14\u0e31\u0e1a\u0e0a\u0e31\u0e49\u0e19' or EventText contains '\u5c42\u6b21' or EventText contains '\u968e\u5c64' or EventText contains '\uacc4\uce35 \uad6c\uc870', 'Hierarchy',\n        EventText contains ' calc' or EventText contains 'ber\u00e4knade' or EventText contains 'berechneten' or EventText contains 'beregne' or EventText contains 'po\u010d\u00edtan\u00e9ho' or EventText contains 'berekende' or EventText contains 'lasketun' or EventText contains 'izra\u010dun' or EventText contains 'apskai\u010diuotojo' or EventText contains 'obliczeniowej' or EventText contains '\u0447\u0438\u0441\u043b\u044f\u0435' or EventText contains '\u03c5\u03c0\u03bf\u03bb\u03bf\u03b3\u03b9\u03c3\u03bc\u03ad\u03bd\u03b7\u03c2' or EventText contains 'apr\u0113\u0137in\u0101t\u0101s' or EventText contains 'hesaplanm\u0131\u015f' or EventText contains '\u0e32\u0e23\u0e04\u0e33\u0e19' or EventText contains '\u7b97' or EventText contains '\uacc4\uc0b0', 'Calculated column',\n        XmlaObjectPath has 'CalculatedTable', 'Calculated Table',\n        XmlaObjectPath has 'CalculationGroup', 'Calculation Group',\n        OperationDetailName =='TabularRefresh' and split(XmlaObjectPath,'.').[3]=='', 'Relationship', '')\n| extend \n    TableName=iif(ObjectType != 'Relationship', split(XmlaObjectPath,'.').[2],''), \n    PartitionName=iif(ObjectType == 'Partition', split(XmlaObjectPath,'.').[3],''),\n    StartTime=datetime_add('millisecond', -DurationMs, EndTime)\n| parse EventText with * '[MashupCPUTime: ' MashupCPUTime:long ' ms, MashupPeakMemory: '  MashupPeakMemory:long ' KB]'\n| parse EventText with * 'Internal Error Code: \\'' ErrorHex '\\'' *\n| extend \n    TableTMID = extract(\"TableTMID='([0-9]+)'\", 1, EventText), \n    PartitionTMID = extract(\"PartitionTMID='([0-9]+)'\", 1, EventText)\n;\nlet TMID = window \n| where EventText has 'TableTMID='| summarize arg_min(StartTime, TableTMID, PartitionTMID) by CorrelationId;\nlet DataRefresh = window \n| where OperationDetailName != 'CompressSegment'// in ('TabularRefresh')\n| summarize \n    //StartTime=iif(isempty(min(StartTime)),min(EndTime), min(StartTime)), \n    StartTime=iif(isempty(min(StartTime)),datetime(null), min(StartTime)), \n    EndTime=arg_max(EndTime, ObjectName, CorrelationId, MashupCPUTime, MashupPeakMemory), \n    DurationMs=sum(DurationMs), \n    CpuTimeMs=sum(CpuTimeMs), \n    ObjectCount=max(ObjectCount), \n    TmObjCount=dcount(XmlaObjectPath), \n    Status=max(Status), \n    StatusCode = min_of(min(StatusCode), \n    toint(min(ErrorHex))) \n    by ItemId, TableName, PartitionName, OperationId, OperationDetailName, ObjectType\n| extend \n    ObjectCount=iff(ObjectType =='Partition', ObjectCount, TmObjCount), \n    ErrorTimeMs=iif(StatusCode <0, datetime_part('millisecond',EndTime), toint(''))\n| join kind=leftouter TMID on CorrelationId\n| project-away TmObjCount, CorrelationId1, StartTime1\n;\nlet PartitionColumn = window | where OperationDetailName == 'CompressSegment'| parse EventText with * '<oii>' columnName '</oii>' *\n| summarize \n    arg_min(StartTime, ObjectType, ObjectName, OperationDetailName), \n    EndTime=max(EndTime), \n    DurationMs=sum(DurationMs), \n    CpuTimeMs=sum(CpuTimeMs), \n    ObjectCount=dcount(columnName), \n    Status=max(Status), \n    StatusCode = min(StatusCode) \n    by TableName, PartitionName, OperationId, TableTMID, PartitionTMID\n;\nlet CompositeResult = DataRefresh | union PartitionColumn\n| extend \n    StartTime,\n    EndTime;\nlet OperationsToItems = \nSemanticModelLogs\n    | where OperationId != '00000000-0000-0000-0000-000000000000'\n    | where ItemId != '' and isnotempty(ItemName)\n    | distinct ItemId, OperationId\n| join kind=inner CompositeResult on OperationId\n| project-away OperationId1, ItemId1\n;\nlet Items = _baseSMItems\n| join kind=inner OperationsToItems on ItemId;\nItems\n| project \n    ItemId,\n    ItemName,\n    OperationId,\n    TableName,\n    PartitionName,\n    OperationDetailName,\n    ObjectType,\n    StartTime = StartTime+totimespan(_utcOffset),\n    EndTime = EndTime+totimespan(_utcOffset),\n    ObjectName,\n    CorrelationId,\n    MashupCPUTime = MashupCPUTime/_TimeUnitBasedOnMs,\n    MashupPeakMemory = MashupPeakMemory/_SizeUnitBasedOnKB,\n    Duration = DurationMs/_TimeUnitBasedOnMs,\n    CpuTime = CpuTimeMs/_TimeUnitBasedOnMs,\n    ObjectCount,\n    Status,\n    StatusCode;",
       "usedVariables": [
         "_SizeUnitBasedOnKB",
         "_TimeUnitBasedOnMs",
@@ -10292,7 +10971,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "let QueryDBs=\n_baseEHQueryLogs\n|where isempty( _EventhouseName)  or ItemId  in ( _EventhouseName)\n|summarize  by DatabaseName\n;\n//QueryDBs\nlet MetricDBs=\n_baseEHMetrics\n|where isempty( _EventhouseName)  or ItemId  in ( _EventhouseName)\n|where MetricName in (\"IngestionResult\", \"IngestionVolumeInBytes\", \"StreamingIngestDataRate \")\n|extend DatabaseId=tostring(MetricSpecificDimensions.DatabaseId)\n|extend DatabaseName=tostring(MetricSpecificDimensions.DatabaseName)\n//|where DatabaseName !=\"$copilot\" and  isnotempty( DatabaseName)// and DatabaseName != DatabaseId\n|summarize  by DatabaseName, DatabaseId\n//|distinct DatabaseName\n;\nunion MetricDBs//, QueryDBs\n|summarize by DatabaseName, DatabaseId\n|where DatabaseName !=\"$copilot\" and  isnotempty( DatabaseName) and DatabaseName != DatabaseId\n|distinct DatabaseName\n\n",
+      "text": "let QueryDBs=\n_baseEHQueryLogs\n|where isempty( _EventhouseName)  or ItemId  in ( _EventhouseName)\n|summarize  by DatabaseName\n;\n//QueryDBs\nlet MetricDBs=\n_baseEHMetrics\n|where isempty( _EventhouseName)  or ItemId  in ( _EventhouseName)\n|where MetricName in (\"IngestionResult\", \"IngestionVolumeInBytes\", \"StreamingIngestDataRate\u00a0\")\n|extend DatabaseId=tostring(MetricSpecificDimensions.DatabaseId)\n|extend DatabaseName=tostring(MetricSpecificDimensions.DatabaseName)\n//|where DatabaseName !=\"$copilot\" and  isnotempty( DatabaseName)// and DatabaseName != DatabaseId\n|summarize  by DatabaseName, DatabaseId\n//|distinct DatabaseName\n;\nunion MetricDBs//, QueryDBs\n|summarize by DatabaseName, DatabaseId\n|where DatabaseName !=\"$copilot\" and  isnotempty( DatabaseName) and DatabaseName != DatabaseId\n|distinct DatabaseName\n\n",
       "id": "9e5d2b66-5e7e-41fc-ac65-62a54ac6d6ed",
       "usedVariables": [
         "_EventhouseName",
@@ -10305,7 +10984,7 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "text": "let tables1=_baseEHMetrics\n|where MetricName in (\"IngestionResult\", \"IngestionVolumeInBytes\", \"StreamingIngestDataRate \")\n|extend DatabaseId=tostring(MetricSpecificDimensions.DatabaseId)\n|extend Database=tostring(MetricSpecificDimensions.DatabaseName)\n|where isempty(['_DatabaseName']) or Database  in (['_DatabaseName']) \n|extend Table=tostring(MetricSpecificDimensions.Table)\n|extend TableName=tostring(MetricSpecificDimensions.TableName)\n|extend Table=iff(isnotempty( TableName), TableName, Table)\n|where Table !startswith \"$\" and isnotempty( Table)\n|where Database !=\"$copilot\" and  isnotempty( Database) and Database != DatabaseId\n|distinct Table\n;\nlet tables2=_baseDataOperations\n|where isempty(['_DatabaseName']) or DatabaseName  in (['_DatabaseName']) \n|where TableName !startswith \"$\" and isnotempty( TableName)\n|distinct Table=TableName\n;\nunion tables1, tables2\n|distinct Table\n|order by Table asc \n",
+      "text": "let tables1=_baseEHMetrics\n|where MetricName in (\"IngestionResult\", \"IngestionVolumeInBytes\", \"StreamingIngestDataRate\u00a0\")\n|extend DatabaseId=tostring(MetricSpecificDimensions.DatabaseId)\n|extend Database=tostring(MetricSpecificDimensions.DatabaseName)\n|where isempty(['_DatabaseName']) or Database  in (['_DatabaseName']) \n|extend Table=tostring(MetricSpecificDimensions.Table)\n|extend TableName=tostring(MetricSpecificDimensions.TableName)\n|extend Table=iff(isnotempty( TableName), TableName, Table)\n|where Table !startswith \"$\" and isnotempty( Table)\n|where Database !=\"$copilot\" and  isnotempty( Database) and Database != DatabaseId\n|distinct Table\n;\nlet tables2=_baseDataOperations\n|where isempty(['_DatabaseName']) or DatabaseName  in (['_DatabaseName']) \n|where TableName !startswith \"$\" and isnotempty( TableName)\n|distinct Table=TableName\n;\nunion tables1, tables2\n|distinct Table\n|order by Table asc \n",
       "id": "5ed6bdd0-6a36-49b4-8001-8f5dc7a28853",
       "usedVariables": [
         "_DatabaseName",
@@ -10664,6 +11343,307 @@
       "id": "155448db-968e-4046-a40f-abffc807afd7",
       "text": "ItemJobEventLogs\n| distinct WorkspaceName\n| order by WorkspaceName asc",
       "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "691111d8-a0cf-4d11-b08c-3e73a9299e56",
+      "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    TotalJobs = count(),\n    SuccessfulJobs = countif(JobStatus == \"Completed\"),\n    FailedJobs = countif(JobStatus == \"Failed\"),\n    TotalDurationMs = sum(DurationMs)\n  by ItemKind, ItemName\n| extend \n    Availability = round(100.0 * SuccessfulJobs / TotalJobs, 2),\n    AvgDurationMs = round(TotalDurationMs / TotalJobs, 2)\n| where TotalJobs >= 5",
+      "usedVariables": [
+        "_WorkspaceName",
+        "_endTime",
+        "_startTime",
+        "_utcOffset"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "fc6adcbf-9fe6-492e-ae2c-61bf2949c810",
+      "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| where JobStatus == \"Failed\"\n| extend RecoveryTime = datetime_diff('minute', JobEndTime, JobStartTime)\n| summarize \n    FailureCount = count(),\n    AvgRecoveryTimeMin = round(avg(RecoveryTime), 1)\n  by ItemKind",
+      "usedVariables": [
+        "_WorkspaceName",
+        "_endTime",
+        "_startTime",
+        "_utcOffset"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "deda70ad-c492-4648-9469-4ac3f32ea738",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| summarize OverallAvailability = round(avg(Availability), 2)",
+      "usedVariables": [
+        "_baseItemJobEventLogs_SLAMetrics"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "ca5431ab-4b1d-44d9-bbb5-bcd5354ae291",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| where Availability < 99.0\n| count",
+      "usedVariables": [
+        "_baseItemJobEventLogs_SLAMetrics"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "c5c93dff-4b93-460f-9f51-6f2aa3d45464",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| where Availability < 99.0\n| project ItemName, ItemKind, TotalJobs, SuccessfulJobs, FailedJobs, Availability\n| order by Availability asc",
+      "usedVariables": [
+        "_baseItemJobEventLogs_SLAMetrics"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "2ddd45db-2a8c-42b9-807c-deced84cb80e",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| summarize AvgAvailability = round(avg(Availability), 2) by ItemKind\n| order by AvgAvailability asc",
+      "usedVariables": [
+        "_baseItemJobEventLogs_SLAMetrics"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "487292a8-3b49-41d4-917b-253d41d11b1f",
+      "text": "_baseItemJobEventLogs_MTTR\n| order by AvgRecoveryTimeMin desc",
+      "usedVariables": [
+        "_baseItemJobEventLogs_MTTR"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "5618ad52-6d60-4b9e-9b87-9eb08e925bf4",
+      "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| summarize \n    Total = count(),\n    Success = countif(JobStatus == \"Completed\")\n  by bin(Timestamp, 1h)\n| extend Availability = round(100.0 * Success / Total, 2)\n| project Timestamp, Availability",
+      "usedVariables": [
+        "_WorkspaceName",
+        "_endTime",
+        "_startTime",
+        "_utcOffset"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "56909fe0-f206-4b9e-b488-468ca3dfb34d",
+      "text": "let Failures = ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| summarize FailureTime = max(Timestamp) by ItemName, TimeWindow;\nFailures\n| join kind=inner (Failures) on TimeWindow\n| where ItemName != ItemName1\n| summarize CoFailureCount = count() by ItemName, ItemName1\n| where CoFailureCount >= 2\n| order by CoFailureCount desc",
+      "usedVariables": [
+        "_WorkspaceName",
+        "_endTime",
+        "_startTime",
+        "_utcOffset"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "0eef2e89-d6c0-4e28-9b74-2691a0203917",
+      "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailureCount = count(), FirstFailure = min(Timestamp), Items = make_set(ItemName) \n  by TimeWindow, WorkspaceName\n| where FailureCount >= 3\n| order by FailureCount desc",
+      "usedVariables": [
+        "_WorkspaceName",
+        "_endTime",
+        "_startTime",
+        "_utcOffset"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "782bc06c-f7ff-421f-8467-36fe88e52595",
+      "text": "_baseItemJobEventLogs_CoFailures\n| summarize TotalCoFailures = sum(CoFailureCount)",
+      "usedVariables": [
+        "_baseItemJobEventLogs_CoFailures"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "0c034a91-3583-460e-8067-90472ec6eb12",
+      "text": "_baseItemJobEventLogs_Cascades\n| count",
+      "usedVariables": [
+        "_baseItemJobEventLogs_Cascades"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "66746da2-8626-4c81-9ea6-d7645be6872b",
+      "text": "_baseItemJobEventLogs_CoFailures\n| top 20 by CoFailureCount desc",
+      "usedVariables": [
+        "_baseItemJobEventLogs_CoFailures"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "0370f80f-4e85-499d-bcc3-b4b002c0fa8f",
+      "text": "_baseItemJobEventLogs_Cascades",
+      "usedVariables": [
+        "_baseItemJobEventLogs_Cascades"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "596bdead-7463-46eb-8674-5fe268894597",
+      "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| where JobStatus == \"Failed\"\n| summarize \n    FailureCount = count(),\n    UniqueFailureWindows = dcount(bin(Timestamp, 1h))\n  by ItemName, ItemKind\n| extend ImpactScore = FailureCount * UniqueFailureWindows\n| order by ImpactScore desc\n| take 10",
+      "usedVariables": [
+        "_WorkspaceName",
+        "_endTime",
+        "_startTime",
+        "_utcOffset"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "95721392-fd5a-4f3e-8b69-cf62f0393a88",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| extend TotalTime = datetime_diff('minute', _endTime, _startTime)\n| summarize \n    TotalFailures = countif(Availability < 100),\n    TotalTime = max(TotalTime)\n| extend MTBF_Hours = round(todouble(TotalTime) / todouble(TotalFailures) / 60.0, 2)\n| project MTBF_Hours",
+      "usedVariables": [
+        "_baseItemJobEventLogs_SLAMetrics",
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "8c84e211-be74-4884-b4a1-95e721cea145",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| summarize \n    OverallAvailability = round(avg(Availability), 2)\n| extend \n    SLA_Target = 99.0,\n    ErrorBudget_Remaining = round(max_of(0.0, Availability - 99.0), 2)\n| project ErrorBudget_Remaining",
+      "usedVariables": [
+        "_baseItemJobEventLogs_SLAMetrics"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "80aeb7b4-e89e-4fb3-997b-c5f72451c3a7",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| top 10 by Availability desc\n| project ItemName, ItemKind, Availability_Pct = round(Availability, 2), TotalJobs, SuccessfulJobs, FailedJobs, MTTR_Minutes = round(MTTR, 2)",
+      "usedVariables": [
+        "_baseItemJobEventLogs_SLAMetrics"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "8685643d-78d0-49a8-b3f1-518b2ceea243",
+      "text": "FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| summarize FirstFailureTime = min(Timestamp) by ItemName, ItemKind\n| extend TimeToFirstFailure_Hours = round(datetime_diff('hour', FirstFailureTime, _startTime), 2)\n| where TimeToFirstFailure_Hours >= 0\n| summarize Count = count() by TimeWindow = bin(TimeToFirstFailure_Hours, 1.0)\n| order by TimeWindow asc",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "024710d2-bd7d-4134-98ff-7f69d25a6874",
+      "text": "_baseItemJobEventLogs_SLAMetrics\n| summarize CurrentAvailability = avg(Availability)\n| extend \n    SLA_Status = case(\n        CurrentAvailability >= 99.5, \"Excellent\",\n        CurrentAvailability >= 99.0, \"Good\", \n        CurrentAvailability >= 98.0, \"Warning\",\n        \"Critical\"\n    )\n| project SLA_Status",
+      "usedVariables": [
+        "_baseItemJobEventLogs_SLAMetrics"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "22fd5464-652e-4c5c-9a19-16ff1eab555b",
+      "text": "let FailureWindows = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailedItems = dcount(ItemName) by TimeWindow;\nFailureWindows\n| summarize MaxBlastRadius = max(FailedItems)\n| project MaxBlastRadius",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "172f96c9-f8eb-4dfa-96be-80f7166e869f",
+      "text": "let Failures = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize by ItemName, ItemKind, TimeWindow;\nFailures\n| join kind=inner (Failures) on TimeWindow\n| where ItemName != ItemName1\n| summarize CoFailureCount = count() by Item1 = ItemName, ItemKind1 = ItemKind, Item2 = ItemName1, ItemKind2 = ItemKind1\n| where CoFailureCount >= 2\n| top 20 by CoFailureCount desc\n| project Item1, Item2, CoFailureCount, ItemKind1, ItemKind2",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "b70f0355-0dd7-44ea-98e7-b3710a59565a",
+      "text": "let Failures = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m);\nlet DownstreamImpact = Failures\n| join kind=inner (Failures) on TimeWindow\n| where ItemName != ItemName1\n| where Timestamp < Timestamp1  // ItemName failed before ItemName1\n| summarize DownstreamFailures = dcount(ItemName1) by TriggerItem = ItemName;\nDownstreamImpact\n| top 1 by DownstreamFailures desc\n| project MostImpactfulItem = TriggerItem, DownstreamFailures",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "c07927ff-ea9d-4b61-baf5-8d98b8fd21f8",
+      "text": "let CascadeWindows = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailureCount = count(), Items = dcount(ItemName) by TimeWindow\n| where FailureCount >= 3;\nCascadeWindows\n| order by TimeWindow asc\n| extend PropagationVelocity = FailureCount\n| project TimeWindow, FailureCount, Items, PropagationVelocity",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "id": "ec47c412-20cb-47f6-be9c-f6f104f0a000",
+      "text": "let Failures = FabricItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where Status == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName);\nFailures\n| summarize \n    FailureCount = count(),\n    LastFailure = max(Timestamp)\nby ItemName, ItemKind\n| extend CriticalityScore = FailureCount * 10\n| top 15 by CriticalityScore desc\n| project ItemName, ItemKind, FailureCount, CriticalityScore, LastFailure",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
     }
   ]
 }
