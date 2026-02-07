@@ -7300,50 +7300,7 @@
       },
       "visualOptions": {
         "multiStat__textSize": "auto",
-        "colorRules": [
-          {
-            "id": "e43bbb263f446ead",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 300000,
-            "maxValue": 999999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "SlowPerformance"
-          },
-          {
-            "id": "06cd425e9d3a6d84",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 60000,
-            "maxValue": 300000,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumPerformance"
-          },
-          {
-            "id": "62f56e9cc6f6d18b",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 60000,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "FastPerformance"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -7363,50 +7320,7 @@
       },
       "visualOptions": {
         "multiStat__textSize": "auto",
-        "colorRules": [
-          {
-            "id": "b6b8bdedfe81cc6a",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 300000,
-            "maxValue": 999999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "SlowPerformance"
-          },
-          {
-            "id": "1ca10c9cb5bb7c2c",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 60000,
-            "maxValue": 300000,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumPerformance"
-          },
-          {
-            "id": "ca523440554b9aa2",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 60000,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "FastPerformance"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -7513,36 +7427,7 @@
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
         "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "c82134281e7da226",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 1,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HasFailures"
-          },
-          {
-            "id": "250e3021d0c5a2e2",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "NoFailures"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -7564,36 +7449,7 @@
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
         "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "34c83514b1963a2a",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 1,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HasFailures"
-          },
-          {
-            "id": "90141be6fcfbedda",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "NoFailures"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -7615,36 +7471,7 @@
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
         "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "1352fe7795271654",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 1,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HasFailures"
-          },
-          {
-            "id": "02e2e87064db3051",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "NoFailures"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -7704,32 +7531,28 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "rule--8963448684506984655-fail-high",
+            "id": "b9c44e0e-3abd-458c-8cb2-8360ef031b87",
             "ruleType": "colorByValue",
-            "applyToColumn": "TotalFailures",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 10.0,
-            "maxValue": 999999.0,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HighFailures"
+            "minValue": "10.0",
+            "maxValue": "999999.0",
+            "ruleName": "HighFailures",
+            "column": "TotalFailures",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           },
           {
-            "id": "rule--8963448684506984655-fail-med",
+            "id": "f625f7a7-3b45-412f-821d-1873724ba010",
             "ruleType": "colorByValue",
-            "applyToColumn": "TotalFailures",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 5.0,
-            "maxValue": 10.0,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumFailures"
+            "minValue": "5.0",
+            "maxValue": "10.0",
+            "ruleName": "MediumFailures",
+            "column": "TotalFailures",
+            "themeName": "yellow",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
@@ -7767,50 +7590,7 @@
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
         "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "e43bbb263f446ead",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 300000,
-            "maxValue": 999999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "SlowPerformance"
-          },
-          {
-            "id": "06cd425e9d3a6d84",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 60000,
-            "maxValue": 300000,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumPerformance"
-          },
-          {
-            "id": "62f56e9cc6f6d18b",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 60000,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "FastPerformance"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -7832,50 +7612,7 @@
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
         "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "b6b8bdedfe81cc6a",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 300000,
-            "maxValue": 999999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "SlowPerformance"
-          },
-          {
-            "id": "1ca10c9cb5bb7c2c",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 60000,
-            "maxValue": 300000,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumPerformance"
-          },
-          {
-            "id": "ca523440554b9aa2",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 60000,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "FastPerformance"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -7897,50 +7634,7 @@
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
         "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "ecab80ab5426a9c2",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 300000,
-            "maxValue": 999999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "SlowPerformance"
-          },
-          {
-            "id": "9614d1c05208cfde",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 60000,
-            "maxValue": 300000,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumPerformance"
-          },
-          {
-            "id": "7d81a77d4497303a",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 60000,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "FastPerformance"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -8001,18 +7695,16 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "e957a3c1c2b03f1c",
+            "id": "fa454fd8-12ea-4f1e-a530-0b86d2fb8b0b",
             "ruleType": "colorByValue",
-            "applyToColumn": "MaxDuration_ms",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 300000,
-            "maxValue": 999999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "SlowPerformance"
+            "minValue": "300000",
+            "maxValue": "999999999",
+            "ruleName": "SlowPerformance",
+            "column": "MaxDuration_ms",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
@@ -8117,36 +7809,7 @@
       "visualOptions": {
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
-        "colorRules": [
-          {
-            "id": "622b216d7fc54051",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 1,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "ItemsBelowSLA"
-          },
-          {
-            "id": "799a83dd1a793ea3",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "AllItemsMeetSLA"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -8220,46 +7883,40 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "rule-6348712748120420708-avail-good",
+            "id": "562b39fc-edc2-428c-8dc8-bde6dc02cfce",
             "ruleType": "colorByValue",
-            "applyToColumn": "Availability_%",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 99.0,
-            "maxValue": 100.0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "GoodAvailability"
+            "minValue": "99.0",
+            "maxValue": "100.0",
+            "ruleName": "GoodAvailability",
+            "column": "Availability_%",
+            "themeName": "blue",
+            "visualType": "table",
+            "reverseTheme": false
           },
           {
-            "id": "rule-6348712748120420708-avail-warn",
+            "id": "af9ed34a-dfbf-4cb8-bf6b-93ffd7d30fd5",
             "ruleType": "colorByValue",
-            "applyToColumn": "Availability_%",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 95.0,
-            "maxValue": 99.0,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "WarningAvailability"
+            "minValue": "95.0",
+            "maxValue": "99.0",
+            "ruleName": "WarningAvailability",
+            "column": "Availability_%",
+            "themeName": "yellow",
+            "visualType": "table",
+            "reverseTheme": false
           },
           {
-            "id": "rule-6348712748120420708-avail-bad",
+            "id": "b3b4a588-390f-4bbe-9928-76e504815620",
             "ruleType": "colorByValue",
-            "applyToColumn": "Availability_%",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 0.0,
-            "maxValue": 95.0,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "PoorAvailability"
+            "minValue": "0.0",
+            "maxValue": "95.0",
+            "ruleName": "PoorAvailability",
+            "column": "Availability_%",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
@@ -8297,36 +7954,7 @@
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
         "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "d6f76028ade5f127",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 1,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HasFailures"
-          },
-          {
-            "id": "e457de7ab3d9f6f2",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "NoFailures"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -8347,36 +7975,7 @@
       "visualOptions": {
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
-        "colorRules": [
-          {
-            "id": "799a646e96038338",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 1,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HasFailures"
-          },
-          {
-            "id": "90d8ee70c7bd8461",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "NoFailures"
-          }
-        ],
+        "colorRules": [],
         "colorStyle": "light"
       }
     },
@@ -8400,18 +7999,16 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "0073c6601aec5251",
+            "id": "16e8d413-cf2f-44bd-9b83-3877bfba8428",
             "ruleType": "colorByValue",
-            "applyToColumn": "TotalFailures",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 10,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HighFailures"
+            "minValue": "10",
+            "maxValue": "999999",
+            "ruleName": "HighFailures",
+            "column": "TotalFailures",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
@@ -8436,18 +8033,16 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "bb4630e888113a8e",
+            "id": "e31758a6-6b91-46f8-9177-010adc1670f9",
             "ruleType": "colorByValue",
-            "applyToColumn": "ImpactScore",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 50,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HighImpact"
+            "minValue": "50",
+            "maxValue": "999999",
+            "ruleName": "HighImpact",
+            "column": "ImpactScore",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
@@ -8472,32 +8067,28 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "rule-4137747870768417974-fail-high",
+            "id": "3b6a33d4-4055-4ed9-9656-255e6ed3c8ad",
             "ruleType": "colorByValue",
-            "applyToColumn": "TotalFailures",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 10.0,
-            "maxValue": 999999.0,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HighFailures"
+            "minValue": "10.0",
+            "maxValue": "999999.0",
+            "ruleName": "HighFailures",
+            "column": "TotalFailures",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           },
           {
-            "id": "rule-4137747870768417974-fail-med",
+            "id": "f6318117-c8d5-45ad-bd83-53eb8c174102",
             "ruleType": "colorByValue",
-            "applyToColumn": "TotalFailures",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 5.0,
-            "maxValue": 10.0,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumFailures"
+            "minValue": "5.0",
+            "maxValue": "10.0",
+            "ruleName": "MediumFailures",
+            "column": "TotalFailures",
+            "themeName": "yellow",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
@@ -8658,46 +8249,40 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "rule-1419897196298950082-avail-good",
+            "id": "cab71158-5153-41c7-b736-afa6a0f5915f",
             "ruleType": "colorByValue",
-            "applyToColumn": "Availability_%",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 99.0,
-            "maxValue": 100.0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "GoodAvailability"
+            "minValue": "99.0",
+            "maxValue": "100.0",
+            "ruleName": "GoodAvailability",
+            "column": "Availability_%",
+            "themeName": "blue",
+            "visualType": "table",
+            "reverseTheme": false
           },
           {
-            "id": "rule-1419897196298950082-avail-warn",
+            "id": "af7ba898-dc55-41b1-9150-55d646caa665",
             "ruleType": "colorByValue",
-            "applyToColumn": "Availability_%",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 95.0,
-            "maxValue": 99.0,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "WarningAvailability"
+            "minValue": "95.0",
+            "maxValue": "99.0",
+            "ruleName": "WarningAvailability",
+            "column": "Availability_%",
+            "themeName": "yellow",
+            "visualType": "table",
+            "reverseTheme": false
           },
           {
-            "id": "rule-1419897196298950082-avail-bad",
+            "id": "32ea714e-0133-4076-9acc-44d459024e99",
             "ruleType": "colorByValue",
-            "applyToColumn": "Availability_%",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 0.0,
-            "maxValue": 95.0,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "PoorAvailability"
+            "minValue": "0.0",
+            "maxValue": "95.0",
+            "ruleName": "PoorAvailability",
+            "column": "Availability_%",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
@@ -8826,32 +8411,28 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "rule--5784667110517288696-fail-high",
+            "id": "5a7c00b6-09f3-4f77-adb5-5afd66e0c608",
             "ruleType": "colorByValue",
-            "applyToColumn": "TotalFailures",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 10.0,
-            "maxValue": 999999.0,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HighFailures"
+            "minValue": "10.0",
+            "maxValue": "999999.0",
+            "ruleName": "HighFailures",
+            "column": "TotalFailures",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           },
           {
-            "id": "rule--5784667110517288696-fail-med",
+            "id": "82191016-c073-40cc-abad-e584f8a79f08",
             "ruleType": "colorByValue",
-            "applyToColumn": "TotalFailures",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 5.0,
-            "maxValue": 10.0,
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumFailures"
+            "minValue": "5.0",
+            "maxValue": "10.0",
+            "ruleName": "MediumFailures",
+            "column": "TotalFailures",
+            "themeName": "yellow",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
@@ -8875,36 +8456,7 @@
         "multiStat__textSize": "auto",
         "colorRulesDisabled": false,
         "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "cb615d921a2ef62c",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 1,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HasFailures"
-          },
-          {
-            "id": "5fd8205b47fe7481",
-            "ruleType": "colorByValue",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "minValue": 0,
-            "maxValue": 0,
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "NoFailures"
-          }
-        ]
+        "colorRules": []
       }
     },
     {
@@ -8944,18 +8496,16 @@
         "colorStyle": "light",
         "colorRules": [
           {
-            "id": "1f89148be1214a08",
+            "id": "32257d98-84c7-45dd-b47b-762f967d37a1",
             "ruleType": "colorByValue",
-            "applyToColumn": "ImpactScore",
-            "hideText": false,
             "applyTo": "cells",
-            "minValue": 50,
-            "maxValue": 999999,
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HighImpact"
+            "minValue": "50",
+            "maxValue": "999999",
+            "ruleName": "HighImpact",
+            "column": "ImpactScore",
+            "themeName": "red",
+            "visualType": "table",
+            "reverseTheme": false
           }
         ]
       }
