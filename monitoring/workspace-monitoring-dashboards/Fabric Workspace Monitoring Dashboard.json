@@ -8780,6 +8780,1116 @@
           }
         ]
       }
+    },
+    {
+      "id": "07d9dad0-431b-45c3-b2d6-cbda9dce80e7",
+      "title": "Total Jobs",
+      "visualType": "card",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "e7e12214-afe4-4a9e-8167-e05b9ca648cf"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "460952a0-72fa-4776-ab5a-38be5ce7cc05",
+      "title": "Success Rate %",
+      "visualType": "card",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 3,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "e3f55c2e-ee1f-458b-8773-2db3610668e5"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "756c111f-f466-415d-9030-39528d6a6822",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": "<",
+                "column": "SuccessRate",
+                "values": [
+                  "95"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          },
+          {
+            "id": "0aa9dce3-523f-4dd9-9fcf-1054f0ed4d9a",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": ">=",
+                "column": "SuccessRate",
+                "values": [
+                  "99"
+                ]
+              }
+            ],
+            "color": "green",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2a7786cd-0a50-48f1-bfa3-b82c9476151d",
+      "title": "Failed Jobs",
+      "visualType": "card",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 6,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "9f2d1edf-a40c-4ea4-914f-361ede6a8eca"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "45507472-bdf0-4e94-8ecd-7564343b2893",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "FailedJobs",
+                "values": [
+                  "0"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3c9bca11-a87d-4167-8673-3fa2d5f88730",
+      "title": "Avg Duration (sec)",
+      "visualType": "card",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 9,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "04730c71-88a5-4683-a758-bd60e534360a"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "6617ff31-470b-4291-ad1f-6f5eaa335d09",
+      "title": "P95 Duration (sec)",
+      "visualType": "card",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 12,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "b7c551b7-561c-4e1f-b37d-2cab0a67102e"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "b7902330-df51-41f1-adc2-7b632634a884",
+      "title": "Job Count Over Time by Item Kind",
+      "visualType": "area",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "a5a290f2-5da9-41be-9d8f-75de9554a5f4"
+      }
+    },
+    {
+      "id": "4927be89-2712-4f2f-80e2-d29f91fdbf62",
+      "title": "Failure Count Over Time",
+      "visualType": "line",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 9,
+        "y": 4,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "2ad9a61b-6f6e-484f-b653-b9bd82c29022"
+      },
+      "visualOptions": {
+        "yAxis": {
+          "label": "Failures"
+        },
+        "legend": {
+          "isVisible": false
+        }
+      }
+    },
+    {
+      "id": "54c8824b-4738-4168-b474-ece70e381571",
+      "title": "Jobs by Item Kind",
+      "visualType": "bar",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 0,
+        "y": 9,
+        "width": 6,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "98169e6b-6427-4476-81a3-5d25259c807c"
+      }
+    },
+    {
+      "id": "51367413-d975-4341-9d03-72f9e0c26d37",
+      "title": "Avg Duration by Item Kind & Job Status",
+      "visualType": "stat",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 6,
+        "y": 9,
+        "width": 6,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "4c84b39e-c89a-4c85-a7e7-fa5ff4af72fd"
+      }
+    },
+    {
+      "id": "2f651f33-2f6b-4b7b-8d18-324ac02072ef",
+      "title": "Top 50 Items by Run Count",
+      "visualType": "table",
+      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+      "layout": {
+        "x": 12,
+        "y": 9,
+        "width": 6,
+        "height": 9
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "f66f0fed-d7cb-40a1-81c1-b1143829ffd4"
+      },
+      "visualOptions": {
+        "colorRules": [
+          {
+            "id": "fe8d23b4-1cc2-4834-ab38-3b900c821faa",
+            "ruleType": "colorByValue",
+            "applyToColumn": "FailRate",
+            "conditions": [
+              {
+                "operator": ">",
+                "values": [
+                  "5"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "table"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8658e77d-9ba6-4622-a9e8-0f03633855ef",
+      "title": "Total Failures",
+      "visualType": "card",
+      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "3d0cb47e-30ef-4725-ac9a-9327acf091a8"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "7e288875-63ac-4881-a841-8e2fe6401b56",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "TotalFailures",
+                "values": [
+                  "0"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "494f7fdc-52a7-4fb5-a657-f66ae6f04f72",
+      "title": "Failure Rate %",
+      "visualType": "card",
+      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+      "layout": {
+        "x": 4,
+        "y": 0,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "b31e7c15-7630-46c4-801c-4131d046c56d"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "b592747f-928b-42ae-90a1-7e761f9f257f",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "FailureRate",
+                "values": [
+                  "5"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f168620f-2548-4740-82fc-98b49f1a66de",
+      "title": "Most Failing Item",
+      "visualType": "card",
+      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+      "layout": {
+        "x": 8,
+        "y": 0,
+        "width": 6,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "6f329312-1bdb-4e09-a729-fd6ac84da022"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "small",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "dafd4090-23c8-402f-80d2-162e374e7684",
+      "title": "Failure Trend Over Time",
+      "visualType": "line",
+      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "5f842116-893d-4b11-b734-28fa4172e603"
+      },
+      "visualOptions": {
+        "yAxis": {
+          "label": "Failure Count"
+        },
+        "legend": {
+          "isVisible": false
+        }
+      }
+    },
+    {
+      "id": "7470b66f-394c-44e9-a0ce-3e6fb467ed93",
+      "title": "Failures by Item Kind",
+      "visualType": "bar",
+      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+      "layout": {
+        "x": 9,
+        "y": 4,
+        "width": 5,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "adf4ff6f-c2c7-47da-ae41-99d6029316f2"
+      }
+    },
+    {
+      "id": "a7c4dcfc-0dc2-4206-8db3-1c298eb770c6",
+      "title": "Failure Heatmap: Item Kind \u00d7 Job Type",
+      "visualType": "stat",
+      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+      "layout": {
+        "x": 14,
+        "y": 4,
+        "width": 4,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "df7f454f-7772-4570-8dc6-d883e46217ec"
+      }
+    },
+    {
+      "id": "b237adb2-a535-4703-9cf7-64d4df432113",
+      "title": "Failure Details - Top 100 Recent",
+      "visualType": "table",
+      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+      "layout": {
+        "x": 0,
+        "y": 9,
+        "width": 18,
+        "height": 9
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "82807166-5160-4831-b310-52368ef012f8"
+      }
+    },
+    {
+      "id": "09cb2c35-0959-413d-adcd-f63949bf1379",
+      "title": "Avg Duration (sec)",
+      "visualType": "card",
+      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "953e02e6-f68d-4a61-879c-7b9caef3e2cd"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "ce4bfedb-a0b9-4404-a1f9-1b9457e65108",
+      "title": "P95 Duration (sec)",
+      "visualType": "card",
+      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+      "layout": {
+        "x": 4,
+        "y": 0,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "b50d6228-6a0a-4ded-9120-d496592f48cc"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "00c037e3-aa55-4eb9-9c12-44bcd568b8fd",
+      "title": "Max Duration (sec)",
+      "visualType": "card",
+      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+      "layout": {
+        "x": 8,
+        "y": 0,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "0c9399d9-ae7a-4403-a471-d2a1ec5cddaa"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "7b045ec6-4ca1-4142-bd58-dc0db4cd5896",
+      "title": "Duration Distribution (buckets)",
+      "visualType": "column",
+      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+      "layout": {
+        "x": 12,
+        "y": 0,
+        "width": 6,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "f272a427-8905-4c6d-ae3a-162841373ce5"
+      }
+    },
+    {
+      "id": "f6c83d5d-58dd-4fc2-9b87-78c38ec81e84",
+      "title": "Avg Duration by Item Kind",
+      "visualType": "bar",
+      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "ab2458f8-b5b1-4b8a-8817-c48d665917a4"
+      }
+    },
+    {
+      "id": "0a6943b6-b4fc-4caa-b8a2-2c09c80ce250",
+      "title": "Scheduled vs On-Demand Comparison",
+      "visualType": "table",
+      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+      "layout": {
+        "x": 9,
+        "y": 4,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "631b22ff-0720-4888-b48b-d714d6600f81"
+      }
+    },
+    {
+      "id": "1db966f1-e59d-4ed4-a70f-a22c9c40162d",
+      "title": "Slowest Jobs (Top 20)",
+      "visualType": "table",
+      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
+      "layout": {
+        "x": 0,
+        "y": 9,
+        "width": 18,
+        "height": 9
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "587f5792-a36b-4768-9aee-2a90cb71054e"
+      }
+    },
+    {
+      "id": "21e80a63-34a4-4acf-9e37-ce2583f3dbd8",
+      "title": "Overall Availability %",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "0de3525c-5305-4965-890c-f3f0b73ca2d5"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "5c74ebc6-ac52-4168-ba1d-93073a52ba87",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": ">=",
+                "column": "Availability",
+                "values": [
+                  "99"
+                ]
+              }
+            ],
+            "color": "green",
+            "visualType": "card"
+          },
+          {
+            "id": "6c070ee6-7c3a-4003-b007-5c47aad16ae7",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": "<",
+                "column": "Availability",
+                "values": [
+                  "95"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efd610fd-c94d-4104-8990-b19b9530c35d",
+      "title": "SLA Violations (Items < 99%)",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 3,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "8c2a7918-2ee2-4180-8bb8-c8028feb14b9"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "f613e0a4-275f-420f-bb57-649f2bd58a75",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "SLAViolations",
+                "values": [
+                  "0"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "0d8f0f35-47fc-4b00-bcf2-906d006a6fd3",
+      "title": "MTBF (hours)",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 6,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "319c8dfd-8e6a-48c5-acc8-3546f831561f"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "d49548db-b228-4607-b288-95ae8ca6e38b",
+      "title": "MTTR (minutes)",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 9,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "20babaa5-079e-4aaf-88ff-921c00964658"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "359469f1-4c54-4184-a865-4d9f959bc85f",
+      "title": "Error Budget Remaining",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 12,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "7587e9e6-4a12-40a6-b2c7-e759288d7827"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "6d6df558-1a6a-4929-b757-9fe2f644eb3e",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": "<",
+                "column": "RemainingBudget",
+                "values": [
+                  "0"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bf4426fc-ecc4-44f5-b8b7-59a0a71e8b2c",
+      "title": "SLA Health Status",
+      "visualType": "card",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 15,
+        "y": 0,
+        "width": 3,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "15b28277-9dfe-4819-8d9e-dc01aed387a2"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "0c1ca794-55e0-47d0-9ec9-dd555fb7ca88",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": "==",
+                "column": "HealthStatus",
+                "values": [
+                  "Excellent"
+                ]
+              }
+            ],
+            "color": "green",
+            "visualType": "card"
+          },
+          {
+            "id": "5e4a91af-0939-4c9f-928f-58b2d1e22edc",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": "==",
+                "column": "HealthStatus",
+                "values": [
+                  "Critical"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f8892695-65dc-4c40-a3ce-d1772440a122",
+      "title": "Availability % Over Time",
+      "visualType": "line",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "ee95b446-1cab-437e-b0b9-021fcde5cb92"
+      }
+    },
+    {
+      "id": "03cf9115-890d-44f4-8e3a-4bc39b65294f",
+      "title": "Mean Time to Recovery by Item Kind (min)",
+      "visualType": "bar",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 9,
+        "y": 4,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "8f4dc70f-7eed-4011-880c-4a7c7dde3bd6"
+      }
+    },
+    {
+      "id": "0800bba5-0d91-4472-a3eb-579898e358dd",
+      "title": "Time to First Failure Distribution (hours)",
+      "visualType": "column",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 9,
+        "width": 6,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "28f1d707-da43-430a-8ed1-048731c32dfb"
+      }
+    },
+    {
+      "id": "837e5e3c-3ce1-4e3b-8819-cee9d39e398c",
+      "title": "Availability % by Item (Top 20)",
+      "visualType": "stat",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 6,
+        "y": 9,
+        "width": 6,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "566ba557-d6db-434d-90b7-6d582c6ee4d1"
+      }
+    },
+    {
+      "id": "ea6cf385-f577-4c67-930a-d6859dd49315",
+      "title": "Items Below 99% SLA - Detailed View",
+      "visualType": "table",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 12,
+        "y": 9,
+        "width": 6,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "266cde52-3c55-46c0-a5c6-d10ab8a48892"
+      },
+      "visualOptions": {
+        "colorRules": [
+          {
+            "id": "8f9e035e-3625-4a36-8923-318f2855d276",
+            "ruleType": "colorByValue",
+            "applyToColumn": "Availability",
+            "conditions": [
+              {
+                "operator": "<",
+                "values": [
+                  "95"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "table"
+          }
+        ]
+      }
+    },
+    {
+      "id": "aaa9f441-c909-4606-aa1e-cdcb1bfcc794",
+      "title": "Top 10 Most Reliable Items (100% Success)",
+      "visualType": "table",
+      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+      "layout": {
+        "x": 0,
+        "y": 14,
+        "width": 18,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "ac2920c4-b64f-4b83-a475-b49bdae67fe0"
+      }
+    },
+    {
+      "id": "b576196c-88aa-4419-8088-c585ed442ca1",
+      "title": "Co-Failure Events (5min windows)",
+      "visualType": "card",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "83dc128e-e7ee-489b-ab8d-5167eed6cf68"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "eb750f91-0172-43cb-be45-5549bb8ea215",
+      "title": "Cascade Events (3+ failures in 15min)",
+      "visualType": "card",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 4,
+        "y": 0,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "3d4458ed-45ea-40bc-ab2f-c1040823451b"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "675e6439-ceae-4496-b4be-c81685368a66",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "CascadeEvents",
+                "values": [
+                  "0"
+                ]
+              }
+            ],
+            "color": "orange",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "19e0d97f-a10d-4d97-afeb-a5dd868362e4",
+      "title": "Max Blast Radius (items)",
+      "visualType": "card",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 8,
+        "y": 0,
+        "width": 4,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "013ec79c-7ac2-4584-bc27-4144f7eedaca"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "colorStyle": "light",
+        "colorRules": [
+          {
+            "id": "5643f4a5-40f3-471e-b5af-67cd8e2a2de8",
+            "ruleType": "colorByCondition",
+            "conditions": [
+              {
+                "operator": ">",
+                "column": "MaxBlastRadius",
+                "values": [
+                  "5"
+                ]
+              }
+            ],
+            "color": "red",
+            "visualType": "card"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c67760cb-1a2e-40ec-b20f-f1c1406abff4",
+      "title": "Most Impactful Item",
+      "visualType": "card",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 12,
+        "y": 0,
+        "width": 6,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "146d734b-5026-47d1-aaf9-4462a3225107"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "small",
+        "colorStyle": "light"
+      }
+    },
+    {
+      "id": "d5488f37-666b-41b9-ac02-5b1f489f7974",
+      "title": "Co-Failing Items (Top 20 Pairs)",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "width": 9,
+        "height": 6
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "93026ca4-8bc4-4896-958f-67043b17871e"
+      }
+    },
+    {
+      "id": "1d1f2fe7-d8e8-4c16-b986-e89aa148f466",
+      "title": "Failure Propagation Timeline",
+      "visualType": "line",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 9,
+        "y": 4,
+        "width": 9,
+        "height": 6
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "478c1cf6-7b42-4a25-81c3-d2082ca5a9fb"
+      },
+      "visualOptions": {
+        "yAxis": {
+          "label": "Failed Items in Window"
+        }
+      }
+    },
+    {
+      "id": "81090934-0f5a-48c9-ae99-99c4f78c3290",
+      "title": "Critical Items by Impact Score (Top 15)",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 10,
+        "width": 6,
+        "height": 6
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "a7cd3e6b-e2b8-4363-b39f-6eae51f64f80"
+      }
+    },
+    {
+      "id": "a3d8fd95-70a2-4e9b-be49-1596c94777de",
+      "title": "Dependency Matrix (Top 20 Co-Failures)",
+      "visualType": "stat",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 6,
+        "y": 10,
+        "width": 6,
+        "height": 6
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "a45a7a23-1baf-4669-a409-c03eede99306"
+      }
+    },
+    {
+      "id": "e10b15ce-9542-4551-91e5-35030f25bdd9",
+      "title": "Blast Radius Distribution",
+      "visualType": "column",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 12,
+        "y": 10,
+        "width": 6,
+        "height": 6
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "a762cc79-81e5-4fb5-97ac-21a5100f282a"
+      }
+    },
+    {
+      "id": "303f2676-45e2-41c4-b2a1-c7e01198f1e0",
+      "title": "Cascade Event Details (3+ failures in 15min)",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 0,
+        "y": 16,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "bae5493d-a634-407f-9900-f25313910b97"
+      }
+    },
+    {
+      "id": "8aaecbc5-7fc9-4843-99d8-4ec39ce0b967",
+      "title": "Critical Dependency Paths (Top 15)",
+      "visualType": "table",
+      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
+      "layout": {
+        "x": 9,
+        "y": 16,
+        "width": 9,
+        "height": 5
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "29bb2000-6eb4-4a30-a185-c82310c7998b"
+      }
     }
   ],
   "baseQueries": [
@@ -8897,6 +10007,11 @@
       "id": "3e18440b-abe8-40b6-b0e0-df4155c69905",
       "queryId": "0eef2e89-d6c0-4e28-9b74-2691a0203917",
       "variableName": "_baseItemJobEventLogs_Cascades"
+    },
+    {
+      "id": "09b95f19-4f0d-4453-8206-20c2f2860e46",
+      "queryId": "25cff02c-c4a6-4f65-ab42-600c166d3de7",
+      "variableName": "_baseIJLogs"
     }
   ],
   "parameters": [
@@ -9669,6 +10784,116 @@
       },
       "showOnPages": {
         "kind": "all"
+      }
+    },
+    {
+      "kind": "string",
+      "id": "b94f9908-9a3f-4e25-859d-65b2c8017aab",
+      "displayName": "Item Kind",
+      "description": "Filter by Fabric item type",
+      "variableName": "_ItemKind",
+      "selectionType": "array",
+      "includeAllOption": true,
+      "defaultValue": {
+        "kind": "all"
+      },
+      "dataSource": {
+        "kind": "query",
+        "columns": {
+          "value": "ItemKind"
+        },
+        "queryRef": {
+          "kind": "query",
+          "queryId": "01f1fac2-7a88-468a-89c4-baf20e11461f"
+        }
+      },
+      "showOnPages": {
+        "kind": "selection",
+        "pageIds": [
+          "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+          "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+          "44167d8b-ae26-4ab4-b87a-5068af935767",
+          "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+          "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc"
+        ]
+      }
+    },
+    {
+      "kind": "string",
+      "id": "61c56e9d-4d68-4d34-b7ed-a9d96e439511",
+      "displayName": "Job Status",
+      "description": "Filter by job status",
+      "variableName": "_JobStatus",
+      "selectionType": "array",
+      "includeAllOption": true,
+      "defaultValue": {
+        "kind": "all"
+      },
+      "dataSource": {
+        "kind": "static",
+        "values": [
+          {
+            "displayText": "Completed",
+            "value": "Completed"
+          },
+          {
+            "displayText": "Failed",
+            "value": "Failed"
+          },
+          {
+            "displayText": "InProgress",
+            "value": "InProgress"
+          },
+          {
+            "displayText": "NotStarted",
+            "value": "NotStarted"
+          }
+        ]
+      },
+      "showOnPages": {
+        "kind": "selection",
+        "pageIds": [
+          "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+          "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+          "44167d8b-ae26-4ab4-b87a-5068af935767",
+          "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+          "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc"
+        ]
+      }
+    },
+    {
+      "kind": "string",
+      "id": "d488e12b-1b6e-41c0-b45e-f8b20b121081",
+      "displayName": "Job Invoke Type",
+      "description": "Filter by trigger type",
+      "variableName": "_JobInvokeType",
+      "selectionType": "array",
+      "includeAllOption": true,
+      "defaultValue": {
+        "kind": "all"
+      },
+      "dataSource": {
+        "kind": "static",
+        "values": [
+          {
+            "displayText": "Scheduled",
+            "value": "Scheduled"
+          },
+          {
+            "displayText": "OnDemand",
+            "value": "OnDemand"
+          }
+        ]
+      },
+      "showOnPages": {
+        "kind": "selection",
+        "pageIds": [
+          "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
+          "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
+          "44167d8b-ae26-4ab4-b87a-5068af935767",
+          "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
+          "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc"
+        ]
       }
     }
   ],
@@ -12108,6 +13333,477 @@
         "_startTime",
         "_endTime"
       ]
+    },
+    {
+      "id": "25cff02c-c4a6-4f65-ab42-600c166d3de7",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Base ItemJobEventLogs query with parameter filtering\nItemJobEventLogs\n| where Timestamp between (['_startTime'] .. ['_endTime'])\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| where isempty(['_ItemKind']) or ItemKind in (['_ItemKind'])\n| where isempty(['_JobStatus']) or JobStatus in (['_JobStatus'])\n| where isempty(['_JobInvokeType']) or JobInvokeType in (['_JobInvokeType'])\n| extend LocalTimestamp = Timestamp + totimespan(['_utcOffset'])",
+      "usedVariables": [
+        "_WorkspaceName",
+        "_startTime",
+        "_endTime",
+        "_utcOffset",
+        "_ItemKind",
+        "_JobStatus",
+        "_JobInvokeType"
+      ],
+      "queryName": "_baseIJLogs"
+    },
+    {
+      "id": "01f1fac2-7a88-468a-89c4-baf20e11461f",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime'] .. ['_endTime'])\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| distinct ItemKind\n| order by ItemKind asc",
+      "usedVariables": [
+        "_WorkspaceName",
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "id": "e7e12214-afe4-4a9e-8167-e05b9ca648cf",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| summarize TotalJobs = count()",
+      "usedVariables": []
+    },
+    {
+      "id": "e3f55c2e-ee1f-458b-8773-2db3610668e5",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n| extend SuccessRate = round(100.0 * Succeeded / Total, 1)\n| project SuccessRate",
+      "usedVariables": []
+    },
+    {
+      "id": "9f2d1edf-a40c-4ea4-914f-361ede6a8eca",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailedJobs = count()",
+      "usedVariables": []
+    },
+    {
+      "id": "04730c71-88a5-4683-a758-bd60e534360a",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize AvgDurationSec = round(avg(DurationMs) / 1000.0, 1)\n| project AvgDurationSec",
+      "usedVariables": []
+    },
+    {
+      "id": "b7c551b7-561c-4e1f-b37d-2cab0a67102e",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize P95DurationSec = round(percentile(DurationMs, 95) / 1000.0, 1)\n| project P95DurationSec",
+      "usedVariables": []
+    },
+    {
+      "id": "a5a290f2-5da9-41be-9d8f-75de9554a5f4",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| summarize JobCount = count() by LocalTimestamp = bin(LocalTimestamp, BinSize), ItemKind\n| order by LocalTimestamp asc",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "id": "2ad9a61b-6f6e-484f-b653-b9bd82c29022",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by LocalTimestamp = bin(LocalTimestamp, BinSize)\n| order by LocalTimestamp asc",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "id": "98169e6b-6427-4476-81a3-5d25259c807c",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| summarize JobCount = count() by ItemKind\n| order by JobCount desc",
+      "usedVariables": []
+    },
+    {
+      "id": "4c84b39e-c89a-4c85-a7e7-fa5ff4af72fd",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize AvgDurationSec = round(avg(DurationMs) / 1000.0, 1) by ItemKind, JobStatus\n| order by AvgDurationSec desc",
+      "usedVariables": []
+    },
+    {
+      "id": "f66f0fed-d7cb-40a1-81c1-b1143829ffd4",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| summarize\n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    AvgDurationSec = round(avg(DurationMs) / 1000.0, 1),\n    MaxDurationSec = round(max(DurationMs) / 1000.0, 1),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n    by ItemName, ItemKind\n| order by TotalRuns desc\n| take 50",
+      "usedVariables": []
+    },
+    {
+      "id": "3d0cb47e-30ef-4725-ac9a-9327acf091a8",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize TotalFailures = count()",
+      "usedVariables": []
+    },
+    {
+      "id": "b31e7c15-7630-46c4-801c-4131d046c56d",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| summarize\n    Total = count(),\n    Failed = countif(JobStatus == \"Failed\")\n| extend FailureRate = round(100.0 * Failed / Total, 2)\n| project FailureRate",
+      "usedVariables": []
+    },
+    {
+      "id": "6f329312-1bdb-4e09-a729-fd6ac84da022",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by ItemName, ItemKind\n| top 1 by FailCount\n| extend MostFailingItem = strcat(ItemName, \" (\", ItemKind, \"): \", FailCount, \" failures\")\n| project MostFailingItem",
+      "usedVariables": []
+    },
+    {
+      "id": "5f842116-893d-4b11-b734-28fa4172e603",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by LocalTimestamp = bin(LocalTimestamp, BinSize)\n| order by LocalTimestamp asc",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "id": "adf4ff6f-c2c7-47da-ae41-99d6029316f2",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by ItemKind\n| order by FailCount desc",
+      "usedVariables": []
+    },
+    {
+      "id": "df7f454f-7772-4570-8dc6-d883e46217ec",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by ItemKind, JobType\n| order by FailCount desc\n| take 20",
+      "usedVariables": []
+    },
+    {
+      "id": "82807166-5160-4831-b310-52368ef012f8",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend DurationSec = round(DurationMs / 1000.0, 1)\n| project\n    LocalTimestamp,\n    ItemName,\n    ItemKind,\n    JobType,\n    WorkspaceName,\n    DurationSec,\n    ExecutingPrincipalId,\n    JobInvokeType,\n    JobInstanceId\n| order by LocalTimestamp desc\n| take 100",
+      "usedVariables": []
+    },
+    {
+      "id": "953e02e6-f68d-4a61-879c-7b9caef3e2cd",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize AvgDurationSec = round(avg(DurationMs) / 1000.0, 1)\n| project AvgDurationSec",
+      "usedVariables": []
+    },
+    {
+      "id": "b50d6228-6a0a-4ded-9120-d496592f48cc",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize P95DurationSec = round(percentile(DurationMs, 95) / 1000.0, 1)\n| project P95DurationSec",
+      "usedVariables": []
+    },
+    {
+      "id": "0c9399d9-ae7a-4403-a471-d2a1ec5cddaa",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize MaxDurationSec = round(max(DurationMs) / 1000.0, 1)\n| project MaxDurationSec",
+      "usedVariables": []
+    },
+    {
+      "id": "f272a427-8905-4c6d-ae3a-162841373ce5",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| extend DurationBucket = case(\n    DurationMs < 10000, \"<10s\",\n    DurationMs < 60000, \"10s-1m\",\n    DurationMs < 300000, \"1m-5m\",\n    DurationMs < 600000, \"5m-10m\",\n    DurationMs < 1800000, \"10m-30m\",\n    DurationMs < 3600000, \"30m-1h\",\n    \">1h\"\n)\n| summarize JobCount = count() by DurationBucket\n| order by JobCount desc",
+      "usedVariables": []
+    },
+    {
+      "id": "ab2458f8-b5b1-4b8a-8817-c48d665917a4",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize AvgDurationSec = round(avg(DurationMs) / 1000.0, 1) by ItemKind\n| order by AvgDurationSec desc",
+      "usedVariables": []
+    },
+    {
+      "id": "631b22ff-0720-4888-b48b-d714d6600f81",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    RunCount = count(),\n    AvgDurationSec = round(avg(DurationMs) / 1000.0, 1),\n    P95DurationSec = round(percentile(DurationMs, 95) / 1000.0, 1),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n    by JobInvokeType, ItemKind\n| order by ItemKind, JobInvokeType",
+      "usedVariables": []
+    },
+    {
+      "id": "587f5792-a36b-4768-9aee-2a90cb71054e",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| extend DurationSec = round(DurationMs / 1000.0, 1)\n| top 20 by DurationMs desc\n| project\n    LocalTimestamp,\n    ItemName,\n    ItemKind,\n    JobType,\n    DurationSec,\n    JobStatus,\n    JobInvokeType,\n    WorkspaceName\n| order by DurationSec desc",
+      "usedVariables": []
+    },
+    {
+      "id": "0de3525c-5305-4965-890c-f3f0b73ca2d5",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n| extend Availability = round(100.0 * Succeeded / Total, 2)\n| project Availability",
+      "usedVariables": []
+    },
+    {
+      "id": "8c2a7918-2ee2-4180-8bb8-c8028feb14b9",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n    by ItemName\n| extend Availability = 100.0 * Succeeded / Total\n| where Availability < 99.0\n| summarize SLAViolations = count()",
+      "usedVariables": []
+    },
+    {
+      "id": "319c8dfd-8e6a-48c5-acc8-3546f831561f",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Calculate MTBF: Total operating time / number of failures\n_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    TotalJobs = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    TotalDurationHours = sum(DurationMs) / 1000.0 / 3600.0\n| extend MTBF = round(TotalDurationHours / Failures, 1)\n| project MTBF",
+      "usedVariables": []
+    },
+    {
+      "id": "20babaa5-079e-4aaf-88ff-921c00964658",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Calculate MTTR: Average duration of failed jobs\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize MTTR = round(avg(DurationMs) / 1000.0 / 60.0, 1)\n| project MTTR",
+      "usedVariables": []
+    },
+    {
+      "id": "7587e9e6-4a12-40a6-b2c7-e759288d7827",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Error budget for 99% SLA: can have 1% failures\n_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Failed = countif(JobStatus == \"Failed\")\n| extend\n    AllowedFailures = Total * 0.01,\n    RemainingBudget = round(AllowedFailures - Failed, 0)\n| project RemainingBudget",
+      "usedVariables": []
+    },
+    {
+      "id": "15b28277-9dfe-4819-8d9e-dc01aed387a2",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n| extend Availability = 100.0 * Succeeded / Total\n| extend HealthStatus = case(\n    Availability >= 99.5, \"Excellent\",\n    Availability >= 99.0, \"Good\",\n    Availability >= 97.0, \"Warning\",\n    \"Critical\"\n)\n| project HealthStatus",
+      "usedVariables": []
+    },
+    {
+      "id": "ee95b446-1cab-437e-b0b9-021fcde5cb92",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n    by LocalTimestamp = bin(LocalTimestamp, BinSize)\n| extend Availability = round(100.0 * Succeeded / Total, 2)\n| project LocalTimestamp, Availability\n| order by LocalTimestamp asc",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "id": "8f4dc70f-7eed-4011-880c-4a7c7dde3bd6",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize MTTRMinutes = round(avg(DurationMs) / 1000.0 / 60.0, 1) by ItemKind\n| order by MTTRMinutes desc",
+      "usedVariables": []
+    },
+    {
+      "id": "28f1d707-da43-430a-8ed1-048731c32dfb",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Time from first job to first failure per item\n_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    FirstJob = min(Timestamp),\n    FirstFailure = minif(Timestamp, JobStatus == \"Failed\")\n    by ItemName\n| where isnotnull(FirstFailure)\n| extend TimeToFailureHours = round((FirstFailure - FirstJob) / 1h, 1)\n| extend Bucket = case(\n    TimeToFailureHours < 1, \"<1h\",\n    TimeToFailureHours < 6, \"1-6h\",\n    TimeToFailureHours < 24, \"6-24h\",\n    TimeToFailureHours < 72, \"1-3d\",\n    TimeToFailureHours < 168, \"3-7d\",\n    \">7d\"\n)\n| summarize ItemCount = count() by Bucket",
+      "usedVariables": []
+    },
+    {
+      "id": "566ba557-d6db-434d-90b7-6d582c6ee4d1",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n    by ItemName, ItemKind\n| extend Availability = round(100.0 * Succeeded / Total, 1)\n| top 20 by Total desc\n| project ItemName, ItemKind, Availability\n| order by Availability asc",
+      "usedVariables": []
+    },
+    {
+      "id": "266cde52-3c55-46c0-a5c6-d10ab8a48892",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    Succeeded = countif(JobStatus == \"Completed\")\n    by ItemName, ItemKind\n| extend Availability = round(100.0 * Succeeded / TotalRuns, 2)\n| where Availability < 99.0\n| order by Availability asc\n| project ItemName, ItemKind, TotalRuns, Failures, Availability",
+      "usedVariables": []
+    },
+    {
+      "id": "ac2920c4-b64f-4b83-a475-b49bdae67fe0",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\")\n    by ItemName, ItemKind\n| where Failures == 0 and TotalRuns > 5  // Must have at least 5 runs\n| extend Availability = 100.0\n| top 10 by TotalRuns desc\n| project ItemName, ItemKind, TotalRuns, Availability",
+      "usedVariables": []
+    },
+    {
+      "id": "83dc128e-e7ee-489b-ab8d-5167eed6cf68",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Count unique 5-minute windows with 2+ failures\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| summarize FailedItems = dcount(ItemName) by TimeWindow\n| where FailedItems >= 2\n| summarize CoFailureEvents = count()",
+      "usedVariables": []
+    },
+    {
+      "id": "3d4458ed-45ea-40bc-ab2f-c1040823451b",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Count 15-minute windows with 3+ failures\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailedItems = dcount(ItemName) by TimeWindow\n| where FailedItems >= 3\n| summarize CascadeEvents = count()",
+      "usedVariables": []
+    },
+    {
+      "id": "013ec79c-7ac2-4584-bc27-4144f7eedaca",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Maximum number of items failing in same 5min window\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| summarize BlastRadius = dcount(ItemName) by TimeWindow\n| summarize MaxBlastRadius = max(BlastRadius)",
+      "usedVariables": []
+    },
+    {
+      "id": "146d734b-5026-47d1-aaf9-4462a3225107",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Item whose failures correlate with most other items failing\nlet FailureWindows = _baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| distinct ItemName, TimeWindow;\nFailureWindows\n| join kind=inner (FailureWindows) on TimeWindow\n| where ItemName != ItemName1\n| summarize ImpactScore = dcount(ItemName1) by ItemName\n| top 1 by ImpactScore\n| extend MostImpactful = strcat(ItemName, \" (impacts \", ImpactScore, \" other items)\")\n| project MostImpactful",
+      "usedVariables": []
+    },
+    {
+      "id": "93026ca4-8bc4-4896-958f-67043b17871e",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Find items that fail together in same 5min windows\nlet FailureWindows = _baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| distinct ItemName, ItemKind, TimeWindow;\nFailureWindows\n| join kind=inner (FailureWindows) on TimeWindow\n| where ItemName < ItemName1  // Avoid duplicates\n| summarize\n    CoFailureCount = count(),\n    UniqueWindows = dcount(TimeWindow)\n    by Item1 = ItemName, Kind1 = ItemKind, Item2 = ItemName1, Kind2 = ItemKind1\n| top 20 by CoFailureCount desc\n| project Item1, Kind1, Item2, Kind2, CoFailureCount, UniqueWindows",
+      "usedVariables": []
+    },
+    {
+      "id": "478c1cf6-7b42-4a25-81c3-d2082ca5a9fb",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(LocalTimestamp, BinSize)\n| summarize FailedItemCount = dcount(ItemName) by TimeWindow\n| order by TimeWindow asc",
+      "usedVariables": [
+        "_startTime",
+        "_endTime"
+      ]
+    },
+    {
+      "id": "a7cd3e6b-e2b8-4363-b39f-6eae51f64f80",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Impact Score = FailureCount \u00d7 UniqueFailureWindows\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize\n    FailureCount = count(),\n    UniqueWindows = dcount(TimeWindow)\n    by ItemName, ItemKind\n| extend ImpactScore = FailureCount * UniqueWindows\n| top 15 by ImpactScore desc\n| project ItemName, ItemKind, FailureCount, UniqueWindows, ImpactScore",
+      "usedVariables": []
+    },
+    {
+      "id": "a45a7a23-1baf-4669-a409-c03eede99306",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Matrix view of co-occurring failures\nlet FailureWindows = _baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| distinct ItemName, TimeWindow;\nFailureWindows\n| join kind=inner (FailureWindows) on TimeWindow\n| where ItemName != ItemName1\n| summarize CoFailures = count() by Item1 = ItemName, Item2 = ItemName1\n| top 20 by CoFailures desc",
+      "usedVariables": []
+    },
+    {
+      "id": "a762cc79-81e5-4fb5-97ac-21a5100f282a",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Distribution of how many items fail together\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| summarize ItemCount = dcount(ItemName) by TimeWindow\n| summarize WindowCount = count() by BlastRadius = ItemCount\n| order by BlastRadius asc",
+      "usedVariables": []
+    },
+    {
+      "id": "bae5493d-a634-407f-9900-f25313910b97",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Detailed view of cascade events\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize\n    FailedItems = dcount(ItemName),\n    ItemList = make_set(ItemName, 10),  // Show up to 10 items\n    FailureCount = count()\n    by TimeWindow\n| where FailedItems >= 3\n| extend LocalTimeWindow = TimeWindow + totimespan(['_utcOffset'])\n| project LocalTimeWindow, FailedItems, FailureCount, ItemList\n| order by LocalTimeWindow desc\n| take 50",
+      "usedVariables": [
+        "_utcOffset"
+      ]
+    },
+    {
+      "id": "29bb2000-6eb4-4a30-a185-c82310c7998b",
+      "dataSource": {
+        "kind": "parameter",
+        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
+      },
+      "text": "// Items with highest failure-prone dependencies\nlet FailureWindows = _baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| distinct ItemName, ItemKind, TimeWindow;\nFailureWindows\n| join kind=inner (FailureWindows) on TimeWindow\n| where ItemName != ItemName1\n| summarize\n    DependencyCount = dcount(ItemName1),\n    CoFailureWindows = dcount(TimeWindow)\n    by ItemName, ItemKind\n| extend DependencyRisk = DependencyCount * CoFailureWindows\n| top 15 by DependencyRisk desc\n| project ItemName, ItemKind, DependencyCount, CoFailureWindows, DependencyRisk",
+      "usedVariables": []
     }
   ]
 }
