@@ -40,11 +40,33 @@ There are two monitoring template options available:
 | [How to deploy **PBI Report**](./how-to/How_to_deploy_Workspace_Monitoring_PBI_Report.md) | [How to deploy **RTI Dashboard**](./how-to/How_to_deploy_Workspace_Monitoring_RTI_Dashboard.md) |
 | [Documentation for **PBI Report**](./documentation/Workspace_Monitoring_PBI_Report.md) | [Documentation for **RTI Dashboard**](./documentation/Workspace_Monitoring_RTI_Dashboard.md)  |
 |[Metric Glossary](/monitoring/workspace-monitoring-dashboards/documentation/Workspace_Monitoring_Templates_Metrics.md)|[Metric Glossary](/monitoring/workspace-monitoring-dashboards/documentation/Workspace_Monitoring_Templates_Metrics.md)|
-|**Included trace logs:** Semantic Models, Eventhouse Databases, Mirrored Databases, API for GraphQL | **Included trace logs:** Semantic Models, Eventhouse Databases | 
+|**Included trace logs:** Semantic Models, Eventhouse Databases, Mirrored Databases, API for GraphQL | **Included trace logs:** Semantic Models, Eventhouse Databases, Item Job Event Logs | 
 |**Connectivity mode:** Composite mode (helper tables are imported; other trace logs use DirectQuery) | **Connectivity mode:** Each visual queries the Monitoring Eventhouse data individually; base queries keep the core logic. |
 | **Main benefits:** Analyzing performance trends over time, deep-dive investigations into historical operations, queries, etc. | **Main benefits:** Tracking current/running operations, enabling proactive alerting based on predefined scenarios. |
 
 ![Fabric Workspace Monitoring component overview with report templates](./media/general/fwm_template_structure.png)
+
+### Item Job Event Logs
+
+**New in version 2025.8.2+**: The Real-Time Dashboard template now includes comprehensive monitoring for **Item Job Event Logs**, providing visibility into job-level execution events across all Fabric item types including Pipelines, Notebooks, Lakehouses, Warehouses, Dataflows, CopyJobs, and MLExperiments.
+
+The Item Jobs pages enable you to:
+- **Track job execution metrics** across all workspace items
+- **Identify failing jobs** and analyze failure patterns by item type
+- **Monitor job performance** including duration trends and resource consumption
+- **Compare scheduled vs on-demand** job execution patterns
+- **Track SLA compliance** with availability metrics, MTBF, MTTR, and error budgets
+- **Detect dependency patterns** including co-failures, cascading failures, and blast radius analysis
+- **Drill into specific items** to understand execution history and impact
+
+**Dashboard Pages:**
+- **Item Jobs Overview**: High-level metrics, trends, and top items by run count
+- **IJ | Failure Analysis**: Deep dive into failures with detailed logs and patterns
+- **IJ | Performance**: Duration analysis, slowest jobs, and performance optimization insights
+- **IJ | Reliability & SLA**: Enterprise-grade monitoring with SLA tracking, MTBF/MTTR metrics, error budgets
+- **IJ | Dependency Analysis**: Co-failure detection, cascade analysis, blast radius visualization, critical dependency identification
+
+For Power BI Report users, see [How to add ItemJobEventLogs to PBI Report](./how-to/How_to_add_ItemJobEventLogs_to_PBI_Report.md) for step-by-step instructions to extend the Power BI template with these capabilities.
 
 ------------------------
 

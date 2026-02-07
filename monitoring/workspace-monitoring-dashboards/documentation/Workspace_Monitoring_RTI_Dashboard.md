@@ -25,6 +25,8 @@ Workspace Monitoring with the Real-Time Dashboard template can help answer commo
 |Semantic model|"Which semantic models used significant resources for refresh operations in the recent period on the workspace?"|Investigate query patterns and CPU usage per model|[Refreshes & queries](#analytical-pathway--semantic-models--refreshes-queries)|
 |Eventhouse|"Which Eventhouse queries are consuming the most resources or failing frequently?"|Query performance analysis and error tracking|[Eventhouse Analysis](#analytical-pathway--eventhouse-analysis-in-near-real-time)|
 |Eventhouse|"Are there ingestion pipelines that are failing or running slower than expected?"|Monitor ingestion success rates, durations, and retry patterns|[Eventhouse Analysis](#analytical-pathway--eventhouse-analysis-in-near-real-time)|
+|Item Jobs|"Which Pipelines, Notebooks, or other items are failing most frequently?"|Analyze job execution patterns and failure rates by item type|[Item Jobs Analysis](#analytical-pathway--item-jobs-analysis)|
+|Item Jobs|"What is the performance trend of scheduled vs on-demand jobs?"|Compare execution metrics across trigger types|[Item Jobs Performance](#analytical-pathway--item-jobs-analysis)|
 
 -----
 
@@ -36,6 +38,9 @@ Workspace Monitoring with the Real-Time Dashboard template can help answer commo
 |Semantic model|[Semantic Models Analysis](#analytical-pathway--semantic-model-log-analysis)|
 |Semantic model|[Most active Users](#analytical-pathway--semantic-models---most-active-users)|
 |Semantic model|[Refreshes & Queries](#analytical-pathway--semantic-models--refreshes-queries)|
+|Item Jobs|[Item Jobs Analysis](#analytical-pathway--item-jobs-analysis)|
+|Item Jobs|[Reliability & SLA Monitoring](#analytical-pathway--item-jobs-reliability-sla)|
+|Item Jobs|[Dependency & Cascade Analysis](#analytical-pathway--item-jobs-dependency-analysis)|
 
 
 ### Overview page
@@ -282,6 +287,119 @@ Let's deep dive into an example query:
 
 **Very well done!**
 You finished the analytical pathway for "Semantic model refreshes & queries".
+
+--------------------------------------------------------
+
+### Analytical Pathway | Item Jobs Analysis
+**for near-real-time monitoring/troubleshooting**
+
+The Item Jobs dashboard pages provide comprehensive monitoring of job-level execution events across all Fabric item types including Pipelines, Notebooks, Lakehouses, Warehouses, Dataflows, CopyJobs, and MLExperiments.
+
+#### Overview | Item Jobs
+
+This dashboard page provides a high-level view of all job executions within your workspace.
+
+|Step|Description|
+|---|---|
+|Info|The Item Jobs Overview page aggregates execution metrics across all item types in the workspace.|
+|1.|**Review** the stat cards at the top: <br> - **Total Jobs**: Count of all job executions in the selected time window <br> - **Success Rate %**: Percentage of jobs that completed successfully <br> - **Failed Jobs**: Count of jobs that failed (highlighted in red if > 0) <br> - **Avg Duration**: Average job execution time in milliseconds <br> - **P95 Duration**: 95th percentile job execution time|
+|2.|**Analyze** the time series charts: <br> - **Job Count Over Time by Item Kind**: Area chart showing job volume trends segmented by item type (Pipeline, Notebook, Lakehouse, etc.) <br> - **Failure Count Over Time**: Line chart (red) tracking failure trends to identify spikes or patterns|
+|3.|**Review** the bar chart "Jobs by Item Kind" to understand which item types are most actively executing jobs in your workspace.|
+|4.|**Examine** the "Top 50 Items by Run Count" table to identify: <br> - Which specific items (Pipelines, Notebooks, etc.) run most frequently <br> - Failure rates per item <br> - Average and maximum execution durations <br> _Hint: Items with high failure rates (> 5%) are highlighted in red._|
+
+#### Failure Analysis | Item Jobs
+
+The Failure Analysis page helps you quickly identify and investigate failing jobs.
+
+|Step|Description|
+|---|---|
+|5.|**Review** the failure summary cards: <br> - **Total Failures**: Total count of failed jobs (red background) <br> - **Most Failing Item**: Name of the item with the highest failure count <br> - **Most Failing Item Kind**: Item type with the most failures|
+|6.|**Analyze failure patterns** using the visualizations: <br> - **Failure Trend Over Time**: Line chart showing failure frequency over time to identify when issues started <br> - **Failures by Item Kind**: Bar chart breaking down failures by item type (Pipeline, Notebook, Lakehouse, etc.)|
+|7.|**Deep dive into failures** using the Failure Details table, which shows: <br> - Timestamp of each failure <br> - Item name and type <br> - Job type (e.g., Data Pipeline, RunNotebook, TableLoad) <br> - Workspace name <br> - Duration and timing information <br> - Executing principal (user or service principal) <br> - Job invoke type (Scheduled or OnDemand) <br> _Hint: You can filter this table by any column to focus on specific failure patterns._|
+
+#### Performance | Item Jobs
+
+The Performance page helps you understand job execution efficiency and identify optimization opportunities.
+
+|Step|Description|
+|---|---|
+|8.|**Review** the performance metrics cards: <br> - **Avg Duration**: Average job execution time <br> - **P95 Duration**: 95th percentile duration (helps identify outliers) <br> - **Max Duration**: Longest job execution time in the selected window|
+|9.|**Analyze** the "Avg Duration by Item Kind" bar chart to compare performance across different item types. This helps you understand which types of jobs typically take longer to execute.|
+|10.|**Compare** scheduled vs on-demand execution patterns in the table, which shows: <br> - Run count for each trigger type <br> - Average duration comparison <br> - Failure rate comparison <br> _This helps you understand if scheduled jobs perform differently than manually triggered ones._|
+|11.|**Identify optimization candidates** in the "Slowest Jobs (Top 20)" table: <br> - Lists the 20 longest-running jobs <br> - Shows item name, type, job type, duration, and status <br> - Use this to find jobs that may benefit from performance tuning|
+
+**Common Use Cases:**
+
+**Use Case 1: Pipeline Failure Investigation**
+If you notice a spike in the "Failure Count Over Time" chart, navigate to the Failure Analysis page, filter the Failure Details table by the relevant time period, and identify which pipelines or notebooks are failing and why.
+
+**Use Case 2: Performance Optimization**
+Use the Performance page to identify jobs with high P95 duration. Check if these are Scheduled jobs that could be optimized or if they're running during peak hours and competing for resources.
+
+**Use Case 3: Capacity Planning**
+Use the Overview page to understand job volume trends. If you see increasing "Job Count Over Time", you may need to plan for additional capacity or optimize high-frequency jobs.
+
+**Very well done!**
+You finished the analytical pathway for "Item Jobs analysis".
+
+--------------------------------------------------------
+
+### Analytical Pathway | Item Jobs Reliability & SLA
+**for enterprise-grade monitoring and SLA compliance**
+
+The Reliability & SLA dashboard page provides enterprise metrics for tracking platform health and SLA compliance across all job executions.
+
+|Step|Description|
+|---|---|
+|1.|**Review** the Overall Availability % card at the top. This shows your platform's uptime percentage across all job types. Green indicates meeting 99%+ SLA target, red indicates below SLA.|
+|2.|**Check** the SLA violation count to see how many items are currently performing below the 99% availability threshold. This card highlights in red when violations exist.|
+|3.|**Analyze** the reliability metrics: <br> - **MTBF (Mean Time Between Failures)**: Shows average time between failures (higher is better) <br> - **Mean Time to Recovery by Item Kind**: Bar chart showing recovery times across different item types (Pipelines, Notebooks, etc.)|
+|4.|**Monitor** the Error Budget card which shows remaining failure budget for your 99% SLA target. This helps you make informed decisions about deploying changes vs maintaining stability.|
+|5.|**Check** the SLA Health Status card for an overall platform health indicator (Excellent, Good, Warning, or Critical).|
+|6.|**Track** the "Availability % Over Time" trend to identify degradation patterns. If availability is declining, proactive action is needed before SLA violations occur.|
+|7.|**Compare** availability across item types using the "Availability % by Item Kind" bar chart. This reveals which types of items (Pipelines, Notebooks, Lakehouses) are most reliable.|
+|8.|**Review** the "Time to First Failure Distribution" chart to understand how quickly new or changed items typically fail after deployment.|
+|9.|**Investigate** the "Items Below 99% SLA - Detailed View" table to identify specific items that need attention. This table is sorted by worst performers first.|
+|10.|**Review** the "Top 10 Most Reliable Items" table to identify best practices from consistently successful implementations.|
+
+**Use Case: SLA Reporting to Leadership**
+The Reliability & SLA page provides executive-ready metrics. Instead of saying "we had some failures," you can report: "Platform availability is 99.2%, with 3 items below SLA threshold requiring optimization. Error budget shows we can tolerate 12 more failures this month while maintaining our 99% commitment."
+
+**Very well done!**
+You finished the analytical pathway for "Item Jobs reliability and SLA monitoring".
+
+--------------------------------------------------------
+
+### Analytical Pathway | Item Jobs Dependency Analysis
+**for understanding failure cascades and system dependencies**
+
+The Dependency Analysis page reveals hidden patterns showing how failures in one item can trigger failures in other items, helping you understand the blast radius of issues.
+
+|Step|Description|
+|---|---|
+|1.|**Review** the Co-Failure Events card which shows how many item pairs consistently fail together. High co-failure counts indicate dependencies that should be investigated.|
+|2.|**Check** the Cascade Events card which detects time windows where 3 or more items failed within 15 minutes. This pattern often indicates a cascading failure triggered by a single root cause.|
+|3.|**Analyze** the Blast Radius card showing the maximum number of items affected when a critical item fails. This metric helps prioritize which items need reliability improvements.|
+|4.|**Identify** the Most Impactful Single Failure - this reveals which item's failure causes the most downstream problems. Focus reliability efforts here first.|
+|5.|**Examine** the "Co-Failing Items" table which lists pairs of items that fail together. For example: <br> - "Pipeline_DataIngestion" and "Notebook_Transformation" fail together 8 times <br> - This indicates the Notebook likely depends on the Pipeline's output <br> - Fix the Pipeline to reduce overall failure count|
+|6.|**Review** the "Critical Items" table with impact scores. Items with high scores (calculated as FailureCount × UniqueFailureWindows) cause widespread problems and should be prioritized for fixes.|
+|7.|**Investigate** cascade event details in the time window table. This shows when multiple failures occurred together, helping you understand: <br> - What time of day cascades occur (e.g., "Every morning at 9 AM") <br> - Which items were involved in the cascade <br> - Whether cascades are increasing in frequency|
+|8.|**Examine** the "Dependency Matrix (Top 20 Co-Failures)" table to see the most frequent co-occurring failures in a matrix format, making patterns easy to spot.|
+|9.|**Use** the Failure Propagation Timeline to visualize how failures spread through your workspace over time. Spikes indicate cascade events worth investigating.|
+|10.|**Review** the "Critical Dependency Paths (Top 15)" table to understand which items have the highest failure-prone dependencies. These represent architectural risks that may need redesign.|
+
+**Use Case: Root Cause Analysis**
+When a cascade occurs (multiple items failing), use the Dependency Analysis page to: <br>
+1. Identify the time window of the cascade <br>
+2. Find which items failed together <br>
+3. Determine the most likely root cause (the item that failed first or most impactfully) <br>
+4. Understand the blast radius to assess business impact <br>
+5. Fix the root cause to prevent future cascades
+
+**Real Example:** "Analysis revealed that when DataflowFabric 'CustomerRefresh' fails, it triggers failures in 3 downstream Notebooks and 2 Pipelines within 10 minutes. Blast radius: 5 items. Root cause: Timeout in source API. Fix: Increase timeout from 30s to 60s. Result: Cascade events dropped from 12/week to 0."
+
+**Very well done!**
+You finished the analytical pathway for "Item Jobs dependency and cascade analysis".
 
 --------------------------------------------------------
 
