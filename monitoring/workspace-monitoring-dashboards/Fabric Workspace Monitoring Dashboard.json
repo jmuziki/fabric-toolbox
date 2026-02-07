@@ -7200,163 +7200,6 @@
       "visualOptions": {}
     },
     {
-      "id": "24058a9a-b715-42a5-881e-3f00c2e9daae",
-      "title": "Total Jobs",
-      "visualType": "card",
-      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
-      "layout": {
-        "x": 0,
-        "y": 1,
-        "width": 4,
-        "height": 4
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "87f0e797-f065-47dc-834f-f50de35d3d55"
-      },
-      "visualOptions": {
-        "multiStat__textSize": "auto"
-      }
-    },
-    {
-      "id": "67f14a28-584b-40ec-84e9-20de1feb8a9f",
-      "title": "Success Rate %",
-      "visualType": "card",
-      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
-      "layout": {
-        "x": 4,
-        "y": 1,
-        "width": 4,
-        "height": 4
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "b3bac89f-f141-44e7-a162-5206bb34ccfb"
-      },
-      "visualOptions": {
-        "multiStat__textSize": "auto",
-        "colorRules": [
-          {
-            "id": "7106e483-152c-4e59-9b0e-e2618bfe674e",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": ">=",
-                "column": "SuccessRate",
-                "values": [
-                  "95"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HighSuccess",
-            "visualType": "card"
-          },
-          {
-            "id": "4d7e5430-0224-4c8f-beee-bc0c354f8b3d",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": ">=",
-                "column": "SuccessRate",
-                "values": [
-                  "90"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumSuccess",
-            "visualType": "card"
-          },
-          {
-            "id": "a9dee7a2-2a15-49fc-bb89-bf9da8dad088",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": "<",
-                "column": "SuccessRate",
-                "values": [
-                  "90"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "LowSuccess",
-            "visualType": "card"
-          }
-        ],
-        "colorRulesDisabled": false,
-        "colorStyle": "light"
-      }
-    },
-    {
-      "id": "2bfd885f-129d-4376-9264-6f485ab73bb2",
-      "title": "Failed Jobs",
-      "visualType": "card",
-      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
-      "layout": {
-        "x": 8,
-        "y": 1,
-        "width": 4,
-        "height": 4
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "796fe456-3d78-4fed-a016-e64fc039bffb"
-      },
-      "visualOptions": {
-        "multiStat__textSize": "auto",
-        "colorRulesDisabled": false,
-        "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "585257f6-be71-4a80-8840-dfeb5257087d",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": ">",
-                "column": "FailedJobs",
-                "values": [
-                  "0"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "FailedJobsAlert",
-            "visualType": "card"
-          }
-        ]
-      }
-    },
-    {
       "id": "a3d1203b-2c67-42d9-b4b2-e9cfbf42404b",
       "title": "Avg Duration (ms)",
       "visualType": "card",
@@ -7397,116 +7240,6 @@
       }
     },
     {
-      "id": "0993e8e5-a7f3-4e72-9019-1bf8a8bce57f",
-      "title": "Job Count Over Time by Item Kind",
-      "visualType": "area",
-      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
-      "layout": {
-        "x": 0,
-        "y": 5,
-        "width": 12,
-        "height": 6
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "e3a62d31-e2f0-40bc-b66e-a2d225dd0c3b"
-      },
-      "visualOptions": {}
-    },
-    {
-      "id": "f3827c2a-4475-4950-991a-a99c4028c995",
-      "title": "Failure Count Over Time",
-      "visualType": "line",
-      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
-      "layout": {
-        "x": 12,
-        "y": 5,
-        "width": 12,
-        "height": 6
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "a7231c50-f479-43f6-a1cf-fffef72ac5dd"
-      },
-      "visualOptions": {
-        "colorRulesDisabled": false,
-        "colorStyle": "light"
-      }
-    },
-    {
-      "id": "1f5b7eae-0b69-462f-91ff-df9074e743a2",
-      "title": "Jobs by Item Kind",
-      "visualType": "bar",
-      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
-      "layout": {
-        "x": 0,
-        "y": 11,
-        "width": 12,
-        "height": 6
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "0e3cb2cd-7fa0-46aa-a38b-512f9b0c6a65"
-      },
-      "visualOptions": {}
-    },
-    {
-      "id": "3b42df9e-61b2-45d3-92fc-415bb95a41e9",
-      "title": "Top 50 Items by Run Count",
-      "visualType": "table",
-      "pageId": "89b9cb0c-9c99-4f81-b2d5-299263e646cd",
-      "layout": {
-        "x": 0,
-        "y": 17,
-        "width": 24,
-        "height": 8
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "0fdea72c-be1c-45f7-814f-542adb1a6e94"
-      },
-      "visualOptions": {
-        "colorRules": [
-          {
-            "id": "f4f52ce9-cc35-4407-a23b-02ead7716038",
-            "ruleType": "colorByValue",
-            "ruleName": "FailureRate",
-            "applyTo": "cells",
-            "column": "FailureRate",
-            "themeName": "red",
-            "maxValue": "100",
-            "minValue": "0",
-            "reverseTheme": false,
-            "visualType": "table"
-          },
-          {
-            "id": "31ca6c0f-a334-484e-9f15-3a770abdd47b",
-            "ruleType": "colorByValue",
-            "ruleName": "SuccessRate",
-            "applyTo": "cells",
-            "column": "SuccessRate",
-            "themeName": "traffic-lights",
-            "maxValue": "100",
-            "minValue": "0",
-            "reverseTheme": true,
-            "visualType": "table"
-          },
-          {
-            "id": "d6a3aa71-1ceb-41ed-af28-0a6c0a9121c7",
-            "ruleType": "colorByValue",
-            "ruleName": "TotalRuns",
-            "applyTo": "cells",
-            "column": "TotalRuns",
-            "themeName": "cold",
-            "maxValue": null,
-            "minValue": null,
-            "reverseTheme": false,
-            "visualType": "table"
-          }
-        ]
-      }
-    },
-    {
       "id": "2e172bf4-f120-4374-8aa1-c77c9c18f048",
       "title": "Item Job Failures - Analysis",
       "visualType": "markdownCard",
@@ -7519,74 +7252,6 @@
       },
       "markdownText": "",
       "visualOptions": {}
-    },
-    {
-      "id": "6b6bbcaa-9bc7-4b99-b3ba-abd03e94eb26",
-      "title": "Total Failures",
-      "visualType": "card",
-      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
-      "layout": {
-        "x": 0,
-        "y": 1,
-        "width": 4,
-        "height": 4
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "325a3d39-4bb8-49a0-8f2f-b79ed02b21c0"
-      },
-      "visualOptions": {
-        "multiStat__textSize": "auto",
-        "colorRulesDisabled": false,
-        "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "ed05ffbd-158a-416f-9aa9-13a9ff939003",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": ">",
-                "column": "TotalFailures",
-                "values": [
-                  "0"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "FailuresExist",
-            "visualType": "card"
-          }
-        ]
-      }
-    },
-    {
-      "id": "ff7856ed-c708-47f5-ad28-184231a227d4",
-      "title": "Most Failing Item",
-      "visualType": "card",
-      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
-      "layout": {
-        "x": 4,
-        "y": 1,
-        "width": 6,
-        "height": 4
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "041ae7c5-c29a-4c49-b947-64b7ea21b695"
-      },
-      "visualOptions": {
-        "multiStat__textSize": "auto",
-        "colorRulesDisabled": false,
-        "colorStyle": "light",
-        "colorRules": []
-      }
     },
     {
       "id": "0189b73b-4c8f-4438-8eb2-7d814db5969f",
@@ -7629,23 +7294,6 @@
         "colorRulesDisabled": false,
         "colorStyle": "light"
       }
-    },
-    {
-      "id": "9f8f907d-e549-4c84-aa7b-6bc64ee877da",
-      "title": "Failures by Item Kind",
-      "visualType": "bar",
-      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
-      "layout": {
-        "x": 0,
-        "y": 5,
-        "width": 16,
-        "height": 6
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "dddae769-a010-4d5c-9d1e-2267ac5e470f"
-      },
-      "visualOptions": {}
     },
     {
       "id": "8b317d72-88f7-44e5-be75-5340192a3bd4",
@@ -7774,23 +7422,6 @@
       }
     },
     {
-      "id": "d404fb40-22b2-4adf-8458-bc499ea207dc",
-      "title": "Avg Duration by Item Kind",
-      "visualType": "bar",
-      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
-      "layout": {
-        "x": 0,
-        "y": 5,
-        "width": 12,
-        "height": 6
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "5b76bc95-09e6-4742-a640-0a974187ff53"
-      },
-      "visualOptions": {}
-    },
-    {
       "id": "e75c2e61-c847-4a41-aa2b-75d431d24061",
       "title": "Scheduled vs On-Demand Jobs",
       "visualType": "table",
@@ -7837,40 +7468,6 @@
       }
     },
     {
-      "id": "242512de-5f59-4652-a07e-f681afce15ed",
-      "title": "Slowest Jobs (Top 20)",
-      "visualType": "table",
-      "pageId": "44167d8b-ae26-4ab4-b87a-5068af935767",
-      "layout": {
-        "x": 0,
-        "y": 11,
-        "width": 24,
-        "height": 10
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "e2df8440-a361-41aa-a304-e16e776f9f13"
-      },
-      "visualOptions": {
-        "colorRulesDisabled": false,
-        "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "7ee2c8be-872d-4bd2-860a-a8db6399c6ec",
-            "ruleType": "colorByValue",
-            "ruleName": "Duration",
-            "applyTo": "cells",
-            "column": "Duration",
-            "themeName": "red",
-            "maxValue": null,
-            "minValue": "0",
-            "reverseTheme": false,
-            "visualType": "table"
-          }
-        ]
-      }
-    },
-    {
       "id": "e567de20-394e-4010-a261-fef5d2e578a4",
       "title": "Reliability & SLA Compliance",
       "visualType": "markdownCard",
@@ -7883,98 +7480,6 @@
       },
       "markdownText": "",
       "visualOptions": {}
-    },
-    {
-      "id": "de547b2a-4dd2-4825-b99d-51f969040c8b",
-      "title": "Overall Availability %",
-      "visualType": "card",
-      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
-      "layout": {
-        "x": 0,
-        "y": 1,
-        "width": 4,
-        "height": 4
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "deda70ad-c492-4648-9469-4ac3f32ea738"
-      },
-      "visualOptions": {
-        "multiStat__textSize": "auto",
-        "colorRulesDisabled": false,
-        "colorRules": [
-          {
-            "id": "558ad25e-83d7-45e9-a32e-5adbb6e574a6",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": ">=",
-                "column": "Availability",
-                "values": [
-                  "99"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "green",
-            "tag": "",
-            "icon": null,
-            "ruleName": "HighAvailability",
-            "visualType": "card"
-          },
-          {
-            "id": "4af183ad-33b6-4a09-933a-e73a8442a9d7",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": ">=",
-                "column": "Availability",
-                "values": [
-                  "95"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "yellow",
-            "tag": "",
-            "icon": null,
-            "ruleName": "MediumAvailability",
-            "visualType": "card"
-          },
-          {
-            "id": "f9c1cc50-a1b5-42d5-b7a7-7b0952f7e17e",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": "<",
-                "column": "Availability",
-                "values": [
-                  "95"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "LowAvailability",
-            "visualType": "card"
-          }
-        ],
-        "colorStyle": "light"
-      }
     },
     {
       "id": "2a334a9e-8082-42bf-83cd-4626a35e8be0",
@@ -8074,52 +7579,6 @@
       "visualOptions": {}
     },
     {
-      "id": "e6ea2042-6eb1-4d9f-8670-cfcc73e6145e",
-      "title": "Items Below 99% SLA - Detailed View",
-      "visualType": "table",
-      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
-      "layout": {
-        "x": 0,
-        "y": 17,
-        "width": 24,
-        "height": 8
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "c5c93dff-4b93-460f-9f51-6f2aa3d45464"
-      },
-      "visualOptions": {
-        "colorRulesDisabled": false,
-        "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "ab7d9574-32e1-42eb-aac7-7348634db59f",
-            "ruleType": "colorByValue",
-            "ruleName": "AvailabilityPct",
-            "applyTo": "cells",
-            "column": "AvailabilityPct",
-            "themeName": "red",
-            "maxValue": "99",
-            "minValue": "0",
-            "reverseTheme": true,
-            "visualType": "table"
-          },
-          {
-            "id": "e7031d7e-a83b-4494-b6d0-c90279a7988a",
-            "ruleType": "colorByValue",
-            "ruleName": "FailureCount",
-            "applyTo": "cells",
-            "column": "FailureCount",
-            "themeName": "red",
-            "maxValue": null,
-            "minValue": "0",
-            "reverseTheme": false,
-            "visualType": "table"
-          }
-        ]
-      }
-    },
-    {
       "id": "40d31e5a-3979-4bc0-a105-0a85faf8602d",
       "title": "Dependency & Cascade Analysis",
       "visualType": "markdownCard",
@@ -8177,52 +7636,6 @@
             "visualType": "card"
           }
         ]
-      }
-    },
-    {
-      "id": "349a6f91-98f0-4488-a4a7-7ce5ee2fa46f",
-      "title": "Cascade Events (3+ failures in 15min)",
-      "visualType": "card",
-      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
-      "layout": {
-        "x": 4,
-        "y": 1,
-        "width": 4,
-        "height": 4
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "0c034a91-3583-460e-8067-90472ec6eb12"
-      },
-      "visualOptions": {
-        "multiStat__textSize": "auto",
-        "colorRulesDisabled": false,
-        "colorRules": [
-          {
-            "id": "8c95dad2-1a38-44fd-80b2-4961eeb2ec3c",
-            "ruleType": "colorByCondition",
-            "applyToColumn": null,
-            "hideText": false,
-            "applyTo": "cells",
-            "conditions": [
-              {
-                "operator": ">",
-                "column": "CascadeEvents",
-                "values": [
-                  "0"
-                ]
-              }
-            ],
-            "chainingOperator": "and",
-            "colorStyle": "light",
-            "color": "red",
-            "tag": "",
-            "icon": null,
-            "ruleName": "CascadeEvents",
-            "visualType": "card"
-          }
-        ],
-        "colorStyle": "light"
       }
     },
     {
@@ -8575,25 +7988,6 @@
       "visualOptions": {}
     },
     {
-      "id": "c2379aa6-9ae7-448b-aedd-265b4257be45",
-      "title": "SLA Health Status",
-      "visualType": "card",
-      "pageId": "87c6f25d-1a20-44a7-91d7-acddde8fca2b",
-      "layout": {
-        "x": 18,
-        "y": 1,
-        "width": 6,
-        "height": 4
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "024710d2-bd7d-4134-98ff-7f69d25a6874"
-      },
-      "visualOptions": {
-        "multiStat__textSize": "auto"
-      }
-    },
-    {
       "id": "40a83f02-225b-4422-afc0-d1ba39638f94",
       "title": "Max Blast Radius (Items Affected)",
       "visualType": "card",
@@ -8660,40 +8054,6 @@
           }
         ],
         "colorStyle": "light"
-      }
-    },
-    {
-      "id": "f73c884f-e8ea-4151-a55f-730645744dd2",
-      "title": "Dependency Matrix (Top 20 Co-Failures)",
-      "visualType": "table",
-      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
-      "layout": {
-        "x": 0,
-        "y": 21,
-        "width": 24,
-        "height": 8
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "172f96c9-f8eb-4dfa-96be-80f7166e869f"
-      },
-      "visualOptions": {
-        "colorRulesDisabled": false,
-        "colorStyle": "light",
-        "colorRules": [
-          {
-            "id": "4041f930-baf8-4024-99fa-380d51c279f0",
-            "ruleType": "colorByValue",
-            "ruleName": "CoOccurrences",
-            "applyTo": "cells",
-            "column": "CoOccurrences",
-            "themeName": "red",
-            "maxValue": null,
-            "minValue": "0",
-            "reverseTheme": false,
-            "visualType": "table"
-          }
-        ]
       }
     },
     {
@@ -9129,30 +8489,6 @@
       "visualOptions": {
         "multiStat__textSize": "small",
         "colorStyle": "light"
-      }
-    },
-    {
-      "id": "dafd4090-23c8-402f-80d2-162e374e7684",
-      "title": "Failure Trend Over Time",
-      "visualType": "line",
-      "pageId": "d14b1d51-05b9-4711-bd0b-a11eedc0b5ec",
-      "layout": {
-        "x": 0,
-        "y": 4,
-        "width": 9,
-        "height": 5
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "5f842116-893d-4b11-b734-28fa4172e603"
-      },
-      "visualOptions": {
-        "yAxis": {
-          "label": "Failure Count"
-        },
-        "legend": {
-          "isVisible": false
-        }
       }
     },
     {
@@ -9873,22 +9209,6 @@
       "queryRef": {
         "kind": "query",
         "queryId": "bae5493d-a634-407f-9900-f25313910b97"
-      }
-    },
-    {
-      "id": "8aaecbc5-7fc9-4843-99d8-4ec39ce0b967",
-      "title": "Critical Dependency Paths (Top 15)",
-      "visualType": "table",
-      "pageId": "d8b097c3-7cbc-43f0-bd41-9100dfffe0dc",
-      "layout": {
-        "x": 9,
-        "y": 16,
-        "width": 9,
-        "height": 5
-      },
-      "queryRef": {
-        "kind": "query",
-        "queryId": "29bb2000-6eb4-4a30-a185-c82310c7998b"
       }
     }
   ],
