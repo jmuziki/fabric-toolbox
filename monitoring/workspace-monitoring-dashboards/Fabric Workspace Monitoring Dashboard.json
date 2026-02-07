@@ -12230,39 +12230,6 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "id": "87f0e797-f065-47dc-834f-f50de35d3d55",
-      "text": "_baseItemJobEventLogs_Overview\n| summarize TotalJobs = sum(TotalJobs)",
-      "usedVariables": [
-        "_baseItemJobEventLogs_Overview"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "b3bac89f-f141-44e7-a162-5206bb34ccfb",
-      "text": "_baseItemJobEventLogs_Overview\n| summarize \n    Total = sum(TotalJobs),\n    Succeeded = sum(SucceededJobs)\n| extend SuccessRate = round(100.0 * Succeeded / Total, 2)\n| project SuccessRate",
-      "usedVariables": [
-        "_baseItemJobEventLogs_Overview"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "796fe456-3d78-4fed-a016-e64fc039bffb",
-      "text": "_baseItemJobEventLogs_Overview\n| summarize FailedJobs = sum(FailedJobs)",
-      "usedVariables": [
-        "_baseItemJobEventLogs_Overview"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
       "id": "ece7872a-d95a-4f79-a676-be1230cfd44b",
       "text": "_baseItemJobEventLogs_Overview\n| summarize AvgDurationMs = round(avg(AvgDurationMs), 2)",
       "usedVariables": [
@@ -12285,74 +12252,8 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "id": "e3a62d31-e2f0-40bc-b66e-a2d225dd0c3b",
-      "text": "_baseItemJobEventLogs_Timeline\n| project Timestamp, ItemKind, JobCount",
-      "usedVariables": [
-        "_baseItemJobEventLogs_Timeline"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "a7231c50-f479-43f6-a1cf-fffef72ac5dd",
-      "text": "_baseItemJobEventLogs_Timeline\n| summarize FailCount = sum(FailCount) by Timestamp",
-      "usedVariables": [
-        "_baseItemJobEventLogs_Timeline"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "0e3cb2cd-7fa0-46aa-a38b-512f9b0c6a65",
-      "text": "_baseItemJobEventLogs_ByItemKind\n| summarize TotalJobs = sum(TotalJobs) by ItemKind\n| order by TotalJobs desc",
-      "usedVariables": [
-        "_baseItemJobEventLogs_ByItemKind"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "0fdea72c-be1c-45f7-814f-542adb1a6e94",
-      "text": "_baseItemJobEventLogs_TopItems",
-      "usedVariables": [
-        "_baseItemJobEventLogs_TopItems"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
       "id": "b724249d-e3ff-4d9a-b6fc-44cbc94e766b",
       "text": "_baseItemJobEventLogs_FailureDetails",
-      "usedVariables": [
-        "_baseItemJobEventLogs_FailureDetails"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "325a3d39-4bb8-49a0-8f2f-b79ed02b21c0",
-      "text": "_baseItemJobEventLogs_FailureDetails\n| count",
-      "usedVariables": [
-        "_baseItemJobEventLogs_FailureDetails"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "041ae7c5-c29a-4c49-b947-64b7ea21b695",
-      "text": "_baseItemJobEventLogs_FailureDetails\n| summarize FailureCount = count() by ItemName\n| top 1 by FailureCount desc\n| project ItemName",
       "usedVariables": [
         "_baseItemJobEventLogs_FailureDetails"
       ]
@@ -12373,17 +12274,6 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "id": "dddae769-a010-4d5c-9d1e-2267ac5e470f",
-      "text": "_baseItemJobEventLogs_FailureDetails\n| summarize Failures = count() by ItemKind\n| order by Failures desc",
-      "usedVariables": [
-        "_baseItemJobEventLogs_FailureDetails"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
       "id": "2438a482-d43e-4950-bc60-6b9d5ff46867",
       "text": "_baseItemJobEventLogs_Timeline\n| summarize FailCount = sum(FailCount) by Timestamp\n| order by Timestamp asc",
       "usedVariables": [
@@ -12395,35 +12285,10 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "id": "5b76bc95-09e6-4742-a640-0a974187ff53",
-      "text": "_baseItemJobEventLogs_ByItemKind\n| summarize AvgDurationMs = round(avg(AvgDurationMs), 2) by ItemKind\n| order by AvgDurationMs desc",
-      "usedVariables": [
-        "_baseItemJobEventLogs_ByItemKind"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
       "id": "37ee73cc-d9db-42ed-b876-354150608fb2",
       "text": "_baseItemJobEventLogs_ScheduledVsOnDemand",
       "usedVariables": [
         "_baseItemJobEventLogs_ScheduledVsOnDemand"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "e2df8440-a361-41aa-a304-e16e776f9f13",
-      "text": "ItemJobEventLogs\n| where Timestamp between (['_startTime']+totimespan(_utcOffset) .. ['_endTime']+totimespan(_utcOffset))\n| where isempty(['_WorkspaceName']) or WorkspaceName in (['_WorkspaceName'])\n| top 20 by DurationMs desc\n| project Timestamp, ItemName, ItemKind, JobType, DurationMs, JobStatus",
-      "usedVariables": [
-        "_WorkspaceName",
-        "_endTime",
-        "_startTime",
-        "_utcOffset"
       ]
     },
     {
@@ -12504,30 +12369,8 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "id": "deda70ad-c492-4648-9469-4ac3f32ea738",
-      "text": "_baseItemJobEventLogs_SLAMetrics\n| summarize OverallAvailability = round(avg(Availability), 2)",
-      "usedVariables": [
-        "_baseItemJobEventLogs_SLAMetrics"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
       "id": "ca5431ab-4b1d-44d9-bbb5-bcd5354ae291",
       "text": "_baseItemJobEventLogs_SLAMetrics\n| where Availability < 99.0\n| count",
-      "usedVariables": [
-        "_baseItemJobEventLogs_SLAMetrics"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "c5c93dff-4b93-460f-9f51-6f2aa3d45464",
-      "text": "_baseItemJobEventLogs_SLAMetrics\n| where Availability < 99.0\n| project ItemName, ItemKind, TotalJobs, SuccessfulJobs, FailedJobs, Availability\n| order by Availability asc",
       "usedVariables": [
         "_baseItemJobEventLogs_SLAMetrics"
       ]
@@ -12605,17 +12448,6 @@
       "text": "_baseItemJobEventLogs_CoFailures\n| summarize TotalCoFailures = sum(CoFailureCount)",
       "usedVariables": [
         "_baseItemJobEventLogs_CoFailures"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "0c034a91-3583-460e-8067-90472ec6eb12",
-      "text": "_baseItemJobEventLogs_Cascades\n| count",
-      "usedVariables": [
-        "_baseItemJobEventLogs_Cascades"
       ]
     },
     {
@@ -12706,31 +12538,8 @@
         "kind": "parameter",
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
-      "id": "024710d2-bd7d-4134-98ff-7f69d25a6874",
-      "text": "_baseItemJobEventLogs_SLAMetrics\n| summarize CurrentAvailability = avg(Availability)\n| extend \n    SLA_Status = case(\n        CurrentAvailability >= 99.5, \"Excellent\",\n        CurrentAvailability >= 99.0, \"Good\", \n        CurrentAvailability >= 98.0, \"Warning\",\n        \"Critical\"\n    )\n| project SLA_Status",
-      "usedVariables": [
-        "_baseItemJobEventLogs_SLAMetrics"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
       "id": "22fd5464-652e-4c5c-9a19-16ff1eab555b",
       "text": "let FailureWindows = ItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where JobStatus == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailedItems = dcount(ItemName) by TimeWindow;\nFailureWindows\n| summarize MaxBlastRadius = max(FailedItems)\n| project MaxBlastRadius",
-      "usedVariables": [
-        "_startTime",
-        "_endTime"
-      ]
-    },
-    {
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "id": "172f96c9-f8eb-4dfa-96be-80f7166e869f",
-      "text": "let Failures = ItemJobEventLogs\n| where Timestamp between (_startTime .. _endTime)\n| where JobStatus == \"Failed\"\n| where isnotempty(WorkspaceName) and isnotempty(ItemName)\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize by ItemName, ItemKind, TimeWindow;\nFailures\n| join kind=inner (Failures) on TimeWindow\n| where ItemName != ItemName1\n| summarize CoFailureCount = count() by Item1 = ItemName, ItemKind1 = ItemKind, Item2 = ItemName1, ItemKind2 = ItemKind1\n| where CoFailureCount >= 2\n| top 20 by CoFailureCount desc\n| project Item1, Item2, CoFailureCount, ItemKind1, ItemKind2",
       "usedVariables": [
         "_startTime",
         "_endTime"
@@ -12924,18 +12733,6 @@
       },
       "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by ItemName, ItemKind\n| top 1 by FailCount\n| extend MostFailingItem = strcat(ItemName, \" (\", ItemKind, \"): \", FailCount, \" failures\")\n| project MostFailingItem",
       "usedVariables": []
-    },
-    {
-      "id": "5f842116-893d-4b11-b734-28fa4172e603",
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by LocalTimestamp = bin(LocalTimestamp, BinSize)\n| order by LocalTimestamp asc",
-      "usedVariables": [
-        "_startTime",
-        "_endTime"
-      ]
     },
     {
       "id": "adf4ff6f-c2c7-47da-ae41-99d6029316f2",
@@ -13232,15 +13029,6 @@
       "usedVariables": [
         "_utcOffset"
       ]
-    },
-    {
-      "id": "29bb2000-6eb4-4a30-a185-c82310c7998b",
-      "dataSource": {
-        "kind": "parameter",
-        "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
-      },
-      "text": "// Items with highest failure-prone dependencies\nlet FailureWindows = _baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| distinct ItemName, ItemKind, TimeWindow;\nFailureWindows\n| join kind=inner (FailureWindows) on TimeWindow\n| where ItemName != ItemName1\n| summarize\n    DependencyCount = dcount(ItemName1),\n    CoFailureWindows = dcount(TimeWindow)\n    by ItemName, ItemKind\n| extend DependencyRisk = DependencyCount * CoFailureWindows\n| top 15 by DependencyRisk desc\n| project ItemName, ItemKind, DependencyCount, CoFailureWindows, DependencyRisk",
-      "usedVariables": []
     }
   ]
 }
