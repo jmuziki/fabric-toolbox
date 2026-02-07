@@ -8380,8 +8380,8 @@
       "layout": {
         "x": 6,
         "y": 9,
-        "width": 6,
-        "height": 5
+        "width": 9,
+        "height": 7
       },
       "queryRef": {
         "kind": "query",
@@ -8556,8 +8556,8 @@
       "layout": {
         "x": 14,
         "y": 4,
-        "width": 4,
-        "height": 5
+        "width": 9,
+        "height": 7
       },
       "queryRef": {
         "kind": "query",
@@ -9035,8 +9035,8 @@
       "layout": {
         "x": 6,
         "y": 9,
-        "width": 6,
-        "height": 5
+        "width": 9,
+        "height": 7
       },
       "queryRef": {
         "kind": "query",
@@ -9286,8 +9286,8 @@
       "layout": {
         "x": 6,
         "y": 10,
-        "width": 6,
-        "height": 6
+        "width": 9,
+        "height": 7
       },
       "queryRef": {
         "kind": "query",
@@ -12618,7 +12618,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| summarize TotalJobs = count()",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "e3f55c2e-ee1f-458b-8773-2db3610668e5",
@@ -12627,7 +12629,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n| extend SuccessRate = round(100.0 * Succeeded / Total, 1)\n| project SuccessRate",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "9f2d1edf-a40c-4ea4-914f-361ede6a8eca",
@@ -12636,7 +12640,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailedJobs = count()",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "04730c71-88a5-4683-a758-bd60e534360a",
@@ -12645,7 +12651,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize AvgDurationSec = round(avg(DurationMs) / 1000.0, 1)\n| project AvgDurationSec",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "b7c551b7-561c-4e1f-b37d-2cab0a67102e",
@@ -12654,7 +12662,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize P95DurationSec = round(percentile(DurationMs, 95) / 1000.0, 1)\n| project P95DurationSec",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "a5a290f2-5da9-41be-9d8f-75de9554a5f4",
@@ -12665,7 +12675,8 @@
       "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| summarize JobCount = count() by LocalTimestamp = bin(LocalTimestamp, BinSize), ItemKind\n| order by LocalTimestamp asc",
       "usedVariables": [
         "_startTime",
-        "_endTime"
+        "_endTime",
+        "_baseIJLogs"
       ]
     },
     {
@@ -12677,7 +12688,8 @@
       "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by LocalTimestamp = bin(LocalTimestamp, BinSize)\n| order by LocalTimestamp asc",
       "usedVariables": [
         "_startTime",
-        "_endTime"
+        "_endTime",
+        "_baseIJLogs"
       ]
     },
     {
@@ -12687,7 +12699,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| summarize JobCount = count() by ItemKind\n| order by JobCount desc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "4c84b39e-c89a-4c85-a7e7-fa5ff4af72fd",
@@ -12696,7 +12710,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize AvgDurationSec = round(avg(DurationMs) / 1000.0, 1) by ItemKind, JobStatus\n| order by AvgDurationSec desc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "f66f0fed-d7cb-40a1-81c1-b1143829ffd4",
@@ -12705,7 +12721,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| summarize\n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    AvgDurationSec = round(avg(DurationMs) / 1000.0, 1),\n    MaxDurationSec = round(max(DurationMs) / 1000.0, 1),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n    by ItemName, ItemKind\n| order by TotalRuns desc\n| take 50",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "3d0cb47e-30ef-4725-ac9a-9327acf091a8",
@@ -12714,7 +12732,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize TotalFailures = count()",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "b31e7c15-7630-46c4-801c-4131d046c56d",
@@ -12723,7 +12743,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| summarize\n    Total = count(),\n    Failed = countif(JobStatus == \"Failed\")\n| extend FailureRate = round(100.0 * Failed / Total, 2)\n| project FailureRate",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "6f329312-1bdb-4e09-a729-fd6ac84da022",
@@ -12732,7 +12754,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by ItemName, ItemKind\n| top 1 by FailCount\n| extend MostFailingItem = strcat(ItemName, \" (\", ItemKind, \"): \", FailCount, \" failures\")\n| project MostFailingItem",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "adf4ff6f-c2c7-47da-ae41-99d6029316f2",
@@ -12741,7 +12765,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by ItemKind\n| order by FailCount desc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "df7f454f-7772-4570-8dc6-d883e46217ec",
@@ -12750,7 +12776,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize FailCount = count() by ItemKind, JobType\n| order by FailCount desc\n| take 20",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "82807166-5160-4831-b310-52368ef012f8",
@@ -12759,7 +12787,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend DurationSec = round(DurationMs / 1000.0, 1)\n| project\n    LocalTimestamp,\n    ItemName,\n    ItemKind,\n    JobType,\n    WorkspaceName,\n    DurationSec,\n    ExecutingPrincipalId,\n    JobInvokeType,\n    JobInstanceId\n| order by LocalTimestamp desc\n| take 100",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "953e02e6-f68d-4a61-879c-7b9caef3e2cd",
@@ -12768,7 +12798,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize AvgDurationSec = round(avg(DurationMs) / 1000.0, 1)\n| project AvgDurationSec",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "b50d6228-6a0a-4ded-9120-d496592f48cc",
@@ -12777,7 +12809,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize P95DurationSec = round(percentile(DurationMs, 95) / 1000.0, 1)\n| project P95DurationSec",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "0c9399d9-ae7a-4403-a471-d2a1ec5cddaa",
@@ -12786,7 +12820,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize MaxDurationSec = round(max(DurationMs) / 1000.0, 1)\n| project MaxDurationSec",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "f272a427-8905-4c6d-ae3a-162841373ce5",
@@ -12795,7 +12831,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| extend DurationBucket = case(\n    DurationMs < 10000, \"<10s\",\n    DurationMs < 60000, \"10s-1m\",\n    DurationMs < 300000, \"1m-5m\",\n    DurationMs < 600000, \"5m-10m\",\n    DurationMs < 1800000, \"10m-30m\",\n    DurationMs < 3600000, \"30m-1h\",\n    \">1h\"\n)\n| summarize JobCount = count() by DurationBucket\n| order by JobCount desc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "ab2458f8-b5b1-4b8a-8817-c48d665917a4",
@@ -12804,7 +12842,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize AvgDurationSec = round(avg(DurationMs) / 1000.0, 1) by ItemKind\n| order by AvgDurationSec desc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "631b22ff-0720-4888-b48b-d714d6600f81",
@@ -12813,7 +12853,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    RunCount = count(),\n    AvgDurationSec = round(avg(DurationMs) / 1000.0, 1),\n    P95DurationSec = round(percentile(DurationMs, 95) / 1000.0, 1),\n    FailRate = round(100.0 * countif(JobStatus == \"Failed\") / count(), 2)\n    by JobInvokeType, ItemKind\n| order by ItemKind, JobInvokeType",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "587f5792-a36b-4768-9aee-2a90cb71054e",
@@ -12822,7 +12864,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| extend DurationSec = round(DurationMs / 1000.0, 1)\n| top 20 by DurationMs desc\n| project\n    LocalTimestamp,\n    ItemName,\n    ItemKind,\n    JobType,\n    DurationSec,\n    JobStatus,\n    JobInvokeType,\n    WorkspaceName\n| order by DurationSec desc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "0de3525c-5305-4965-890c-f3f0b73ca2d5",
@@ -12831,7 +12875,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n| extend Availability = round(100.0 * Succeeded / Total, 2)\n| project Availability",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "8c2a7918-2ee2-4180-8bb8-c8028feb14b9",
@@ -12840,7 +12886,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n    by ItemName\n| extend Availability = 100.0 * Succeeded / Total\n| where Availability < 99.0\n| summarize SLAViolations = count()",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "319c8dfd-8e6a-48c5-acc8-3546f831561f",
@@ -12849,7 +12897,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Calculate MTBF: Total operating time / number of failures\n_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    TotalJobs = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    TotalDurationHours = sum(DurationMs) / 1000.0 / 3600.0\n| extend MTBF = round(TotalDurationHours / Failures, 1)\n| project MTBF",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "20babaa5-079e-4aaf-88ff-921c00964658",
@@ -12858,7 +12908,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Calculate MTTR: Average duration of failed jobs\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize MTTR = round(avg(DurationMs) / 1000.0 / 60.0, 1)\n| project MTTR",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "7587e9e6-4a12-40a6-b2c7-e759288d7827",
@@ -12867,7 +12919,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Error budget for 99% SLA: can have 1% failures\n_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Failed = countif(JobStatus == \"Failed\")\n| extend\n    AllowedFailures = Total * 0.01,\n    RemainingBudget = round(AllowedFailures - Failed, 0)\n| project RemainingBudget",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "15b28277-9dfe-4819-8d9e-dc01aed387a2",
@@ -12876,7 +12930,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n| extend Availability = 100.0 * Succeeded / Total\n| extend HealthStatus = case(\n    Availability >= 99.5, \"Excellent\",\n    Availability >= 99.0, \"Good\",\n    Availability >= 97.0, \"Warning\",\n    \"Critical\"\n)\n| project HealthStatus",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "ee95b446-1cab-437e-b0b9-021fcde5cb92",
@@ -12887,7 +12943,8 @@
       "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n    by LocalTimestamp = bin(LocalTimestamp, BinSize)\n| extend Availability = round(100.0 * Succeeded / Total, 2)\n| project LocalTimestamp, Availability\n| order by LocalTimestamp asc",
       "usedVariables": [
         "_startTime",
-        "_endTime"
+        "_endTime",
+        "_baseIJLogs"
       ]
     },
     {
@@ -12897,7 +12954,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus == \"Failed\"\n| summarize MTTRMinutes = round(avg(DurationMs) / 1000.0 / 60.0, 1) by ItemKind\n| order by MTTRMinutes desc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "28f1d707-da43-430a-8ed1-048731c32dfb",
@@ -12906,7 +12965,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Time from first job to first failure per item\n_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    FirstJob = min(Timestamp),\n    FirstFailure = minif(Timestamp, JobStatus == \"Failed\")\n    by ItemName\n| where isnotnull(FirstFailure)\n| extend TimeToFailureHours = round((FirstFailure - FirstJob) / 1h, 1)\n| extend Bucket = case(\n    TimeToFailureHours < 1, \"<1h\",\n    TimeToFailureHours < 6, \"1-6h\",\n    TimeToFailureHours < 24, \"6-24h\",\n    TimeToFailureHours < 72, \"1-3d\",\n    TimeToFailureHours < 168, \"3-7d\",\n    \">7d\"\n)\n| summarize ItemCount = count() by Bucket",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "566ba557-d6db-434d-90b7-6d582c6ee4d1",
@@ -12915,7 +12976,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    Total = count(),\n    Succeeded = countif(JobStatus == \"Completed\")\n    by ItemName, ItemKind\n| extend Availability = round(100.0 * Succeeded / Total, 1)\n| top 20 by Total desc\n| project ItemName, ItemKind, Availability\n| order by Availability asc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "266cde52-3c55-46c0-a5c6-d10ab8a48892",
@@ -12924,7 +12987,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\"),\n    Succeeded = countif(JobStatus == \"Completed\")\n    by ItemName, ItemKind\n| extend Availability = round(100.0 * Succeeded / TotalRuns, 2)\n| where Availability < 99.0\n| order by Availability asc\n| project ItemName, ItemKind, TotalRuns, Failures, Availability",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "ac2920c4-b64f-4b83-a475-b49bdae67fe0",
@@ -12933,7 +12998,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "_baseIJLogs\n| where JobStatus in (\"Completed\", \"Failed\")\n| summarize\n    TotalRuns = count(),\n    Failures = countif(JobStatus == \"Failed\")\n    by ItemName, ItemKind\n| where Failures == 0 and TotalRuns > 5  // Must have at least 5 runs\n| extend Availability = 100.0\n| top 10 by TotalRuns desc\n| project ItemName, ItemKind, TotalRuns, Availability",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "83dc128e-e7ee-489b-ab8d-5167eed6cf68",
@@ -12942,7 +13009,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Count unique 5-minute windows with 2+ failures\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| summarize FailedItems = dcount(ItemName) by TimeWindow\n| where FailedItems >= 2\n| summarize CoFailureEvents = count()",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "3d4458ed-45ea-40bc-ab2f-c1040823451b",
@@ -12951,7 +13020,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Count 15-minute windows with 3+ failures\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize FailedItems = dcount(ItemName) by TimeWindow\n| where FailedItems >= 3\n| summarize CascadeEvents = count()",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "013ec79c-7ac2-4584-bc27-4144f7eedaca",
@@ -12960,7 +13031,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Maximum number of items failing in same 5min window\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| summarize BlastRadius = dcount(ItemName) by TimeWindow\n| summarize MaxBlastRadius = max(BlastRadius)",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "146d734b-5026-47d1-aaf9-4462a3225107",
@@ -12969,7 +13042,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Item whose failures correlate with most other items failing\nlet FailureWindows = _baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| distinct ItemName, TimeWindow;\nFailureWindows\n| join kind=inner (FailureWindows) on TimeWindow\n| where ItemName != ItemName1\n| summarize ImpactScore = dcount(ItemName1) by ItemName\n| top 1 by ImpactScore\n| extend MostImpactful = strcat(ItemName, \" (impacts \", ImpactScore, \" other items)\")\n| project MostImpactful",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "93026ca4-8bc4-4896-958f-67043b17871e",
@@ -12978,7 +13053,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Find items that fail together in same 5min windows\nlet FailureWindows = _baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| distinct ItemName, ItemKind, TimeWindow;\nFailureWindows\n| join kind=inner (FailureWindows) on TimeWindow\n| where ItemName < ItemName1  // Avoid duplicates\n| summarize\n    CoFailureCount = count(),\n    UniqueWindows = dcount(TimeWindow)\n    by Item1 = ItemName, Kind1 = ItemKind, Item2 = ItemName1, Kind2 = ItemKind1\n| top 20 by CoFailureCount desc\n| project Item1, Kind1, Item2, Kind2, CoFailureCount, UniqueWindows",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "478c1cf6-7b42-4a25-81c3-d2082ca5a9fb",
@@ -12989,7 +13066,8 @@
       "text": "let Duration = ['_endTime'] - ['_startTime'];\nlet BinSize = case(\n    Duration >= 7d, 1d,\n    Duration > 1d, 1h,\n    Duration > 6h, 10m,\n    1m\n);\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(LocalTimestamp, BinSize)\n| summarize FailedItemCount = dcount(ItemName) by TimeWindow\n| order by TimeWindow asc",
       "usedVariables": [
         "_startTime",
-        "_endTime"
+        "_endTime",
+        "_baseIJLogs"
       ]
     },
     {
@@ -12999,7 +13077,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Impact Score = FailureCount \u00d7 UniqueFailureWindows\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize\n    FailureCount = count(),\n    UniqueWindows = dcount(TimeWindow)\n    by ItemName, ItemKind\n| extend ImpactScore = FailureCount * UniqueWindows\n| top 15 by ImpactScore desc\n| project ItemName, ItemKind, FailureCount, UniqueWindows, ImpactScore",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "a45a7a23-1baf-4669-a409-c03eede99306",
@@ -13008,7 +13088,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Matrix view of co-occurring failures\nlet FailureWindows = _baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| distinct ItemName, TimeWindow;\nFailureWindows\n| join kind=inner (FailureWindows) on TimeWindow\n| where ItemName != ItemName1\n| summarize CoFailures = count() by Item1 = ItemName, Item2 = ItemName1\n| top 20 by CoFailures desc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "a762cc79-81e5-4fb5-97ac-21a5100f282a",
@@ -13017,7 +13099,9 @@
         "parameterId": "1e69cd40-8885-49cc-925b-b1457bb4f7e7"
       },
       "text": "// Distribution of how many items fail together\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 5m)\n| summarize ItemCount = dcount(ItemName) by TimeWindow\n| summarize WindowCount = count() by BlastRadius = ItemCount\n| order by BlastRadius asc",
-      "usedVariables": []
+      "usedVariables": [
+        "_baseIJLogs"
+      ]
     },
     {
       "id": "bae5493d-a634-407f-9900-f25313910b97",
@@ -13027,7 +13111,8 @@
       },
       "text": "// Detailed view of cascade events\n_baseIJLogs\n| where JobStatus == \"Failed\"\n| extend TimeWindow = bin(Timestamp, 15m)\n| summarize\n    FailedItems = dcount(ItemName),\n    ItemList = make_set(ItemName, 10),  // Show up to 10 items\n    FailureCount = count()\n    by TimeWindow\n| where FailedItems >= 3\n| extend LocalTimeWindow = TimeWindow + totimespan(['_utcOffset'])\n| project LocalTimeWindow, FailedItems, FailureCount, ItemList\n| order by LocalTimeWindow desc\n| take 50",
       "usedVariables": [
-        "_utcOffset"
+        "_utcOffset",
+        "_baseIJLogs"
       ]
     }
   ]
