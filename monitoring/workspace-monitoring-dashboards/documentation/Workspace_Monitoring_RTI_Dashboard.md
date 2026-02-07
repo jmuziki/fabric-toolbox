@@ -353,12 +353,14 @@ The Reliability & SLA dashboard page provides enterprise metrics for tracking pl
 |---|---|
 |1.|**Review** the Overall Availability % card at the top. This shows your platform's uptime percentage across all job types. Green indicates meeting 99%+ SLA target, red indicates below SLA.|
 |2.|**Check** the SLA violation count to see how many items are currently performing below the 99% availability threshold. This card highlights in red when violations exist.|
-|3.|**Analyze** the MTBF (Mean Time Between Failures) and MTTR (Mean Time to Recovery) metrics. These professional reliability indicators help you: <br> - MTBF: Understand how long items typically run without failure <br> - MTTR: Track how quickly items recover from failures|
+|3.|**Analyze** the reliability metrics: <br> - **MTBF (Mean Time Between Failures)**: Shows average time between failures (higher is better) <br> - **Mean Time to Recovery by Item Kind**: Bar chart showing recovery times across different item types (Pipelines, Notebooks, etc.)|
 |4.|**Monitor** the Error Budget card which shows remaining failure budget for your 99% SLA target. This helps you make informed decisions about deploying changes vs maintaining stability.|
-|5.|**Track** the "Availability % Over Time" trend to identify degradation patterns. If availability is declining, proactive action is needed before SLA violations occur.|
-|6.|**Compare** availability across item types using the "Availability by Item Kind" bar chart. This reveals which types of items (Pipelines, Notebooks, Lakehouses) are most reliable.|
-|7.|**Investigate** the "Items Below SLA" table to identify specific Pipelines, Notebooks, or other items that need attention. This table is sorted by worst performers first.|
-|8.|**Review** the reliability scorecard showing the top 10 most reliable items. Use this to identify best practices from consistently successful implementations.|
+|5.|**Check** the SLA Health Status card for an overall platform health indicator (Excellent, Good, Warning, or Critical).|
+|6.|**Track** the "Availability % Over Time" trend to identify degradation patterns. If availability is declining, proactive action is needed before SLA violations occur.|
+|7.|**Compare** availability across item types using the "Availability % by Item Kind" bar chart. This reveals which types of items (Pipelines, Notebooks, Lakehouses) are most reliable.|
+|8.|**Review** the "Time to First Failure Distribution" chart to understand how quickly new or changed items typically fail after deployment.|
+|9.|**Investigate** the "Items Below 99% SLA - Detailed View" table to identify specific items that need attention. This table is sorted by worst performers first.|
+|10.|**Review** the "Top 10 Most Reliable Items" table to identify best practices from consistently successful implementations.|
 
 **Use Case: SLA Reporting to Leadership**
 The Reliability & SLA page provides executive-ready metrics. Instead of saying "we had some failures," you can report: "Platform availability is 99.2%, with 3 items below SLA threshold requiring optimization. Error budget shows we can tolerate 12 more failures this month while maintaining our 99% commitment."
@@ -382,8 +384,9 @@ The Dependency Analysis page reveals hidden patterns showing how failures in one
 |5.|**Examine** the "Co-Failing Items" table which lists pairs of items that fail together. For example: <br> - "Pipeline_DataIngestion" and "Notebook_Transformation" fail together 8 times <br> - This indicates the Notebook likely depends on the Pipeline's output <br> - Fix the Pipeline to reduce overall failure count|
 |6.|**Review** the "Critical Items" table with impact scores. Items with high scores (calculated as FailureCount × UniqueFailureWindows) cause widespread problems and should be prioritized for fixes.|
 |7.|**Investigate** cascade event details in the time window table. This shows when multiple failures occurred together, helping you understand: <br> - What time of day cascades occur (e.g., "Every morning at 9 AM") <br> - Which items were involved in the cascade <br> - Whether cascades are increasing in frequency|
-|8.|**Use** the Failure Propagation Timeline to visualize how failures spread through your workspace over time. Spikes indicate cascade events worth investigating.|
-|9.|**Review** the Critical Dependency Paths table to understand which items have the highest failure-prone dependencies. These represent architectural risks that may need redesign.|
+|8.|**Examine** the "Dependency Matrix (Top 20 Co-Failures)" table to see the most frequent co-occurring failures in a matrix format, making patterns easy to spot.|
+|9.|**Use** the Failure Propagation Timeline to visualize how failures spread through your workspace over time. Spikes indicate cascade events worth investigating.|
+|10.|**Review** the "Critical Dependency Paths (Top 15)" table to understand which items have the highest failure-prone dependencies. These represent architectural risks that may need redesign.|
 
 **Use Case: Root Cause Analysis**
 When a cascade occurs (multiple items failing), use the Dependency Analysis page to: <br>

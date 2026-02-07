@@ -115,11 +115,12 @@ The ItemJobEventLogs table captures events from multiple Fabric item types. Comm
 |--|--|--|
 |JobStatus|Overall Availability %|Percentage of successful jobs across all item types. SLA target: 99%|
 |JobStatus|Items Below SLA|Count of items with availability < 99%|
-|JobStatus, Timestamp|MTBF (Mean Time Between Failures)|Average time between consecutive failures for an item. Higher is better.|
-|JobStartTime, JobEndTime|MTTR (Mean Time to Recovery)|Average time from job start to end for failed jobs. Lower is better.|
+|JobStatus, Timestamp|MTBF (Mean Time Between Failures)|Average time between consecutive failures for an item. Displayed as a single card metric. Higher is better.|
+|ItemKind, DurationMs|Mean Time to Recovery by Item Kind|Bar chart showing average recovery time (in minutes) for failed jobs, grouped by item type (Pipeline, Notebook, Lakehouse, etc.). Lower is better.|
 |JobStatus|Error Budget|Remaining failure allowance to maintain 99% SLA target|
 |JobStatus|SLA Health Status|Overall platform health: Excellent (>99.5%), Good (99-99.5%), Warning (97-99%), Critical (<97%)|
 |Timestamp|Availability Trend|Time series of platform availability to detect degradation|
+|Timestamp, JobStatus|Time to First Failure Distribution|Column chart showing distribution of time intervals (in hours) before first failure occurs, helping identify how quickly new or changed items typically fail|
 
 **Dependency & Cascade Metrics:**
 
@@ -132,6 +133,7 @@ The ItemJobEventLogs table captures events from multiple Fabric item types. Comm
 |ItemName|Most Impactful Failure|Identifies which single item's failure caused the most downstream co-failures|
 |Timestamp|Failure Propagation|Time series showing how failures spread through the workspace during cascade events|
 |ItemName pairs|Co-Failure Pairs|Top item pairs that consistently fail together, revealing hidden dependencies|
+|ItemName pairs|Dependency Matrix|Matrix view of the top 20 co-occurring failures, showing which items fail together most frequently|
 |ItemName|Critical Dependency Paths|Items with highest failure impact based on co-failure analysis|
 
 **Use Cases:**
